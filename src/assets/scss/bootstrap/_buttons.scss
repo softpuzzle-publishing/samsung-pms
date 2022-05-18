@@ -45,8 +45,11 @@
   &.disabled,
   fieldset:disabled & {
     pointer-events: none;
-    opacity: $btn-disabled-opacity;
+    // opacity: $btn-disabled-opacity;
     @include box-shadow(none);
+    background: $gray-300 !important;
+    border-color: $gray-300 !important;
+    color: $gray-400 !important;
   }
 }
 

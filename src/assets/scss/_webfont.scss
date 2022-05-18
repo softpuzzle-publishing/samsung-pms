@@ -27,3 +27,17 @@
         url(../fonts/SamsungSharpSans/SamsungSharpSans-Bold.ttf) format('truetype'),
         url(../fonts/SamsungSharpSans/SamsungSharpSans-Bold.svg#SamsungSharpSans-Bold) format('svg');
 }
+
+@font-face {
+    font-family: 'SamsungOne';
+    font-weight: 400;
+    src: url(../fonts/SamsungOne/SamsungOneUIKorean-Regular.ttf) format('truetype');
+        //unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+    font-family: 'SamsungOne';
+    font-weight: 500;
+    src: url(../fonts/SamsungOne/SamsungOneUIKorean-Medium.ttf) format('truetype');
+        unicode-range: U+AC00-D7A3;
+}

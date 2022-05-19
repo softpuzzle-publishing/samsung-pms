@@ -22,4 +22,30 @@ img{max-width: 100%;}
 .icon-paging-end{width: 30px; height:30px; display: inline-block; background:url('../images/icon-paging-end.png') 50% 50% no-repeat;}
 // icons -- end
 
-// btn
+// select
+
+// page nav
+.page-nav{
+    display: flex; align-items: center;
+    .page-nav__dapth{
+        font-size: 14px; color: $gray-500; position: relative; padding-right: 1.25rem;
+        &.active{ color: $black;}
+        &::after{
+            content: ""; position: absolute; width: 20px; height:20px; display: inline-block; background:url('../images/icon-arrow-next-gray5.png') 50% 50% no-repeat;
+        }
+        &:last-child{
+            padding-right: 0;
+            &::after{ content: none;}
+        }
+    }
+}
+// pagination
+.custom-pagination{
+    .page-item{ padding: 0 5px;}
+    .page-link{
+        width:41px; height:41px; padding: 0; color: #282929; display: inline-block; display:flex; align-items: center; justify-content: center;
+        &.active{
+            color: $white; background-color: $black;
+        }
+    }
+}

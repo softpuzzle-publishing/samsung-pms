@@ -8,23 +8,26 @@ let Common = {
             $("#right-card").toggleClass("d-none");
         });
 
-        $('[multiple="multiple"]').each(function () {
-            let ph = $(this).attr('placeholder')
-            $(this).bsMultiSelect({
-                cssPatch: {
-                    choice: 'p-1',
-                    choices: {
-                        columnCount: "2",
+        if ($('[multiple="multiple"]').length > 0) {
+            $('[multiple="multiple"]').each(function () {
+                let ph = $(this).attr('placeholder')
+                $(this).bsMultiSelect({
+                    cssPatch: {
+                        choice: 'p-1',
+                        choices: {
+                            columnCount: "2",
+                        },
                     },
-                },
-                css: {
-                    pick: "",
-                    pickButton: "btn-close ms-1",
-                    choiceContent: 'form-check mb-0'
-                },
-                placeholder: ph,
+                    css: {
+                        pick: "",
+                        pickButton: "btn-close ms-1",
+                        choiceContent: 'form-check mb-0'
+                    },
+                    placeholder: ph,
+                });
             });
-        });
+        }
+
 
         // 데이트피커
         $( "#before-datepicker, #after-datepicker" ).datepicker();
@@ -46,9 +49,11 @@ let Common = {
         }
         // input file에 change 이벤트 부여
         const inputImage = document.getElementById("input-image")
-        inputImage.addEventListener("change", e => {
-            readImage(e.target)
-        });
+        if (inputImage !== null) {
+            inputImage.addEventListener("change", e => {
+                readImage(e.target)
+            });
+        }
     }
 }
 

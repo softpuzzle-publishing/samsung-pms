@@ -55,12 +55,9 @@
   }
 
   &.custom{
-    background-image: escape-svg($form-select-custom-indicator);
+    background-image: escape-svg($form-select-custom-indicator);background-size: 16px 12px;
   }
 }
-
-
-
 
 .form-select-sm {
   padding-top: $form-select-padding-y-sm;

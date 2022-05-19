@@ -1,0 +1,16 @@
+#header{padding-left: 28px;padding-right: 28px;}
+#container{padding-left: 250px;}
+#main{padding-left: 28px;padding-right: 28px;}
+#aside{width: 250px;position: fixed;background: #fff;top: 0;left: 0;bottom: 0;
+    &::before{content: '';width: 40px;height: 40px;background: url('../images/bg-border-radius.png') no-repeat 0 0;position: absolute;right: -40px;top: 0;}
+}
+
+.page-title{font-size: 32px;font-weight: 700;height: 40px;overflow: hidden;margin-bottom: 30px;}
+.header-title{font-size: 20px;font-weight: 700;}
+
+.navbar-brand{position: fixed;left: 30px;top: 35px;z-index: 10;}
+
+.breadcrumb{
+    i{vertical-align: middle;transform: translateY(-1px);}
+    .breadcrumb-item:not(.active){color: $gray-500;}
+}

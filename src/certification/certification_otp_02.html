@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    @@include('@@webRoot/_include/_head.html')
+</head>
+
+<body class="util">
+    <div id="wrap">
+        @@include('@@webRoot/_include/_header.html')
+        <div class="container">
+            <div class="util-wrap">
+                <div class="util-header d-flex align-items-center flex-column">
+                    <strong>2단계 인증 설정</strong>
+                    <p>2단계 인증 선택</p>
+                </div>
+                <div class="util-body mt-5">
+                    <div class="row g-5 justify-content-center">
+                        <div class="col-8">
+                            <div class="border p-5 rounded-sm">
+                                <div class="option-header">Opt.1 Google Autenticator (Google OTP)</div>
+                                <div class="option-body gap-5">
+                                    <div>
+                                        <p>Scan QR Code with your Google Authenticator app.</p><br>
+                                        <p>Open your Google Authenticator app, click the symbol [+] on the top right-hand side to scan the QR code,
+                                            or you con manually enter the ‘2FA 16-digit key:RSOR3SNSEMW376TM’</p>
+                                    </div>
+
+                                    <div class="gap-4 w-100 d-flex flex-column align-items-center">
+                                        <strong><a href="#">Step1. Download App (Android | iOS)</a></strong>
+                                        <div class="qr-area">
+                                            <img src="../assets/images/img-qr.svg" alt="Google OTP 등록 QR 코드">
+                                        </div>
+                                        <a href="certification_otp_02.html" class="btn btn-dark btn-sm">Scan QR Code with Google OTP App</a>
+                                    </div>
+
+                                    <div>
+                                        <strong class="text-danger">Check!</strong>
+                                        <p>Please install GoogleOTP and register QR code.</p>
+                                        <p>If you turn this page over without scanning GoogleOTP for QR codes, you won’t be able to use the site normally.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

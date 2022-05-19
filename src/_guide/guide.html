@@ -1,52 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <title>SAMSUNG PMS</title>
     @@include('@@webRoot/_include/_head.html')
+    <style>
+        section{border-bottom: 1px solid #e8e8e8;padding: 1.5rem 0;}
+        h1{font-size: 2rem;color: #df1f1f;}
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <ul style="font-size: 50px">
-            <li>font : SamsungSharpSans</li>
-            <li class="fw-bold">font : SamsungSharpSans Bold</li>
+        <section>
+            <h1>폰트</h1>
+            <ul style="font-size: 20px">
+                <li>영문폰트 : SamsungSharpSans</li>
+                <li class="fw-bold">영문 : SamsungSharpSans Bold</li>
+            </ul>
+            <ul style="font-size: 20px">
+                <li>한글 : 삼성원 노멀</li>
+                <li class="fw-medium">한글 : 삼성원 미디엄</li>
+                <li class="fw-bold">한글 : 삼성원 볼드</li>
+            </ul>
+        </section>
 
-            <i class="icon-home"></i>
-            <i class="icon-arrow-gray"></i>
-            <i class="icon-select-top"></i>
-            <i class="icon-select-bottom"></i>
-            <i class="icon-paging-first"></i>
-            <i class="icon-paging-prev"></i>
-            <i class="icon-paging-next"></i>
-            <i class="icon-paging-end"></i>
+        <section>
+            <h1>아이콘</h1>
+            <div>
+                <i class="icon-home"></i>
+                <i class="icon-arrow-gray"></i>
+                <i class="icon-select-top"></i>
+                <i class="icon-select-bottom"></i>
+                <i class="icon-paging-first"></i>
+                <i class="icon-paging-prev"></i>
+                <i class="icon-paging-next"></i>
+                <i class="icon-paging-end"></i>
+            </div>
+        </section>
 
-        </ul>
-        <div class="container">
+        <section>
             <h1>버튼</h1>
             <div class="mb-2">
-                <button class="btn btn-xs btn-dark">28px</button>    
-                <button class="btn btn-xs btn-dark" disabled>28px</button>    
+                <button class="btn btn-xs btn-dark">button xs</button>
+                <button class="btn btn-xs btn-dark" disabled>button xs</button>
             </div>
-            
             <div class="mb-2">
-                <button class="btn btn-sm btn-dark">34px</button>
-                <button class="btn btn-sm btn-dark" disabled>34px</button>
+                <button class="btn btn-sm btn-dark">button sm</button>
+                <button class="btn btn-sm btn-dark" disabled>button sm</button>
             </div>
+            <div class="mb-2">
+                <button class="btn btn-md btn-dark">button md</button>
+                <button class="btn btn-md btn-dark" disabled>button md</button>
+            </div>
+            <div class="mb-2">
+                <button class="btn btn-lg btn-dark">button lg</button>
+                <button class="btn btn-lg btn-dark" disabled>button lg</button>
+            </div>
+            <button class="btn btn-sm btn-primary rounded-pill">button sm rounded-pill</button>
+        </section>
 
-            <div class="mb-2">
-                <button class="btn btn-md btn-dark">38px</button>
-                <button class="btn btn-md btn-dark" disabled>38px</button>
+        <section>
+            <h1>Form</h1>
+            <div>
+                <input type="text" class="form-control form-control-lg d-inline w-auto" value="asdsad">
             </div>
-
-            <div class="mb-2">
-                <button class="btn btn-lg btn-dark">48px</button>
-                <button class="btn btn-lg btn-dark" disabled>48px</button>
-            </div>
-            
-            <button class="btn btn-sm btn-primary rounded-pill" disabled>34px</button>
-            
-            <input type="text" class="form-control form-control-lg d-inline w-auto" value="asdsad">
-        </div>
+        </section>
     </div>
 </body>
 </html>

@@ -31,13 +31,20 @@
 @font-face {
     font-family: 'SamsungOne';
     font-weight: 400;
-    src: url(../fonts/SamsungOne/SamsungOneUIKorean-Regular.ttf) format('truetype');
-        //unicode-range: U+AC00-D7A3;
+    src: url(../fonts/SamsungOne/SamsungOne-400.ttf) format('truetype');
+        unicode-range: U+AC00-D7A3;
 }
 
 @font-face {
     font-family: 'SamsungOne';
     font-weight: 500;
-    src: url(../fonts/SamsungOne/SamsungOneUIKorean-Medium.ttf) format('truetype');
+    src: url(../fonts/SamsungOne/SamsungOne-500.ttf) format('truetype');
+        unicode-range: U+AC00-D7A3;
+}
+
+@font-face {
+    font-family: 'SamsungOne';
+    font-weight: 700;
+    src: url(../fonts/SamsungOne/SamsungOne-700.ttf) format('truetype');
         unicode-range: U+AC00-D7A3;
 }

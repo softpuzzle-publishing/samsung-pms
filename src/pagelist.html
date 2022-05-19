@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    @@include('@@webRoot/_include/_head.html')
+    <style>
+        body{padding:20px;position:relative;}
+        *{margin:0;padding:0;font-size:12px;color:#222;line-height:1.5em;font-family:'NanumGothic';}
+        h1{margin-bottom:20px;font-size:24px;text-align: center;}
+        table{width:100%;border-collapse:collapse;margin: 0 auto;}
+        table th,
+        table td{border:1px solid #7992b9;padding:2px 10px;word-break: keep-all}
+        table th{background:#283c5d;color:#fff;padding:10px;font-size:14px;}
+        table td a{color:#283c5d;text-decoration:none;}
+        table td a:hover{text-decoration:underline;}
+        table tbody tr:hover{background-color: #ecf8fc;}
+        .noteTable{display: table;width: 100%;}
+        .noteTable .date{display: table-cell;color: #ff523c;width: 40px;}
+        .noteTable .note{display: table-cell;}
+        .center{text-align: center;}
+        .bg{background: #fff5f5;}
+        ul.float{position:absolute;right:20px;top:20px;}
+        ul.float li{list-style:none;border:1px solid #ccc;padding:2px 5px;display:inline-block;}
+        .end{background:#ffffcc;}
+        .ing{background:#f6b1a6;}
+        .list{text-align:center;padding:0 0 20px;}
+        .list a{text-decoration:none;margin:0 10px;}
+        .list a:hover{text-decoration:underline;}
+        .box{border: 2px dotted #aaa;padding: 1rem;margin-bottom: 1rem;text-align: center;line-height: 1.6;}
+        .box > ul{display: inline-block;text-align-last: left;}
+    </style>
+</head>
+
+<body>
+    <h1>SAMSUNG PMS PAGELIST</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Depth 1</th>
+                <th>Depth 2</th>
+                <th>Depth 3</th>
+                <th>Depth 4</th>
+                <th>File</th>
+                <th>pageLink</th>
+                <th></th>
+                <th>Popup</th>
+            </tr>
+        </thead>
+        <tbody id="pageList">
+            <tr>
+                <td></td>
+                <td>* Guide</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="_guide/guide.html">guide.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>* Modal</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="_guide/modal.html">modal.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>DASHBOARD</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>/dashboard/</td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>SYSTEM SETTINGS</td>
+                <td>SUBSIDIARY 관리</td>
+                <td></td>
+                <td></td>
+                <td>//</td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>COUNTRY 관리</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>CHANNEL 관리</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>DEVICE MODEL 관리</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>PRICE DATA SETTINGS</td>
+                <td>가격 데이터 등록/관리</td>
+                <td></td>
+                <td></td>
+                <td>//</td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>승인 대기 목록</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>이력 관리</td>
+                <td>관리자 이력 관리</td>
+                <td></td>
+                <td></td>
+                <td>//</td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>API 요청 이력</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>사용자 관리</td>
+                <td>관리자 목록</td>
+                <td></td>
+                <td></td>
+                <td>//</td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>관리자 등록</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>사용자 등록 신청</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>사용자 등록 승인 대기 목록</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a target="_blank" href="">.html</a></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        var leng = document.querySelectorAll('tbody td a');
+        console.log(leng.length);
+
+                // var rows = document.getElementById("pageList").getElementsByTagName("tr");
+                // console.log(rows.length);
+    </script>
+</body>
+</html>

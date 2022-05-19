@@ -14,14 +14,16 @@ img{max-width: 100%;}
 .card{box-shadow: 0 .375rem .375rem 0 rgba(0, 0, 0, 0.05);}
 
 // icons
-.icon-home{width: 13px; height:13px; display: inline-block; background:url('../images/icon-home.png') 50% 50% no-repeat;}
-.icon-arrow-gray{width: 20px; height:20px; display: inline-block; background:url('../images/icon-arrow-next-gray5.png') 50% 50% no-repeat;}
-.icon-select-top{width: 20px; height:20px; display: inline-block; background:url('../images/icon-select.png') 0 7px no-repeat;}
-.icon-select-bottom{width: 20px; height:20px; display: inline-block; background:url('../images/icon-select.png') 0 -7px no-repeat;}
-.icon-paging-first{width: 30px; height:30px; display: inline-block; background:url('../images/icon-paging-first.png') 50% 50% no-repeat;}
-.icon-paging-prev{width: 24px; height:24px; display: inline-block; background:url('../images/icon-paging-prev.png') 50% 50% no-repeat;}
-.icon-paging-next{width: 24px; height:24px; display: inline-block; background:url('../images/icon-paging-next.png') 50% 50% no-repeat;}
-.icon-paging-end{width: 30px; height:30px; display: inline-block; background:url('../images/icon-paging-end.png') 50% 50% no-repeat;}
+[class^=icon-]{display: inline-block;vertical-align: middle;background-repeat: no-repeat;background-position: 50% 50%;}
+.icon-logout{width: 30px;height: 30px; background-image: url('../images/icon-logout.svg');}
+.icon-home{width: 13px; height:13px; background-image:url('../images/icon-home.png');}
+.icon-arrow-gray{width: 20px; height:20px; background-image:url('../images/icon-arrow-next-gray5.png');}
+.icon-select-top{width: 20px; height:20px; background-image:url('../images/icon-select.png')t; background-position: 0 7px;}
+.icon-select-bottom{width: 20px; height:20px; background-image:url('../images/icon-select.png');background-position: 0 -7px;}
+.icon-paging-first{width: 30px; height:30px; background-image:url('../images/icon-paging-first.png');}
+.icon-paging-prev{width: 24px; height:24px; background-image:url('../images/icon-paging-prev.png');}
+.icon-paging-next{width: 24px; height:24px; background-image:url('../images/icon-paging-next.png');}
+.icon-paging-end{width: 30px; height:30px; background-image:url('../images/icon-paging-end.png');}
 // icons -- end
 
 // select
@@ -51,3 +53,6 @@ img{max-width: 100%;}
         }
     }
 }
+
+//button
+.btn{font-weight: 700;}

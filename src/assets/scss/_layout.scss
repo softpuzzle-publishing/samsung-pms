@@ -1,16 +1,38 @@
 #header{padding-left: 28px;padding-right: 28px;}
 #container{padding-left: 250px;}
 #main{padding-left: 28px;padding-right: 28px;}
-#aside{width: 250px;position: fixed;background: #fff;top: 0;left: 0;bottom: 0;
+#aside{
+    width: 250px;position: fixed;background: #fff;top: 0;left: 0;bottom: 0;padding-top: 130px;
     &::before{content: '';width: 40px;height: 40px;background: url('../images/bg-border-radius.png') no-repeat 0 0;position: absolute;right: -40px;top: 0;}
 }
 
 .page-title{font-size: 32px;font-weight: 700;height: 40px;overflow: hidden;margin-bottom: 30px;}
 .header-title{font-size: 20px;font-weight: 700;}
 
-.navbar-brand{position: fixed;left: 30px;top: 35px;z-index: 10;}
+.navbar{padding-top: 35px;}
+.navbar-brand{position: fixed;left: 30px;top: 35px;z-index: 10;padding: 0;}
 
 .breadcrumb{
-    i{vertical-align: middle;transform: translateY(-1px);}
+    i{vertical-align: middle;transform: translateY(-2px);}
     .breadcrumb-item:not(.active){color: $gray-500;}
+}
+
+.sidebar-nav{
+    padding: 0 30px;
+    a{text-decoration: none;}
+    > li{
+        > a{
+            line-height: 2.3;font-weight: 700;font-size: .9375rem;display: inline-flex;align-items: center;
+            i{display: inline-block;width: 22px;height: 22px;background: #000;margin-right: 10px;}
+        }
+    }
+    .second-level{
+        padding-left: 40px;
+        > li{
+            > a{line-height: 2.3;color: $gray-500;}
+        }
+        > li.active{
+            > a{color: $primary;font-weight: 700;}
+        }
+    }
 }

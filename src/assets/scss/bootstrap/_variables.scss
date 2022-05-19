@@ -442,7 +442,7 @@ $utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg") !defau
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
+$link-color:                              $body-color !default;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
@@ -745,7 +745,7 @@ $table-variants: (
 
 // md
 $input-btn-padding-y:         0.625rem !default;
-$input-btn-padding-x:         1.5625rem !default;
+$input-btn-padding-x:         1rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       1.2857 !default;

@@ -8,25 +8,9 @@
 <body>
     <div id="wrap">
 
-        <header id="header">
-            <div class="navbar">
-                <div class="container-fluid justify-content-end">
-                    <a class="navbar-brand" href="#"><img src="../assets/images/logo.svg" alt="SAMSUNG PMS"></a>
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item">
-                            <strong>홍길동</strong> <span>(슈퍼관리자)</span>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:;" class="nav-link" aria-label="로그아웃"><i class="icon-logout"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </header>
+        @@include('@@webRoot/_include/_header.html')
         <div id="container">
-            <aside id="aside">
-
-            </aside>
+            @@include('@@webRoot/_include/_aside.html')
             <main id="main">
                 <div class="container-fluid">
                     <nav aria-label="breadcrumb">
@@ -61,14 +45,15 @@
                                                 </select>
                                             </div>
                                             <div class="col-auto">
-                                                <button type="button" class="btn btn-dark">검색</button>
+                                                <button type="button" class="btn btn-secondary">검색</button>
                                             </div>
                                         </div>
                                     </div>
+                                    <button class="btn btn-xs btn-primary rounded-pill" data-toggle="right-card">신규등록</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-5 d-none" id="right-card">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h2 class="header-title">가격 데이터 상세</h2>

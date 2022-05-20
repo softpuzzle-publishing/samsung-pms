@@ -24,7 +24,7 @@
     > li{
         > a{
             line-height: 2.3;font-weight: 700;font-size: .9375rem;display: inline-flex;align-items: center;
-            i{display: inline-block;width: 22px;height: 22px;background: #000;margin-right: 10px;}
+            i{display: inline-block;width: 22px;height: 22px;margin-right: 10px;}
         }
     }
     .second-level{
@@ -35,5 +35,8 @@
         > li.active{
             > a{color: $primary;font-weight: 700;}
         }
+    }
+    .has-treeview{
+        margin-bottom: 1rem;
     }
 }

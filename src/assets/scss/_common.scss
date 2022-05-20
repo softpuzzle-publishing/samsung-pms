@@ -11,6 +11,8 @@ li{list-style: none;padding: 0;margin: 0;}
 
 img{max-width: 100%;}
 
+textarea{ resize: none;}
+
 .card{box-shadow: $box-shadow;}
 
 // icons
@@ -25,6 +27,9 @@ img{max-width: 100%;}
 .icon-paging-next{width: 24px; height:24px; background-image:url('../images/icon-paging-next.png');}
 .icon-paging-end{width: 30px; height:30px; background-image:url('../images/icon-paging-end.png');}
 
+.icon-plus{width: 12px; height:12px; background-image:url('../images/icon-plus.png');}
+.icon-minus{width: 12px; height:2px; background-image:url('../images/icon-minus.png');}
+
 // aside icon
 .icon-gnb-dash{width: 22px; height:22px; background-image:url('../images/icon_gnb01.svg');}
 .icon-gnb-system{width: 22px; height:22px;background-image:url('../images/icon_gnb02.svg');}
@@ -34,10 +39,13 @@ img{max-width: 100%;}
 
 // icons -- end
 
-// width
-.width-410px{ width:410px !important;}
+// line
+.dash-line{ width: 100%; height: 1px; background-color: $black; margin: 1.8rem 0;}
 
 // pagination
+.pagination-wrap{
+    margin-top: 4.4rem;
+}
 .custom-pagination{
     .page-item{ padding: 0 5px;}
     .page-link{
@@ -68,7 +76,9 @@ img{max-width: 100%;}
 }
 
 //button
-.btn{font-weight: 700;}
+.btn{font-weight: 700;
+    &.active{ background-color: $black !important;}
+}
 
 //select multiple
 .form-select[multiple]{opacity: 0;}
@@ -76,7 +86,7 @@ img{max-width: 100%;}
     .dropdown-menu{padding: .5rem;}
     .btn-close{margin-left: 3px;}
     .form-control{
-        border-color: $input-border-color;font-weight: 400;position: relative;padding-right: $form-select-indicator-padding;max-width: 500px;
+        border-color: $input-border-color;font-weight: 400;position: relative;padding-right: $form-select-indicator-padding;max-width: 500px; overflow: hidden;
         &::before{content: '';width: 50px;height: 100%;background: #fff;position: absolute;right: 0;top: 0;}
         &::after{border: 0;content: '';background-image: escape-svg($form-select-custom-indicator);background-size: 16px 12px;background-position: 0 0;background-repeat: no-repeat; width: 16px;height: 16px;background-size: 16px 12px;position: absolute;top: 50%;right: 1rem;transform: translateY(-50%);}
         &::placeholder{color: #000;}

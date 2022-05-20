@@ -4,9 +4,14 @@
 <head>
     @@include('@@webRoot/_include/_head.html')
     <style>
+        body{
+            background: #fff;
+        }
+        .container{ display:flex; flex-wrap: wrap;}
         section {
             border-bottom: 1px solid #e8e8e8;
             padding: 1.5rem 0;
+            flex: 0 0 50%;
         }
 
         h1 {
@@ -48,6 +53,9 @@
                 <i class="icon-gnb-price"></i>
                 <i class="icon-gnb-record"></i>
                 <i class="icon-gnb-user"></i>
+                <br>
+                <i class="icon-plus"></i>
+                <i class="icon-minus"></i>
             </div>
         </section>
 
@@ -106,6 +114,12 @@
             <div class="mb-2">
                 <button class="btn btn-lg btn-dark">button lg</button>
                 <button class="btn btn-lg btn-dark" disabled>button lg</button>
+            </div>
+            <div class="mb-2">
+                <button type="button"  class="btn btn-lg btn-gray2"><i class="icon-plus"></i></button>
+            </div>
+            <div class="mb-2">
+                <button type="button"  class="btn btn-lg btn-gray2"><i class="icon-minus"></i></button>
             </div>
             <button class="btn btn-xs btn-primary rounded-pill">신규등록</button>
         </section>
@@ -235,10 +249,6 @@
                         </tbody>
                     </table>
                 </div>
-                <table class="table">
-                    <thead></thead>
-                    <tbody></tbody>
-                </table>
             </section>
             <section>
                 <h1>color</h1>

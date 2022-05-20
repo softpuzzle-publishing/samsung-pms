@@ -97,8 +97,36 @@ textarea{ resize: none;}
 .form-wrap{
     >.row>.col-auto{
         label{
-            margin-top: 15px; width: 155px;
+            margin-top: 10px; width: 155px;
         }
     }
     .text-danger{ margin-top: 2px; font-size: 13px; line-height: 24px;}
+}
+@media screen and (max-width: 1500px) {
+    .form-wrap{
+        >.row>.col-auto{
+            label{
+                width: 100px;
+            }
+        }
+    }   
+}
+
+// modal
+.modal-content{
+    border-radius: 20px;
+}
+.modal-header{
+    padding: 28px 30px; border-bottom: 0; font-size: 19px;
+    .modal-title{ font-weight: bold;}
+    .btn-close{ opacity: 1; }
+}
+.modal-body{
+    padding: 0 30px;
+    .modal-body__desc{
+        font-size: 15px; color: $gray-700;
+    }
+}
+.modal-footer{
+    padding: 40px 30px 30px; border-top: 0;
 }

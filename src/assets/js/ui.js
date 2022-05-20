@@ -8,6 +8,13 @@ let Common = {
             $("#right-card").toggleClass("d-none");
         });
 
+        // 버튼 active
+        $('[data-toggle="btn-select"]').on('click', function (e) {
+            e.preventDefault();
+            $(this).toggleClass("active");
+        });
+
+        // 가격데이터 이미지 등록
         if ($('[multiple="multiple"]').length > 0) {
             $('[multiple="multiple"]').each(function () {
                 let ph = $(this).attr('placeholder')

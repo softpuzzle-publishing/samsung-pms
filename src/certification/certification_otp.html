@@ -5,33 +5,33 @@
     @@include('@@webRoot/_include/_head.html')
 </head>
 
-<body class="util">
+<body>
     <div id="wrap">
         @@include('@@webRoot/_include/_header.html')
         <div class="container">
             <div class="util-wrap">
                 <div class="util-header d-flex align-items-center flex-column">
                     <strong>2단계 인증 설정</strong>
-                    <p>2단계 인증 선택</p>
+                    <b>2단계 인증 선택</b>
                 </div>
                 <div class="util-body mt-5">
                     <div class="row g-5 justify-content-center align-items-center flex-column">
-                        <div class="col-8">
-                            <div class="border p-5">
+                        <div class="col-6 p-0">
+                            <div class="box-style bg-white rounded-lg">
                                 <div class="option-header">Opt.1 Google Autenticator (Google OTP)</div>
                                 <div class="option-body gap-5">
                                     <div>
-                                        <p>Scan QR Code with your Google Authenticator app.</p><br>
-                                        <p>Open your Google Authenticator app, click the symbol [+] on the top right-hand side to scan the QR code,
+                                        <p>Scan QR Code with your Google Authenticator app.</p>
+                                        <p>Open your Google Authenticator app, click the symbol [+] on the top right-hand side to scan the QR code,<br>
                                             or you con manually enter the ‘2FA 16-digit key:RSOR3SNSEMW376TM’</p>
                                     </div>
 
                                     <div class="gap-4 w-100 d-flex flex-column align-items-center">
-                                        <strong><a href="#">Step1. Download App (Android | iOS)</a></strong>
+                                        <strong><a href="#">Download App (Android | iOS)</a></strong>
                                         <div class="qr-area">
                                             <img src="../assets/images/img-qr.svg" alt="Google OTP 등록 QR 코드">
                                         </div>
-                                        <a href="certification_otp_01.html" class="btn btn-dark btn-sm">Scan QR Code with Google OTP App</a>
+                                        <a href="certification_otp_01.html" class="btn btn-outline-dark min-width-400px btn-lg">Enable Google Authentication</a>
                                     </div>
 
                                     <div>
@@ -42,10 +42,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-8">
-                            <a href="" class="w-100 d-block text-center">
-                                <b>Opt.2 E-mail Authentication</b>
-                            </a>
+                        <div class="col-6 text-center">
+                            <a href="" class="btn btn-dark min-width-400px btn-lg">Opt.2 E-mail Authentication</a>
                         </div>
                     </div>
                 </div>

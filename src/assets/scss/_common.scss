@@ -41,7 +41,7 @@ textarea{ resize: none;}
 
 //width
 .min-width-400px{min-width: 400px;}
-
+.width-60px{width: 60px;}
 
 // line
 .dash-line{ width: 100%; height: 1px; background-color: $black; margin: 1.8rem 0;}
@@ -68,14 +68,22 @@ textarea{ resize: none;}
 }
 .custom-table{
     thead{ border-top: 1px solid $black;}
-    th{padding: 15px 0; font-size: 13px; font-weight: 700; vertical-align: middle;}
-    td{padding: 27px 0; font-size: 14px; font-weight: 400; color: $gray-500;}
+    th{padding: 15px 0.5rem; font-size: 13px; font-weight: 700; vertical-align: middle;}
+    td{padding: 27px 0.5rem; font-size: 14px; font-weight: 400; color: $gray-500; vertical-align: middle;}
     >:not(:first-child){
         border-top: 0;
     }
     a{
         text-decoration: none;
         &:hover{ color:$primary; text-decoration: underline;}
+    }
+}
+.common-table{
+    th{padding: 15px 0.3rem; font-size: 13px; font-weight: 700; vertical-align: middle; background-color: $gray-100;}
+    td{padding: 15px 0.5rem; font-size: 14px; font-weight: 400; color: $gray-500; vertical-align: middle;}
+    
+    textarea{
+        width: 100%; height: 120px; border-radius: 6px; background-color: #fff; border:1px solid $gray-300; margin-top: 20px;
     }
 }
 

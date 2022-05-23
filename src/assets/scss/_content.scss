@@ -4,3 +4,10 @@
     margin: 0 -4px;
     .btn{ margin: 4px;}
 }
+
+// card
+.card-data__content{
+    .form-control[readonly]{
+        background-color: #fff;
+    }
+}

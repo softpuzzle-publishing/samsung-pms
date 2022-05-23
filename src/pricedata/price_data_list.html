@@ -146,7 +146,7 @@
                         </div>
                         <div class="col-5">
                             <div class="card h-100">
-                                <div class="card-body">
+                                <div class="card-body card-data__content">
                                     <h2 class="header-title">가격 데이터 상세</h2>
 
                                     <form action="" class="form-wrap mt-5">
@@ -159,33 +159,31 @@
                                                 <input type="text" class="form-control" value="Galaxy S22" readonly>
                                             </div>
                                         </div>
-
                                         <div class="row mb-2">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex"><span class="text-primary mx-1">*</span>Subsidiary</label>
+                                                <label for="" class="d-flex">Promotion Image</label>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select" aria-label="Default select">
-                                                    <option selected>SEA</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
+                                                <div class="image-container">
+                                                    <img id="preview-image" src="/assets/images/default-image.png">
+                                                </div>
                                             </div>
                                         </div>
-
-                                        <div class="row">
+                                        <div class="row mb-2">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex"><span class="text-primary mx-1">*</span>Company Name</label>
+                                                <label for="" class="d-flex">Promotion<br>
+                                                    Description</label>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select" aria-label="Default select">
-                                                    <option selected>AT&T</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                                <p class="text-danger">Please change your posting time to GMT</p>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="300" readonly>Trade in and save $22.31 Early upgrade with AT&T Next Up</textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-auto">
+                                                <label for="" class="d-flex">Company Name</label>
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" value="AT&T" readonly>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -195,44 +193,15 @@
                                             <div class="col">
                                                 <div class="row gx-3 align-items-center">
                                                     <div class="col">
-                                                        <input type="text" class="form-control" id="before-datepicker">
+                                                        <input type="text" class="form-control" value="2020/07/27 17:59:00" readonly>
                                                     </div>
                                                     <div class="col-auto">
                                                         <span class="fw-bold"> ~ </span>
                                                     </div>
                                                     <div class="col">
-                                                        <input type="text" class="form-control" id="after-datepicker">
+                                                        <input type="text" class="form-control" value="2020/07/27 17:59:00" readonly>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- line -->
-                                        <div class="dash-line"></div>
-                                        <!-- line //-->
-
-                                        <div class="row mb-2">
-                                            <div class="col-auto">
-                                                <label for="" class="d-flex">Promotion Image</label>
-                                            </div>
-                                            <div class="col">
-                                                <div class="image-container">
-                                                    <img id="preview-image" src="/assets/images/default-image.png">
-
-                                                    <input type="file" id="input-image" class="d-none" value="upload">
-
-                                                    <div class="d-flex justify-content-end mt-2"><label for="input-image" class="btn btn-xs btn-dark">upload</label></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-auto">
-                                                <label for="" class="d-flex">Promotion<br>
-                                                    Description</label>
-                                            </div>
-                                            <div class="col">
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="300"></textarea>
                                             </div>
                                         </div>
 
@@ -264,43 +233,37 @@
                                                 </div>
                                                 <div class="row gx-2 mb-2">
                                                     <div class="col">
-                                                        <input type="text" class="form-control" value="Full Pricen">
+                                                        <input type="text" class="form-control" value="Full Pricen" readonly>
                                                     </div>
                                                     <div class="col">
-                                                        <input type="text" class="form-control" value="1288.98">
+                                                        <input type="text" class="form-control" value="1288.98" readonly>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <select class="form-select w-auto" aria-label="Default select">
-                                                            <option selected>$</option>
-                                                            <option value="1">W</option>
-                                                        </select>
+                                                        <input type="text" class="form-control width-60px" value="$" readonly>
                                                     </div>
                                                     <div class="row gx-2 mt-2">
                                                         <div class="col">
-                                                            <input type="text" class="form-control" value="Price Description">
+                                                            <input type="text" class="form-control" value="Price Description" readonly>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 <div class="row gx-2 gy-2 mb-2 mt-4">
                                                     <div class="col">
-                                                        <input type="text" class="form-control" value="Full Pricen">
+                                                        <input type="text" class="form-control" value="Full Pricen" readonly>
                                                     </div>
                                                     <div class="col">
-                                                        <input type="text" class="form-control" value="1288.98">
+                                                        <input type="text" class="form-control" value="1288.98" readonly>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <select class="form-select w-auto" aria-label="Default select">
-                                                            <option selected>$</option>
-                                                            <option value="1">W</option>
-                                                        </select>
+                                                        <input type="text" class="form-control width-60px" value="$" readonly>
                                                     </div>
                                                     <div class="col">
-                                                        <input type="text" class="form-control" value="24">
+                                                        <input type="text" class="form-control" value="24" readonly>
                                                     </div>
                                                     <div class="row gx-2 mt-2">
                                                         <div class="col">
-                                                            <input type="text" class="form-control" value="Price Description">
+                                                            <input type="text" class="form-control" value="Price Description" readonly>
                                                         </div>
                                                         <div class="col-auto">
                                                             <button type="button" class="btn btn-sm btn-gray2"><i class="icon-plus"></i></button>
@@ -311,71 +274,29 @@
 
                                                 <div class="row gx-2 gy-2 mb-2">
                                                     <div class="col">
-                                                        <input type="text" class="form-control" value="Full Pricen">
+                                                        <input type="text" class="form-control" value="Full Pricen" readonly>
                                                     </div>
                                                     <div class="col">
-                                                        <input type="text" class="form-control" value="1288.98">
+                                                        <input type="text" class="form-control" value="1288.98" readonly>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <select class="form-select w-auto" aria-label="Default select">
-                                                            <option selected>$</option>
-                                                            <option value="1">W</option>
-                                                        </select>
+                                                        <input type="text" class="form-control width-60px" value="$" readonly>
                                                     </div>
                                                     <div class="col">
-                                                        <input type="text" class="form-control" value="Month">
+                                                        <input type="text" class="form-control" value="Month" readonly>
                                                     </div>
 
                                                     <div class="row gx-2 mt-2">
                                                         <div class="col">
-                                                            <input type="text" class="form-control" value="Price Description">
+                                                            <input type="text" class="form-control" value="Price Description" readonly>
                                                         </div>
                                                         <div class="col-auto">
                                                             <button type="button" class="btn btn-sm btn-gray2"><i class="icon-minus"></i></button>
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
-                                        <div class="row mt-4">
-                                            <div class="col-auto">
-                                                <label for="" class="d-flex">Price Disclaimer</label>
-                                            </div>
-                                            <div class="col">
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="300"></textarea>
-                                            </div>
-                                        </div>
-
-                                        <!-- line -->
-                                        <div class="dash-line"></div>
-                                        <!-- line //-->
-
-                                        <div class="row mb-2">
-                                            <div class="col-auto">
-                                                <label for="" class="d-flex">Link Button Text</label>
-                                            </div>
-                                            <div class="col">
-                                                <input type="text" class="form-control" value="Price Description">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-auto">
-                                                <label for="" class="d-flex">URL</label>
-                                            </div>
-                                            <div class="col">
-                                                <input type="text" class="form-control" value="Price Description">
-                                            </div>
-                                        </div>
-
-                                        <div class="row mt-5">
-                                            <div class="d-flex justify-content-end">
-                                                <button type="button" class="btn btn-gray4 w-auto text-white">취소</button>
-                                                <button type="button" class="btn btn-outline-primary w-auto mx-2">미리보기</button>
-                                                <button type="button" class="btn btn-primary w-auto ">저장</button>
-                                            </div>
-                                        </div>
-
                                     </form> <!-- form-wrap -->
                                 </div> <!-- card-body -->
                             </div>

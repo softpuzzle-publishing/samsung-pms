@@ -64,7 +64,7 @@ textarea{ resize: none;}
 }
 .custom-table{
     thead{ border-top: 1px solid $black;}
-    th{padding: 15px 0; font-size: 13px; font-weight: 700;}
+    th{padding: 15px 0; font-size: 13px; font-weight: 700; vertical-align: middle;}
     td{padding: 27px 0; font-size: 14px; font-weight: 400; color: $gray-500;}
     >:not(:first-child){
         border-top: 0;

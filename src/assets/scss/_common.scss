@@ -80,8 +80,9 @@ textarea{ resize: none;}
 }
 
 //button
-.btn{font-weight: 700;
-    &.active{ background-color: $black !important;}
+.btn{font-weight: 700;}
+.btn-check:checked+.btn-gray4, .btn-check:active+.btn-gray4, .btn-gray4:active, .btn-gray4.active, .show>.btn-gray4.dropdown-toggle{
+    background-color: $black; border-color: $black; box-sizing: 0;
 }
 
 //select multiple

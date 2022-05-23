@@ -34,10 +34,9 @@
   .btn-check:active + &,
   &:active,
   &.active {
-    @include box-shadow($btn-active-box-shadow);
-
+    // @include box-shadow($btn-active-box-shadow);
     &:focus {
-      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      // @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
     }
   }
 

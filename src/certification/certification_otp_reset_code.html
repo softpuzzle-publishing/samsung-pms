@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    @@include('@@webRoot/_include/_head.html')
+</head>
+
+<body class="util">
+    <div id="wrap">
+        @@include('@@webRoot/_include/_header.html')
+        <div class="container">
+            <div class="util-wrap">
+                <div class="util-header d-flex align-items-center flex-column">
+                    <strong>2단계 인증 설정</strong>
+                    <p>2단계 인증 초기화</p>
+                </div>
+                <div class="util-body mt-5">
+                    <div class="row g-5 justify-content-center align-items-center flex-column">
+                        <div class="col-6">
+                            <div class="border p-5">
+                                <div class="option-header">Google Authenticator (Google OTP)</div>
+                                <div class="gap-5">
+                                    <div>
+                                        <p>Reset Google Verification with <span class="text-danger">6-digit code</span></p><br>
+                                    </div>
+
+                                    <div class="row g-2">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="6-digit code">
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="btn btn-dark">Confirm</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

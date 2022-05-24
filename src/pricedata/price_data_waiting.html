@@ -17,15 +17,15 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="icon-home"></i></li>
                             <li class="breadcrumb-item">가격 데이터 관리</li>
-                            <li class="breadcrumb-item active" aria-current="page">가격 데이터 등록/관리</li>
+                            <li class="breadcrumb-item active" aria-current="page">승인 대기 목록</li>
                         </ol>
                     </nav>
-                    <h1 class="page-title">가격 데이터 등록/관리</h1>
+                    <h1 class="page-title">승인 대기 목록</h1>
                     <div class="row">
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h2 class="header-title">가격 데이터 목록</h2>
+                                    <h2 class="header-title">승인 대기 목록</h2>
                                     <div class="search">
                                         <div class="row gx-2">
                                             <div class="col">
@@ -70,14 +70,13 @@
                                             <p class="fw-bold">
                                                 [총 <span class="text-primary">106</span>건]
                                             </p>
-                                            <a href="price_data_registration.html" class="btn btn-xs btn-primary rounded-pill">신규등록</a>
                                         </div>
                                         <table class="table custom-table">
                                             <thead>
                                                 <tr>
                                                     <th class="text-center">No</th>
                                                     <th class="text-center">Model</th>
-                                                    <th class="text-center">Status</th>
+                                                    <th class="text-center"></th>
                                                     <th class="text-center">최근 변경일시</th>
                                                     <th class="text-center">Subsidiary</th>
                                                     <th class="text-center">Country</th>
@@ -90,7 +89,7 @@
                                                     <td class="text-center">
                                                         <a href="" class="text-gray5">Galaxy S22</a>
                                                     </td>
-                                                    <td class="text-center">Y</td>
+                                                    <td class="text-center"></td>
                                                     <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
                                                     <td class="text-center"></td>
@@ -101,7 +100,7 @@
                                                     <td class="text-center">
                                                         <a href="" class="text-gray5">Galaxy S22</a>
                                                     </td>
-                                                    <td class="text-center">Y</td>
+                                                    <td class="text-center"></td>
                                                     <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
                                                     <td class="text-center"></td>
@@ -112,7 +111,7 @@
                                                     <td class="text-center">
                                                         <a href="" class="text-gray5">Galaxy S22</a>
                                                     </td>
-                                                    <td class="text-center">Y</td>
+                                                    <td class="text-center"></td>
                                                     <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
                                                     <td class="text-center"></td>
@@ -148,7 +147,7 @@
                         <div class="col-5">
                             <div class="card h-100">
                                 <div class="card-body card-data__content">
-                                    <h2 class="header-title">가격 데이터 상세</h2>
+                                    <h2 class="header-title">승인 대기 상세</h2>
 
                                     <form action="" class="form-wrap mt-5">
 
@@ -290,8 +289,9 @@
                                         </div>
                                         <div class="row mt-5">
                                             <div class="d-flex justify-content-end">
-                                                <button type="button" class="btn btn-gray4 w-auto">삭제</button>
-                                                <button type="button" class="btn btn-primary w-auto mx-2">수정</button>
+                                                <button type="button" class="btn btn-outline-primary w-auto">미리보기</button>
+                                                <button type="button" class="btn btn-gray4 w-auto mx-2" data-bs-target="#modal-companion" data-bs-toggle="modal">반려</button>
+                                                <button type="button" class="btn btn-primary w-auto ">승인</button>
                                             </div>
                                         </div>
                                     </form> <!-- form-wrap -->

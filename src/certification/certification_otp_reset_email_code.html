@@ -15,24 +15,24 @@
                     <p>2단계 인증 초기화</p>
                 </div>
                 <div class="util-body mt-5">
-                    <div class="row g-5 justify-content-center align-items-center flex-column">
-                        <div class="col-6">
-                            <div class="border p-5">
+                    <div class="row g-4 justify-content-center align-items-center flex-column">
+                        <div class="col-5">
+                            <div class="card">
                                 <div class="option-header">Google Authenticator (Google OTP)</div>
                                 <div class="gap-5">
                                     <div>
-                                        <p>Reset Google Verification with <span class="text-danger">E-mail Authentication Code</span></p><br>
+                                        <p>Reset Google Verification with E-mail Authentication Code</p>
                                     </div>
 
-                                    <div class="row g-2">
+                                    <div class="row g-1 mt-5 pt-5">
                                         <div class="col-4">
-                                            <input type="text" class="form-control" placeholder="ID">
+                                            <input type="text" class="form-control form-control-lg" placeholder="ID">
                                         </div>
                                         <div class="col">
-                                            <input type="text" class="form-control" placeholder="E-mail">
+                                            <input type="text" class="form-control form-control-lg" placeholder="E-mail">
                                         </div>
                                         <div class="col-auto">
-                                            <button class="btn btn-dark">Confirm</button>
+                                            <button class="btn btn-dark btn-lg" data-bs-target="#modal-cert-fail" data-bs-toggle="modal">Confirm</button>
                                         </div>
                                     </div>
                                 </div> 
@@ -43,6 +43,7 @@
             </div>
         </div>
     </div>
+    @@include('@@webRoot/_include/_modal.html')
 </body>
 
 </html>

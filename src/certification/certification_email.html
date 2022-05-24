@@ -18,24 +18,25 @@
                     <div class="row g-4 justify-content-center align-items-center flex-column">
                         <div class="col-5">
                             <div class="card">
-                                <div class="option-header">E-mail Authentication</div>
-                                <div class="gap-5">
-                                    <div>
-                                        <p>인증요청 후 인증시간 내 전송된 인증번호를 입력해주세요.</p>
+                                <div class="card-body">
+                                    <div class="option-header">E-mail Authentication</div>
+                                    <div class="gap-5">
+                                        <div>
+                                            <p>인증요청 후 인증시간 내 전송된 인증번호를 입력해주세요.</p>
+                                        </div>
+                                        <div class="row g-1 mt-5 pt-5">
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Auth Code">
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-cert-email">인증 요청</button>
+                                            </div>
+                                            <div class="col-12 mt-5">
+                                                <button type="button" class="btn btn-dark btn-lg w-100" data-bs-toggle="modal" data-bs-target="#modal-cert-fail">LOGIN</button>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <div class="row g-1 mt-5 pt-5">
-                                        <div class="col">
-                                            <input type="text" class="form-control" placeholder="Auth Code">
-                                        </div>
-                                        <div class="col-auto">
-                                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-cert-email">인증 요청</button>
-                                        </div>
-                                        <div class="col-12 mt-5">
-                                            <button type="button" class="btn btn-dark btn-lg w-100" data-bs-toggle="modal" data-bs-target="#modal-cert-fail">LOGIN</button>
-                                        </div>
-                                    </div>
-                                </div> 
+                                </div>
                             </div>
                         </div>
                     </div>

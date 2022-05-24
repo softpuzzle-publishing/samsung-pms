@@ -16,56 +16,104 @@
                 </div>
                 <div class="util-body mt-5">
                     <div class="row g-4 align-items-stretch justify-content-center">
-                        <div class="col-5 h-100">
+                        <div class="col-6 h-100">
                             <div class="card">
-                                <form action="" class="form-wrap">
-                                    <div class="row mb-2 align-items-center">
-                                        <div class="col-auto">
-                                            <label for="" class="d-flex mt-0">No</label>
-                                        </div>
-                                        <div class="col">
-                                            신규
-                                        </div>
+                                <div class="card-body">
+                                    <table class="table common-table border">
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-center">No</th>
+                                                <td class="text-center">
+                                                    신규
+                                                </td>
+                                                <th class="text-center">등록일</th>
+                                                <td class="text-center">
+                                                    2022/05/12
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center"><span class="text-primary">*</span>구분</th>
+                                                <td colspan="3">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="samsungCor" value="samsungCor">
+                                                        <label class="form-check-label" for="samsungCor">삼성지법인</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="channel" value="channel" onchange="setDisplay()">
+                                                        <label class="form-check-label" for="channel">채널</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <script>
+                                                $('input[name="inlineRadioOptions"]').change(function () {
+                                                    if ($('input[name="inlineRadioOptions"]:checked').val() === "channel") {
+                                                        $('#channel_tr').show();
+                                                    } else {
+                                                        $('#channel_tr').hide();
+                                                    }
+                                                });
+                                            </script>
+                                            <tr>
+                                                <th class="text-center"><span class="text-primary">*</span>Country</th>
+                                                <td colspan="3">
+                                                    <div class="row g-2">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control" readonly>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <button class="btn btn-dark">검색</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr id="channel_tr" style="display: none;">
+                                                <th class="text-center"><span class="text-primary">*</span>Channel</th>
+                                                <td colspan="3">
+                                                    <input type="text" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center"><span class="text-primary">*</span>아이디</th>
+                                                <td colspan="3">
+                                                    <input type="text" class="form-control" aria-describedby="idHelp">
+                                                    <div id="idHelp" class="form-text">6~30자 이내 영문으로 입력</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center"><span class="text-primary">*</span>이름</th>
+                                                <td colspan="3">
+                                                    <input type="text" class="form-control" aria-describedby="nameHelp">
+                                                    <div id="nameHelp" class="form-text">1~20자 이내 숫자/특수문자 제외</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center"><span class="text-primary">*</span>비밀번호</th>
+                                                <td colspan="3">
+                                                    <input type="password" class="form-control" aria-describedby="passwordHelp">
+                                                    <div id="passwordHelp" class="form-text">8~20자 이내 영문/숫자/특수문자 조합</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center"><span class="text-primary">*</span>E-mail</th>
+                                                <td colspan="3">
+                                                    <div class="row g-2">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <button class="btn btn-dark" data-bs-target="#modal-email" data-bs-toggle="modal">인증 요청</button>
+                                                            <button class="btn btn-secondary" data-bs-target="#modal-email" data-bs-toggle="modal">인증 완료</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="row g-2 justify-content-end mt-5">
+                                        <div class="col-auto"><button type="button" class="btn btn-outline-dark">초기화</button></div>
+                                        <div class="col-auto"><a href="user_form.html" class="btn btn-dark">다음</a></div>
                                     </div>
-                                    <div class="row mb-2 align-items-center">
-                                        <div class="col-auto">
-                                            <label for="" class="d-flex mt-0">등록일</label>
-                                        </div>
-                                        <div class="col">
-                                            2022/05/12
-                                        </div>
-                                    </div>
-                                    <div class="row mb-2 align-items-center">
-                                        <div class="col-auto">
-                                            <label for="" class="d-flex mt-0"><span class="text-primary">*</span>구분</label>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="corp" value="option1">
-                                                <label class="form-check-label" for="corp">삼성지법인</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="channel" value="option2">
-                                                <label class="form-check-label" for="channel">채널</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-2 align-items-center">
-                                        <div class="col-auto">
-                                            <label for="" class="d-flex mt-0"><span class="text-primary">*</span>Country</label>
-                                        </div>
-                                        <div class="col">
-                                            <div class="row g-2">
-                                                <div class="col">
-                                                    <input type="text" class="form-control form-contorl-lg">
-                                                </div>
-                                                <div class="col-auto">
-                                                    <button type="button" class="btn btn-lg"></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form> <!-- form-wrap -->
+                                </div>
                             </div>
                         </div>
                     </div>

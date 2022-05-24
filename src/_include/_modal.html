@@ -84,7 +84,6 @@
                     <div class="col-auto">
                         <button type="button" class="btn btn-lg btn-dark">인증 확인</button>
                     </div>
-                 
                 </div>
             </div>
         </div>
@@ -108,6 +107,85 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-lg btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-lg btn-dark">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 모달 : 2단계 인증 > 이메일 인증 -->
+<div class="modal fade" id="modal-cert-email" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">알림</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-body__desc">
+                    회원가입 시 등록한 이메일로 인증번호가 발송되었습니다.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-dark" data-bs-dismiss="modal">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 모달 : 2단계 인증 > 이메일 인증/ otp 인증 > 인증 실패 -->
+<div class="modal fade" id="modal-cert-fail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">알림</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-body__desc">
+                    인증번호가 올바르지 않습니다. 다시 시도해주세요.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-dark" data-bs-dismiss="modal">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 모달 : 2단계 인증 > otp 인증 > 이메일코드인증 -->
+<div class="modal fade" id="modal-cert-otp-emailCode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Two-factor E-mail Authentication</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-body__desc">
+                    Proceed with Email Authentication.<br>
+                    Please re-certify by sending security code again after the time limit.
+                </p>
+            </div>
+            <div class="modal-footer pt-3">
+                <div class="row w-100 mb-2">
+                    <div class="col p-0">
+                        <input type="text" class="form-control form-control-lg" value="" disabled>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-lg btn-gray4 text-white">인증 요청</button>
+                    </div>
+                </div>
+                <div class="row w-100 mb-2">
+                    <div class="col p-0">
+                        <input type="text" class="form-control form-control-lg" placeholder="인증코드 입력">
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-lg btn-dark">인증 확인</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

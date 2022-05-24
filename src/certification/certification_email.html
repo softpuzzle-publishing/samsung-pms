@@ -12,27 +12,27 @@
             <div class="util-wrap">
                 <div class="util-header d-flex align-items-center flex-column">
                     <strong>2단계 인증 설정</strong>
-                    <p>2단계 인증 초기화</p>
+                    <b>이메일 인증</b>
                 </div>
                 <div class="util-body mt-5">
                     <div class="row g-4 justify-content-center align-items-center flex-column">
                         <div class="col-5">
                             <div class="card">
-                                <div class="option-header">Google Authenticator (Google OTP)</div>
+                                <div class="option-header">E-mail Authentication</div>
                                 <div class="gap-5">
                                     <div>
-                                        <p>Reset Google Verification with 2FA 16-digit key</p>
+                                        <p>인증요청 후 인증시간 내 전송된 인증번호를 입력해주세요.</p>
                                     </div>
 
                                     <div class="row g-1 mt-5 pt-5">
-                                        <div class="col-4">
-                                            <input type="text" class="form-control form-control-lg" placeholder="ID">
-                                        </div>
                                         <div class="col">
-                                            <input type="text" class="form-control form-control-lg" placeholder="2FA 16-digit key">
+                                            <input type="text" class="form-control" placeholder="Auth Code">
                                         </div>
                                         <div class="col-auto">
-                                            <button class="btn btn-dark btn-lg" data-bs-target="#modal-cert-fail" data-bs-toggle="modal">Confirm</button>
+                                            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal-cert-email">인증 요청</button>
+                                        </div>
+                                        <div class="col-12 mt-5">
+                                            <button type="button" class="btn btn-dark btn-lg w-100" data-bs-toggle="modal" data-bs-target="#modal-cert-fail">LOGIN</button>
                                         </div>
                                     </div>
                                 </div> 
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
     @@include('@@webRoot/_include/_modal.html')

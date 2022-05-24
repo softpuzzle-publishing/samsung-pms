@@ -27,9 +27,8 @@
         strong {font-size: 2rem;}
         b {font-size: 1.25rem; margin-top: 0.25rem;}
     }
-    .box-style {
+    .card {
         padding: 60px 43px;
-        box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.05);
     }
     .option-header{
         font-weight: bold;
@@ -40,7 +39,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        min-height: 340px;
+        min-height: 245px;
         p{
             margin-bottom: 0;
         }

@@ -17,7 +17,7 @@
                 <div class="util-body mt-5">
                     <div class="row g-4 align-items-stretch justify-content-center">
                         <div class="col-5 h-100">
-                            <div class="box-style bg-white rounded-lg">
+                            <div class="card">
                                 <div class="option-header">Opt.1 Google Autenticator (Google OTP)</div>
                                 <div class="option-body gap-4">
                                     <div>
@@ -26,10 +26,10 @@
 
                                     <div class="row g-2">
                                         <div class="col">
-                                            <input type="text" class="form-control" placeholder="6-digit code">
+                                            <input type="text" class="form-control form-control-lg" placeholder="6-digit code">
                                         </div>
                                         <div class="col-auto">
-                                            <button class="btn btn-dark">Confirm</button>
+                                            <button class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#modal-cert-fail">Confirm</button>
                                         </div>
                                     </div>
 
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="col-5 h-100">
-                            <div class="box-style bg-white rounded-lg">
+                            <div class="card h-100">
                                 <div class="option-header">Opt.2 E-mail Authentication</div>
                                 <div class="option-body">
                                     <div>
@@ -74,6 +74,7 @@
             </div>
         </div>
     </div>
+    @@include('@@webRoot/_include/_modal.html')
 </body>
 
 </html>

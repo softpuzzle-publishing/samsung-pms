@@ -1,4 +1,33 @@
-body{-webkit-font-smoothing: antialiased; min-width: 1400px;}
+body{
+    -webkit-font-smoothing: antialiased; min-width: 1400px;
+    scrollbar-face-color: transparent;
+	scrollbar-track-color: transparent;
+	scrollbar-arrow-color: $gray-300;
+	scrollbar-3dlight-color: none;
+	scrollbar-shadow-color: $gray-300;
+	scrollbar-darkshadow-color: none;
+    scrollbar-color: $gray-300 transparent;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar{
+	width: 6px;
+	height: 6px;
+	background-color: transparent;
+}
+::-webkit-scrollbar-track{
+	border-radius: 0;
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 2px;
+	background-color: $gray-300;
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
 
 em,
 i{font-style: normal;}
@@ -18,6 +47,7 @@ textarea{ resize: none;}
 // icons
 [class^=icon-]{display: inline-block;vertical-align: middle;background-repeat: no-repeat;background-position: 50% 50%;}
 .icon-logout{width: 30px;height: 30px; background-image: url('../images/icon-logout.svg');}
+.icon-user{width: 30px;height: 30px; background-image: url('../images/icon-user.svg');}
 .icon-home{width: 13px; height:13px; background-image:url('../images/icon-home.png');}
 .icon-arrow-gray{width: 20px; height:20px; background-image:url('../images/icon-arrow-next-gray5.png');}
 .icon-select-top{width: 20px; height:20px; background-image:url('../images/icon-select.png'); background-position: 0 7px;}
@@ -40,6 +70,7 @@ textarea{ resize: none;}
 // icons -- end
 
 //width
+.min-width-150px{min-width: 150px;}
 .min-width-400px{min-width: 400px;}
 .width-60px{width: 60px;}
 
@@ -88,6 +119,12 @@ textarea{ resize: none;}
     
     textarea{
         width: 100%; height: 120px; border-radius: 6px; background-color: #fff; border:1px solid $gray-300; margin-top: 20px;
+    }
+}
+.table-fixed{
+    table-layout: fixed;
+    th,td{
+        border-color: inherit;
     }
 }
 
@@ -156,3 +193,5 @@ textarea{ resize: none;}
 .rounded-lg{
     border-radius: 1.25rem;
 }
+
+

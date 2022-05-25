@@ -11,3 +11,20 @@
         background-color: #fff;
     }
 }
+
+//모달 : 가격데이터 미리보기 입력
+.modal-pricedata{
+    &__model{
+        font-size:32px;
+    }
+    &__promImg{
+        height: 215px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__price{
+        font-size:32px;
+        line-height: 22px;
+    }
+}

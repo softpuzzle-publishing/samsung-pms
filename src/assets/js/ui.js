@@ -14,7 +14,7 @@ let Common = {
             $(this).toggleClass("active");
         });
 
-        // 가격데이터 이미지 등록
+        // 가격데이터 셀렉박스 옵션선택
         if ($('[multiple="multiple"]').length > 0) {
             $('[multiple="multiple"]').each(function () {
                 let ph = $(this).attr('placeholder')
@@ -33,7 +33,7 @@ let Common = {
                     placeholder: ph,
                 });
             });
-        }
+        } 
 
 
         // 데이트피커

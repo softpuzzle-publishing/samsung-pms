@@ -114,16 +114,52 @@
 
 <!-- 가격데이터 미리보기 입력 -->
 <div class="modal fade" id="modal-preview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel"></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-4 border-dark">
+            <div class="moda-header p-3"></div>
             <div class="modal-body">
-                <div class="modal-pricedata">
-                    <p class="modal-pricedata__title">Price</p>
-
+                <div class="modal-pricedata d-flex flex-wrap flex-column">
+                    <b>Price</b>
+                    <b class="modal-pricedata__model mt-3">The price for <br>
+                        <span>Galaxy S22</span></b>
+                    <b class="mt-4">Promotion</b>
+                    <div class="modal-pricedata__promImg mt-2" style="background-image: url(../assets/images/@profile.jpg);"></div>
+                    <div class="modal-pricedata__promDesc mt-2 fs-6">
+                        <p>Trade in and save $22.31</p>
+                        <p>Early upgrade with AT&T Next Up</p>
+                    </div>
+                    <b class="mt-4">Choose the capacity</b>
+                    <div class="modal-pricedata__capacity">
+                        <div class="row gx-2 gy-2 pt-1">
+                            <div class="col-auto">
+                                <input type="radio" class="btn-check" name="capacity" id="btncheck1" autocomplete="off">
+                                <label class="btn btn-gray4 btn-sm" for="btncheck1">128G</label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="radio" class="btn-check" name="capacity" id="btncheck2" autocomplete="off">
+                                <label class="btn btn-gray4 btn-sm" for="btncheck2">256G</label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="radio" class="btn-check" name="capacity" id="btncheck3" autocomplete="off">
+                                <label class="btn btn-gray4 btn-sm" for="btncheck3">512G</label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
+                                <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
+                            </div>
+                        </div>
+                    </div>
+                    <b class="mt-4 pt-2">Purchase option</b>
+                    <b class="mt-4 fs-6">Full payment</b>
+                    <b class="modal-pricedata__price mt-3">
+                        $1288.90
+                    </b>
+                    <div class="fs-6 mt-3 pt-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        Vivamus placerat sit ametex eu congue.
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -132,6 +168,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- 모달 : 2단계 인증 > 이메일 인증 -->
 <div class="modal fade" id="modal-cert-email" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -212,37 +249,295 @@
 </div>
 
 
-<!-- 모달 : 사용자 등록 > 나라 검색-->
-<div class="modal fade" id="modal-cert-otp-emailCode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- 모달 : 사용자 등록 > 삼성지법인 > 나라 검색 [단일선택]-->
+<div class="modal fade" id="modal-search-country-single" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Two-factor E-mail Authentication</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Country 선택</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="border height-300px overflow-auto p-3">
+                    <ul class="form-check-list">
+                        @@for (var i = 1; i < 10; i++) { <li class="form-check  mb-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault`+i+`">
+                            <label class="form-check-label" for="flexRadioDefault`+i+`">
+                                country `+i+`
+                            </label>
+                            </li>
+                            }
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-lg btn-dark">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 모달 : 사용자 등록 > 채널 > 나라 /채널 검색 [복수선택 - 라디오/라디오]-->
+<div class="modal fade" id="modal-search-country-multiple-radio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Country / Channel 선택</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="border height-300px overflow-auto p-3">
+                    <b>Country</b>
+                    <ul class="form-check-list mt-2">
+                        @@for (var i = 1; i < 3; i++) { <li class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault`+i+`">
+                            <label class="form-check-label" for="flexRadioDefault`+i+`">
+                                country `+i+`
+                            </label>
+                            </li>
+                            <li class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault`+i+`">
+                                <label class="form-check-label" for="flexRadioDefault`+i+`">
+                                    country `+i+`
+                                </label>
+                            </li>
+                            }
+                            @@for (var i = 1; i < 5; i++) { <li>
+                                <ul>
+                                    <li class="form-check  mb-2">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault`+i+`">
+                                        <label class="form-check-label" for="flexRadioDefault`+i+`">
+                                            country `+i+`
+                                        </label>
+                                    </li>
+                                    <div class="ms-3">
+                                        <div class="form-check  mb-2">
+                                            <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Default checkbox
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-2">
+                                            <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Default checkbox
+                                            </label>
+                                        </div>
+                                    </div>
+                                </ul>
+                                </li>
+                                }
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-lg btn-dark">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 모달 : 사용자 등록 > [복수선택 - 라디오/체크박스]-->
+<div class="modal fade" id="modal-search-country-multiple " tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Country 복수 선택</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="border height-300px overflow-auto p-3">
+                    <b>Country</b>
+                    <ul class="form-check-list mt-2">
+                        @@for (var i = 1; i < 3; i++) { <li class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault`+i+`">
+                            <label class="form-check-label" for="flexRadioDefault`+i+`">
+                                country `+i+`
+                            </label>
+                            </li>
+                            <li class="form-check mb-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault`+i+`">
+                                <label class="form-check-label" for="flexRadioDefault`+i+`">
+                                    country `+i+`
+                                </label>
+                            </li>
+                            }
+                            @@for (var i = 1; i < 5; i++) { <li>
+                                <ul>
+                                    <li class="form-check  mb-2">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault`+i+`">
+                                        <label class="form-check-label" for="flexRadioDefault`+i+`">
+                                            country `+i+`
+                                        </label>
+                                    </li>
+                                    <div class="ms-3">
+                                        <div class="form-check  mb-2">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Default checkbox
+                                            </label>
+                                        </div>
+                                        <div class="form-check  mb-2">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Default checkbox
+                                            </label>
+                                        </div>
+                                    </div>
+                                </ul>
+                                </li>
+                                }
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-lg btn-dark">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 모달 : 사용자 등록 > Subsidiary 선택 > [복수선택 - 체크박스]-->
+<div class="modal fade" id="modal-search-subsidiary-checkbox" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Subsidiary 선택</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="border height-300px overflow-auto p-3">
+                    <ul class="form-check-list">
+                        <li class="form-check  mb-2">
+                            <input class="form-check-input" type="checkbox" name="flexCheckDefault" id="flexCheckDefault`+i+`">
+                            <label class="form-check-label" for="flexCheckDefault`+i+`">
+                                All
+                            </label>
+                        </li>
+                        @@for (var i = 1; i < 10; i++) { <li class="form-check  mb-2">
+                            <input class="form-check-input" type="checkbox" name="flexCheckDefault" id="flexCheckDefault`+i+`">
+                            <label class="form-check-label" for="flexCheckDefault`+i+`">
+                                country `+i+`
+                            </label>
+                            </li>
+                            }
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-lg btn-dark">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 모달 : 사용자 등록 > Subsidiary 선택 > [복수선택 - 체크박스]-->
+<div class="modal fade" id="modal-search-country-checkbox" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Country 선택</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="border height-300px overflow-auto p-3">
+                    <ul class="form-check-list">
+                        <li class="form-check  mb-2">
+                            <input class="form-check-input" type="checkbox" name="flexCheckDefault" id="flexCheckDefault`+i+`">
+                            <label class="form-check-label" for="flexCheckDefault`+i+`">
+                                All
+                            </label>
+                        </li>
+                        @@for (var i = 1; i < 10; i++) { <li class="form-check  mb-2">
+                            <input class="form-check-input" type="checkbox" name="flexCheckDefault" id="flexCheckDefault`+i+`">
+                            <label class="form-check-label" for="flexCheckDefault`+i+`">
+                                country `+i+`
+                            </label>
+                            </li>
+                            }
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-lg btn-dark">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 모달 : 비밀번호 변경-->
+<div class="modal fade" id="modal-reset-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">비밀번호 변경</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-grid gap-3">
+                    <div class="">
+                        <label for="password" class="form-label">현재 비밀번호</label>
+                        <input type="password" class="form-control" id="password" placeholder="현재 비밀번호 입력하세요" required>
+                    </div>
+                    <div class="">
+                        <label for="newPassword" class="form-label">새 비밀번호</label>
+                        <input type="password" class="form-control" id="newPassword" placeholder="8~20자 이내 영문/숫자/특수문자 조합 새 비밀번호 입력" required>
+                    </div>
+                    <div class="">
+                        <label for="newPassword" class="form-label">새 비밀번호 확인</label>
+                        <input type="password" class="form-control" id="newPasswordConfirm" placeholder="8~20자 이내 영문/숫자/특수문자 조합 새 비밀번호 입력" required>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-lg btn-dark">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 모달 : 삭제-->
+<div class="modal fade" id="modal-delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">알림</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <p class="modal-body__desc">
-                    Proceed with Email Authentication.<br>
-                    Please re-certify by sending security code again after the time limit.
+                    삭제 하시겠습니까?
                 </p>
             </div>
-            <div class="modal-footer pt-3">
-                <div class="row w-100 mb-2">
-                    <div class="col p-0">
-                        <input type="text" class="form-control form-control-lg" value="" disabled>
-                    </div>
-                    <div class="col-auto">
-                        <button type="button" class="btn btn-lg btn-gray4 text-white">인증 요청</button>
-                    </div>
-                </div>
-                <div class="row w-100 mb-2">
-                    <div class="col p-0">
-                        <input type="text" class="form-control form-control-lg" placeholder="인증코드 입력">
-                    </div>
-                    <div class="col-auto">
-                        <button type="button" class="btn btn-lg btn-dark">인증 확인</button>
-                    </div>
-                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-dark" data-bs-dismiss="modal">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 모달 : 수정-->
+<div class="modal fade" id="modal-modify" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">알림</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-body__desc">
+                    수정 하시겠습니까?
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-dark" data-bs-dismiss="modal">Confirm</button>
             </div>
         </div>
     </div>

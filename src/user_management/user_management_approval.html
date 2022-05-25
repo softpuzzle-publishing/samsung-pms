@@ -16,25 +16,29 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="icon-home"></i></li>
-                            <li class="breadcrumb-item">SYSTEM SETTINGS</li>
-                            <li class="breadcrumb-item active" aria-current="page">SUBSIDIARY 관리</li>
+                            <li class="breadcrumb-item">사용자 관리</li>
+                            <li class="breadcrumb-item active" aria-current="page">사용자 등록 승인 대기 목록</li>
                         </ol>
                     </nav>
-                    <h1 class="page-title">SUBSIDIARY 관리</h1>
+                    <h1 class="page-title">사용자 등록 승인 대기 목록</h1>
                     <div class="row">
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h2 class="header-title">SUBSIDIARY 목록</h2>
+                                    <h2 class="header-title">승인 대기 사용자 목록</h2>
                                     <div class="search">
                                         <div class="row gx-2">
-                                            <div class="col-auto">
-                                                <select class="form-select custom" multiple="multiple" placeholder="전체">
+                                            <div class="col-auto min-width-150px">
+                                                <select class="form-select custom" placeholder="구분">
+                                                    <option value="삼성지법인">삼성지법인</option>
+                                                    <option value="채널">채널</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-auto min-width-150px">
+                                                <select class="form-select custom" placeholder="전체">
                                                     <option value="전체">전체</option>
-                                                    <option value="지법인명">지법인명</option>
-                                                    <option value="리전명">리전명</option>
-                                                    <option value="Subsidiary Code">Subsidiary Code</option>
-                                                    <option value="Country">Country</option>
+                                                    <option value="아이디">아이디</option>
+                                                    <option value="이름">이름</option>
                                                 </select>
                                             </div>
                                             <div class="col">
@@ -50,49 +54,27 @@
                                             <p class="fw-bold">
                                                 [총 <span class="text-primary">106</span>건]
                                             </p>
-                                            <a href="subsidary_registration.html" class="btn btn-xs btn-primary rounded-pill" data-toggle="right-card">신규등록</a>
+                                            <button class="btn btn-xs btn-primary rounded-pill" data-toggle="right-card">신규등록</button>
                                         </div>
                                         <table class="table custom-table">
                                             <thead>
                                                 <tr>
                                                     <th class="text-center">No</th>
-                                                    <th class="text-center">지법인명</th>
-                                                    <th class="text-center">리전명</th>
-                                                    <th class="text-center">Subsidiary Code</th>
-                                                    <th class="text-center">Countries</th>
-                                                    <th class="text-center">메모</th>
+                                                    <th class="text-center">등록일</th>
+                                                    <th class="text-center">구분</th>
+                                                    <th class="text-center">소속</th>
+                                                    <th class="text-center">이름</th>
+                                                    <th class="text-center">아이디</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr data-toggle="right-card">
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">
-                                                        SEEG
-                                                    </td>
-                                                    <td class="text-center">Middle East</td>
-                                                    <td class="text-center">SAUDI ARABIA</td>
-                                                    <td class="text-center">Saudi Arabia</td>
-                                                    <td class="text-center"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">1</td>
-                                                    <td class="text-center">
-                                                        SEEG
-                                                    </td>
-                                                    <td class="text-center">Middle East</td>
-                                                    <td class="text-center">SAUDI ARABIA</td>
-                                                    <td class="text-center">Saudi Arabia</td>
-                                                    <td class="text-center"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">1</td>
-                                                    <td class="text-center">
-                                                        SEEG
-                                                    </td>
-                                                    <td class="text-center">Middle East</td>
-                                                    <td class="text-center">SAUDI ARABIA</td>
-                                                    <td class="text-center">Saudi Arabia</td>
-                                                    <td class="text-center"></td>
+                                                    <td class="text-center">2022/05/04</td>
+                                                    <td class="text-center">삼성지법인</td>
+                                                    <td class="text-center">SUB1/CHAN1</td>
+                                                    <td class="text-center">김길동</td>
+                                                    <td class="text-center">gamestop</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -121,10 +103,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-5 d-none" id="right-card">
+                        <div class="col-5  d-none" id="right-card">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h2 class="header-title">SUBSIDIARY 상세</h2>
+                                    <h2 class="header-title">승인 대기 사용자 상세</h2>
 
                                     <table class="table common-table border table-fixed">
                                         <colgroup>
@@ -135,32 +117,48 @@
                                         </colgroup>
                                         <tbody>
                                             <tr>
+                                                <th class="text-center">승인 여부</th>
+                                                <td colspan="3">Request</td>
+                                            </tr>
+                                            <tr>
                                                 <th class="text-center">No</th>
-                                                <td class="text-center">2</td>
-                                                <th class="text-center">지법인명</th>
-                                                <td class="text-center">SEAD</td>
+                                                <td class="text-center">1</td>
+                                                <th class="text-center">등록일</th>
+                                                <td class="text-center">2022/05/04</td>
                                             </tr>
                                             <tr>
-                                                <th class="text-center">리전명</th>
-                                                <td class="text-center">Europe</td>
-                                                <th class="text-center">Subsidiary Code</th>
-                                                <td class="text-center">SEAD</td>
+                                                <th class="text-center"><span class="text-primary">*</span>구분</th>
+                                                <td colspan="3">삼성지법인</td>
                                             </tr>
                                             <tr>
-                                                <th class="text-center">Countries</th>
-                                                <td colspan="3">Slovenia, Montenegro, Serbia, Macodonia, Croatia, Albania, Bosnia and Herzegovnia, Kosovo</td>
+                                                <th class="text-center"><span class="text-primary">*</span>소속</th>
+                                                <td class="text-center" colspan="3">
+                                                    <input type="text" class="form-control" readonly value="SEA">
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th class="text-center">메모</th>
-                                                <td colspan="3">메모메모</td>
+                                                <th class="text-center"><span class="text-primary">*</span>아이디</th>
+                                                <td colspan="3">
+                                                    <input type="text" class="form-control" readonly value="gd.hong2">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center"><span class="text-primary">*</span>이름</th>
+                                                <td colspan="3">
+                                                    <input type="text" class="form-control" readonly value="홍길동">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center"><span class="text-primary">*</span>E-mail</th>
+                                                <td colspan="3">
+                                                    <input type="text" class="form-control" readonly value="gd.hong@samsung.com">
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <div class="row mt-5">
-                                        <div class="d-flex justify-content-center">
-                                            <button type="button" class="btn btn-gray4 w-auto">삭제</button>
-                                            <a href="subsidary/subsidary_modify.html" class="btn btn-dark w-auto mx-2">수정</a>
-                                        </div>
+                                    <div class="row g-2 mt-5 justify-content-center">
+                                        <div class="col-auto"><button type="button" class="btn btn-gray4 w-auto" data-bs-target="#modal-companion" data-bs-toggle="modal">반려</button></div>
+                                        <div class="col-auto"><button type="button" class="btn btn-dark w-auto">승인</button></div>
                                     </div>
                                 </div> <!-- card-body -->
                             </div>

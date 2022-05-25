@@ -3,8 +3,14 @@
         <div class="container-fluid justify-content-end">
             <a class="navbar-brand" href="#"><img src="../assets/images/logo.svg" alt="SAMSUNG PMS"></a>
             <ul class="navbar-nav align-items-center">
-                <li class="nav-item">
-                    <strong>홍길동</strong> <span>(슈퍼관리자)</span>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="icon-user me-3"></i>
+                        <strong>홍길동</strong> <span>(슈퍼관리자)</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#modal-reset-password" data-bs-toggle="modal">비밀번호 변경</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item ms-3">
                     <a href="javascript:;" class="nav-link p-0" aria-label="로그아웃"><i class="icon-logout"></i></a>

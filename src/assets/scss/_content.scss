@@ -1,30 +1,56 @@
 // Model capacity
-.modal-btn-group{
-    display: flex; align-items: center; flex-flow: wrap;
+.modal-btn-group {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
     margin: 0 -4px;
-    .btn{ margin: 4px;}
+
+    .btn {
+        margin: 4px;
+    }
 }
 
 // card
-.card-data__content{
-    .form-control[readonly]{
+.card-data__content {
+    .form-control[readonly] {
         background-color: #fff;
     }
 }
 
 //모달 : 가격데이터 미리보기 입력
-.modal-pricedata{
-    &__model{
-        font-size:32px;
+.modal-pricedata {
+    &__model {
+        font-size: 32px;
     }
-    &__promImg{
+
+    &__promImg {
         height: 215px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
-    &__price{
-        font-size:32px;
+
+    &__price {
+        font-size: 32px;
         line-height: 22px;
+    }
+}
+
+.image-delete-btn {
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    display: none;
+}
+
+.upload-image-wrap {
+    background: url(../images/default-image.png)no-repeat center;
+    background-size: cover;
+    height: 12vw;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+        height: 12vw;
     }
 }

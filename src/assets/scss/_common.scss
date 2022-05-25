@@ -60,6 +60,9 @@ textarea{ resize: none;}
 .icon-plus{width: 12px; height:12px; background-image:url('../images/icon-plus.png');}
 .icon-minus{width: 12px; height:2px; background-image:url('../images/icon-minus.png');}
 
+.icon-close-circle{width: 28px; height:28px; background-image:url('../images/icon-close-circle.svg');}
+
+
 // aside icon
 .icon-gnb-dash{width: 22px; height:22px; background-image:url('../images/icon_gnb01.svg');}
 .icon-gnb-system{width: 22px; height:22px;background-image:url('../images/icon_gnb02.svg');}
@@ -126,6 +129,12 @@ textarea{ resize: none;}
     th,td{
         border-color: inherit;
     }
+    colgroup{
+        border:0;
+    }
+}
+.tr-active{
+    background-color: $table-hover-bg;
 }
 
 //button

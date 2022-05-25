@@ -36,7 +36,7 @@
                                                     <option value="Subsidiary Code">Subsidiary Code</option>
                                                     <option value="Country">Country</option>
                                                 </select>
-                                            </div>
+                                            </div>  
                                             <div class="col">
                                                 <input type="text" class="form-control" value="" placeholder="asdsad">
                                             </div>
@@ -52,47 +52,43 @@
                                             </p>
                                             <a href="subsidary_registration.html" class="btn btn-xs btn-primary rounded-pill">신규등록</a>
                                         </div>
-                                        <table class="table custom-table">
+                                        <table class="table custom-table table-hover">
                                             <thead>
                                                 <tr>
                                                     <th class="text-center">No</th>
                                                     <th class="text-center">지법인명</th>
-                                                    <th class="text-center">리전명</th>
-                                                    <th class="text-center">Subsidiary Code</th>
-                                                    <th class="text-center">Countries</th>
-                                                    <th class="text-center">메모</th>
+                                                    <th class="text-center">국가</th>
+                                                    <th class="text-center">채널이름</th>
+                                                    <th class="text-center">채널코드</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                <tr data-toggle="right-card">
                                                     <td class="text-center">1</td>
                                                     <td class="text-center">
-                                                        SEEG
+                                                        Egypt
                                                     </td>
                                                     <td class="text-center">Middle East</td>
-                                                    <td class="text-center">SAUDI ARABIA</td>
-                                                    <td class="text-center">Saudi Arabia</td>
-                                                    <td class="text-center"></td>
+                                                    <td class="text-center">SEEG</td>
+                                                    <td class="text-center">SEEG</td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="text-center">1</td>
+                                                <tr data-toggle="right-card">
+                                                    <td class="text-center">2</td>
                                                     <td class="text-center">
-                                                        SEEG
+                                                        Egypt
                                                     </td>
                                                     <td class="text-center">Middle East</td>
-                                                    <td class="text-center">SAUDI ARABIA</td>
-                                                    <td class="text-center">Saudi Arabia</td>
-                                                    <td class="text-center"></td>
+                                                    <td class="text-center">SEEG</td>
+                                                    <td class="text-center">SEEG</td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="text-center">1</td>
+                                                <tr data-toggle="right-card">
+                                                    <td class="text-center">3</td>
                                                     <td class="text-center">
-                                                        SEEG
+                                                        Egypt
                                                     </td>
                                                     <td class="text-center">Middle East</td>
-                                                    <td class="text-center">SAUDI ARABIA</td>
-                                                    <td class="text-center">Saudi Arabia</td>
-                                                    <td class="text-center"></td>
+                                                    <td class="text-center">SEEG</td>
+                                                    <td class="text-center">SEEG</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -121,37 +117,41 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-5">
+                        <div class="col-5 d-none" id="right-card">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h2 class="header-title">SUBSIDIARY 수정</h2>
 
-                                    <table class="table common-table border">
+                                    <table class="table common-table border table-fixed">
+                                        <colgroup>
+                                            <col style="width: 130px;">
+                                            <col>
+                                            <col style="width: 130px;">
+                                            <col>
+                                        </colgroup>
                                         <tbody>
                                             <tr>
                                                 <th class="text-center">No</th>
-                                                <td class="text-center">
-                                                   2
-                                                </td>
-                                                <th class="text-center">지법인명</th>
+                                                <td class="text-center">2</td>
+                                                <th class="text-center">Region</th>
                                                 <td class="text-center">
                                                     <input type="text" class="form-control" value="" placeholder="">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th class="text-center">리전명</th>
+                                                <th class="text-center">Subsidiary</th>
                                                 <td class="text-center">
-                                                    <input type="text" class="form-control" value="" placeholder="">
+                                                    <input type="text" class="form-control w-auto" value="" placeholder="">
                                                 </td>
                                                 <th class="text-center">Subsidiary Code</th>
                                                 <td class="text-center">
-                                                    <input type="text" class="form-control" value="" placeholder="">
+                                                    <input type="text" class="form-control w-auto" value="" placeholder="">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th class="text-center">Countries</th>
+                                                <th class="text-center">Subsidiary Code</th>
                                                 <td colspan="3">
-                                                    <textarea class="" name="" id="" cols="30" rows="10" maxlength="300"></textarea>
+                                                    <textarea class="m-0" name="" id="" cols="30" rows="10" maxlength="300"></textarea>
                                                     <div class="text-center">
                                                         <button type="button" class="btn btn-secondary">Countries 검색</button>
                                                     </div>
@@ -160,7 +160,7 @@
                                             <tr>
                                                 <th class="text-center">메모</th>
                                                 <td colspan="3">
-                                                    <textarea class="" name="" id="" cols="30" rows="10" maxlength="300"></textarea>
+                                                    <textarea class="m-0" name="" id="" cols="30" rows="10" maxlength="300"></textarea>
                                                 </td>
                                             </tr>
                                         </tbody>

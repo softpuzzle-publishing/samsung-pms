@@ -17,17 +17,24 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="icon-home"></i></li>
                             <li class="breadcrumb-item">가격 데이터 관리</li>
-                            <li class="breadcrumb-item active" aria-current="page">승인 대기 목록</li>
+                            <li class="breadcrumb-item active" aria-current="page">승인 완료 목록</li>
                         </ol>
                     </nav>
-                    <h1 class="page-title">승인 대기 목록</h1>
+                    <h1 class="page-title">승인 완료 목록</h1>
                     <div class="row">
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h2 class="header-title">승인 대기 목록</h2>
+                                    <h2 class="header-title">승인 완료 목록</h2>
                                     <div class="search">
                                         <div class="row gx-2">
+                                            <div class="col">
+                                                <select class="form-select custom" multiple="multiple" placeholder="Status">
+                                                    <option value="Request">Request</option>
+                                                    <option value="Approve">Approve</option>
+                                                    <option value="Return">Return</option>
+                                                </select>
+                                            </div>
                                             <div class="col">
                                                 <select class="form-select custom">
                                                     <option selected>Subsidiary</option>
@@ -71,11 +78,12 @@
                                                 [총 <span class="text-primary">106</span>건]
                                             </p>
                                         </div>
-                                        <table class="table custom-table">
+                                        <table class="table custom-table table-hover">
                                             <thead>
                                                 <tr>
                                                     <th class="text-center">No</th>
                                                     <th class="text-center">Model</th>
+                                                    <th class="text-center">Status</th>
                                                     <th class="text-center"></th>
                                                     <th class="text-center">최근 승인일시</th>
                                                     <th class="text-center">Subsidiary</th>
@@ -84,33 +92,36 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                <tr data-toggle="raight-card">
                                                     <td class="text-center">1</td>
                                                     <td class="text-center">
                                                         <a href="" class="text-gray5">Galaxy S22</a>
                                                     </td>
+                                                    <td class="text-center">Request</td>
                                                     <td class="text-center"></td>
                                                     <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
                                                     <td class="text-center"></td>
                                                     <td class="text-center text-dark">S1-Ch1</td>
                                                 </tr>
-                                                <tr>
+                                                <tr data-toggle="raight-card">
                                                     <td class="text-center">2</td>
                                                     <td class="text-center">
                                                         <a href="" class="text-gray5">Galaxy S22</a>
                                                     </td>
+                                                    <td class="text-center">Request</td>
                                                     <td class="text-center"></td>
                                                     <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
                                                     <td class="text-center"></td>
                                                     <td class="text-center text-dark">S1-Ch1</td>
                                                 </tr>
-                                                <tr>
+                                                <tr data-toggle="raight-card">
                                                     <td class="text-center">3</td>
                                                     <td class="text-center">
                                                         <a href="" class="text-gray5">Galaxy S22</a>
                                                     </td>
+                                                    <td class="text-center">Request</td>
                                                     <td class="text-center"></td>
                                                     <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
@@ -147,7 +158,7 @@
                         <div class="col-5 d-none" id="right-card">
                             <div class="card h-100">
                                 <div class="card-body card-data__content">
-                                    <h2 class="header-title">승인 대기 상세</h2>
+                                    <h2 class="header-title">승인 완료 상세</h2>
 
                                     <form action="" class="form-wrap mt-5">
 
@@ -165,7 +176,9 @@
                                             </div>
                                             <div class="col">
                                                 <div class="image-container">
-                                                    <img id="preview-image" src="/assets/images/default-image.png">
+                                                    <div class="upload-image-wrap position-relative">
+                                                        <img id="preview-image" src="/assets/images/default-image.png">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -216,16 +229,23 @@
                                             <div class="col">
                                                 <div class="row gx-2 gy-2 mb-2">
                                                     <div class="col-auto">
-                                                        <button type="button" class="btn btn-sm btn-gray4 text-white active">128G</button>
+                                                        <input type="radio" class="btn-check" name="capacity" id="btncheck1" autocomplete="off">
+                                                        <label class="btn btn-gray4 btn-sm" for="btncheck1">128G</label>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <button type="button" class="btn btn-sm btn-gray4 text-white">256G</button>
+                                                        <input type="radio" class="btn-check" name="capacity" id="btncheck2" autocomplete="off">
+                                                        <label class="btn btn-gray4 btn-sm" for="btncheck2">256G</label>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <button type="button" class="btn btn-sm btn-gray4 text-white">512G</button>
+                                                        <input type="radio" class="btn-check" name="capacity" id="btncheck3" autocomplete="off">
+                                                        <label class="btn btn-gray4 btn-sm" for="btncheck3">512G</label>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <button type="button" class="btn btn-sm btn-gray4 text-white">1TB</button>
+                                                        <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
+                                                        <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <button type="button" class="btn btn-sm btn-gray2" data-bs-toggle="modal" data-bs-target="#modal-modelcapacity"><i class="icon-plus"></i></button>
                                                     </div>
                                                 </div>
                                                 <div class="row gx-2 mb-2">
@@ -265,7 +285,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row gx-2 gy-2 mb-2">
+                                                <div class="row gx-2 gy-2 mb-2  mt-4">
                                                     <div class="col">
                                                         <input type="text" class="form-control" value="Full Pricen" readonly>
                                                     </div>

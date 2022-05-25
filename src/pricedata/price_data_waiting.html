@@ -29,6 +29,13 @@
                                     <div class="search">
                                         <div class="row gx-2">
                                             <div class="col">
+                                                <select class="form-select custom" multiple="multiple" placeholder="Status">
+                                                    <option value="Request">Request</option>
+                                                    <option value="Approve">Approve</option>
+                                                    <option value="Return">Return</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
                                                 <select class="form-select custom">
                                                     <option selected>Subsidiary</option>
                                                 </select>
@@ -71,12 +78,12 @@
                                                 [총 <span class="text-primary">106</span>건]
                                             </p>
                                         </div>
-                                        <table class="table custom-table">
+                                        <table class="table custom-table table-hover">
                                             <thead>
                                                 <tr>
                                                     <th class="text-center">No</th>
                                                     <th class="text-center">Model</th>
-                                                    <th class="text-center"></th>
+                                                    <th class="text-center">Status</th>
                                                     <th class="text-center">최근 변경일시</th>
                                                     <th class="text-center">Subsidiary</th>
                                                     <th class="text-center">Country</th>
@@ -84,34 +91,34 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                <tr data-toggle="right-card">
                                                     <td class="text-center">1</td>
                                                     <td class="text-center">
-                                                        <a href="" class="text-gray5">Galaxy S22</a>
+                                                        Galaxy S22
                                                     </td>
-                                                    <td class="text-center"></td>
+                                                    <td class="text-center">Request</td>
                                                     <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
                                                     <td class="text-center"></td>
                                                     <td class="text-center text-dark">S1-Ch1</td>
                                                 </tr>
-                                                <tr>
+                                                <tr data-toggle="right-card">
                                                     <td class="text-center">2</td>
                                                     <td class="text-center">
-                                                        <a href="" class="text-gray5">Galaxy S22</a>
+                                                        Galaxy S22
                                                     </td>
-                                                    <td class="text-center"></td>
+                                                    <td class="text-center">Request</td>
                                                     <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
                                                     <td class="text-center"></td>
                                                     <td class="text-center text-dark">S1-Ch1</td>
                                                 </tr>
-                                                <tr>
+                                                <tr data-toggle="right-card">
                                                     <td class="text-center">3</td>
                                                     <td class="text-center">
-                                                        <a href="" class="text-gray5">Galaxy S22</a>
+                                                        Galaxy S22
                                                     </td>
-                                                    <td class="text-center"></td>
+                                                    <td class="text-center">Request</td>
                                                     <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
                                                     <td class="text-center"></td>
@@ -144,7 +151,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-5">
+                        <div class="col-5 d-none" id="right-card">
                             <div class="card h-100">
                                 <div class="card-body card-data__content">
                                     <h2 class="header-title">승인 대기 상세</h2>
@@ -165,7 +172,9 @@
                                             </div>
                                             <div class="col">
                                                 <div class="image-container">
-                                                    <img id="preview-image" src="/assets/images/default-image.png">
+                                                    <div class="upload-image-wrap position-relative">
+                                                        <img id="preview-image" src="/assets/images/default-image.png">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -235,8 +244,8 @@
                                                     <div class="col">
                                                         <input type="text" class="form-control" value="1288.98" readonly>
                                                     </div>
-                                                    <div class="col-auto">
-                                                        <input type="text" class="form-control width-60px" value="$" readonly>
+                                                    <div class="col">
+                                                        <input type="text" class="form-control width-60px" value="Monetary" readonly>
                                                     </div>
                                                     <div class="row gx-2 mt-2">
                                                         <div class="col">
@@ -253,7 +262,7 @@
                                                         <input type="text" class="form-control" value="1288.98" readonly>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <input type="text" class="form-control width-60px" value="$" readonly>
+                                                        <input type="text" class="form-control width-60px" value="Monetary" readonly>
                                                     </div>
                                                     <div class="col">
                                                         <input type="text" class="form-control" value="24" readonly>
@@ -265,7 +274,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row gx-2 gy-2 mb-2">
+                                                <div class="row gx-2 gy-2 mb-2  mt-4">
                                                     <div class="col">
                                                         <input type="text" class="form-control" value="Full Pricen" readonly>
                                                     </div>

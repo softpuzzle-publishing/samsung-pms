@@ -29,6 +29,13 @@
                                     <div class="search">
                                         <div class="row gx-2">
                                             <div class="col">
+                                                <select class="form-select custom" multiple="multiple" placeholder="Status">
+                                                    <option value="Request">Request</option>
+                                                    <option value="Approve">Approve</option>
+                                                    <option value="Return">Return</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
                                                 <select class="form-select custom">
                                                     <option selected>Subsidiary</option>
                                                 </select>
@@ -223,12 +230,17 @@
                                             </div>
                                             <div class="col">
                                                 <div class="image-container">
-                                                    <img id="preview-image" src="/assets/images/default-image.png">
+                                                    <div class="upload-image-wrap position-relative">
+                                                        <img id="preview-image" src="/assets/images/default-image.png">
+                                                        <button type="button" class="image-delete-btn">
+                                                            <i class="icon-close-circle"></i>
+                                                        </button>
+                                                    </div>
 
                                                     <input type="file" id="input-image" class="d-none" value="upload">
 
-                                                    <div class="mt-2">
-                                                        <p class="">용량: 3MB 이하, 해상도: 640*228의 이미지 파일만 업로드 가능합니다.</p>
+                                                    <p class="mt-2 text-gray5">용량: 3MB 이하, 해상도: 640*228의 이미지 파일만 업로드 가능합니다.</p>
+                                                    <div class="mt-2 d-flex justify-content-end">
                                                         <label for="input-image" class="btn btn-xs btn-dark">upload</label>
                                                     </div>
                                                 </div>
@@ -251,7 +263,7 @@
 
                                         <div class="row mb-2">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">Price</label>
+                                                <label for="" class="d-flex"><span class="text-primary  mx-1">*</span>Price</label>
                                             </div>
                                             <div class="col">
                                                 <div class="row gx-2 gy-2 mb-2">
@@ -297,7 +309,7 @@
 
                                                 <div class="row gx-2 gy-2 mb-2 mt-4">
                                                     <div class="col">
-                                                        <input type="text" class="form-control" value="Full Pricen">
+                                                        <input type="text" class="form-control" value="Monthly">
                                                     </div>
                                                     <div class="col">
                                                         <input type="text" class="form-control" value="1288.98">
@@ -322,9 +334,9 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row gx-2 gy-2 mb-2">
+                                                <div class="row gx-2 gy-2 mb-2  mt-4">
                                                     <div class="col">
-                                                        <input type="text" class="form-control" value="Full Pricen">
+                                                        <input type="text" class="form-control" value="Monthly">
                                                     </div>
                                                     <div class="col">
                                                         <input type="text" class="form-control" value="1288.98">

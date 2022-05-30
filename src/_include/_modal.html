@@ -54,42 +54,6 @@
     </div>
 </div>
 
-<!-- 이메일 인증 -->
-<div class="modal fade" id="modal-email" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Two-factor E-mail Authentication</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p class="modal-body__desc">
-                    Proceed with Email Authentication.<br>
-                    Please re-certify by sending security code again after the time limit.
-                </p>
-            </div>
-            <div class="modal-footer pt-3">
-                <div class="row w-100 mb-2">
-                    <div class="col p-0">
-                        <input type="text" class="form-control form-control-lg" value="">
-                    </div>
-                    <div class="col-auto">
-                        <button type="button" class="btn btn-lg btn-gray4 text-white">인증 요청</button>
-                    </div>
-                </div>
-                <div class="row w-100 mb-2">
-                    <div class="col p-0">
-                        <input type="text" class="form-control form-control-lg" value="">
-                    </div>
-                    <div class="col-auto">
-                        <button type="button" class="btn btn-lg btn-dark">인증 확인</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- 반려사유 입력 -->
 <div class="modal fade" id="modal-companion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -222,25 +186,25 @@
             </div>
             <div class="modal-body">
                 <p class="modal-body__desc">
-                    Proceed with Email Authentication.<br>
-                    Please re-certify by sending security code again after the time limit.
+                    인증요청후 전송된 인증번호를 입력해주세요.
                 </p>
             </div>
-            <div class="modal-footer pt-3">
+            <div class="modal-footer pt-3 flex-column align-items-start">
+                <label for="">이메일 인증</label>
                 <div class="row w-100 mb-2">
                     <div class="col p-0">
-                        <input type="text" class="form-control form-control-lg" value="" disabled>
+                        <input type="text" class="form-control form-control-lg" value="***********@samsung.com" disabled>
                     </div>
                     <div class="col-auto">
-                        <button type="button" class="btn btn-lg btn-gray4 text-white">인증 요청</button>
+                        <button type="button" class="btn btn-lg btn-dark">인증 요청</button>
                     </div>
                 </div>
                 <div class="row w-100 mb-2">
                     <div class="col p-0">
-                        <input type="text" class="form-control form-control-lg" placeholder="인증코드 입력">
+                        <input type="text" class="form-control form-control-lg" placeholder="Auth Code">
                     </div>
                     <div class="col-auto">
-                        <button type="button" class="btn btn-lg btn-dark">인증 확인</button>
+                        <button type="button" class="btn btn-lg" disabled>인증 확인</button>
                     </div>
                 </div>
             </div>

@@ -11,8 +11,7 @@
         <div class="container">
             <div class="util-wrap">
                 <div class="util-header d-flex align-items-center flex-column">
-                    <strong>2단계 인증 설정</strong>
-                    <b>2단계 인증 선택</b>
+                    <strong>2단계 인증</strong>
                 </div>
                 <div class="util-body mt-5">
                     <div class="row g-4 align-items-stretch justify-content-center">
@@ -22,33 +21,29 @@
                                     <div class="option-header">Opt.1 Google Autenticator (Google OTP)</div>
                                     <div class="option-body gap-4">
                                         <div>
-                                            <p>After downloading the app to your smartphone, Enable Google Authentication</p>
+                                            <p>Google OTP 앱에서 6자리 코드를 확인해주세요.</p>
                                         </div>
                                         <div class="row g-2">
                                             <div class="col">
                                                 <input type="text" class="form-control form-control-lg" placeholder="6-digit code">
                                             </div>
                                             <div class="col-auto">
-                                                <button class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#modal-cert-fail">Confirm</button>
+                                                <button class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#modal-cert-fail">확인</button>
                                             </div>
                                         </div>
                                         <div>
-                                            <strong class="text-danger">Check!</strong>
-                                            <span>Please go to Reset Google verification with E-mail Authentication code below and Click<br>
-                                                Confirm your reset request.<br><br>After reset, please log in again and register QR code </span><br><br>
-                                            <span><br>
+                                            <p>Google OTP 초기화가 필요한 경우 아래 옵션 중 하나를 선택해주세요.</p>
+                                            <p>초기화 후, 재로그인하여 QR코드 등록을 다시 진행해주세요.</p>
+                                        
                                         </div>
                                         <div>
-                                            <p class="">Reset Google Verification with  6-digit code</p>
-                                            <div class="d-grid mt-2"><a href="certification_otp_reset_code.html" class="btn btn-lg btn-outline-dark">Confirm Your Reset Request</a></div>
+                                            <div class="d-grid mt-2"><a href="certification_otp_reset_code.html" class="btn btn-lg btn-outline-dark">6-digit code로 초기화</a></div>
                                         </div>
                                         <div>
-                                            <p class="">Reset Google Verification with 2FA 16-digit key</p>
-                                            <div class="d-grid mt-2"><a href="certification_otp_reset_key.html" class="btn btn-lg btn-outline-dark">Confirm Your Reset Request</a></div>
+                                            <div class="d-grid mt-2"><a href="certification_otp_reset_key.html" class="btn btn-lg btn-outline-dark">2FA 16-digit key로 초기화</a></div>
                                         </div>
                                         <div>
-                                            <p class="">Reset Google Verification with E-mail Authentication code</p>
-                                            <div class="d-grid mt-2"><a href="certification_otp_reset_email_code.html" class="btn btn-lg btn-outline-dark">Confirm Your Reset Request </a></div>
+                                            <div class="d-grid mt-2"><a href="certification_otp_reset_email_code.html" class="btn btn-lg btn-outline-dark">이메일 인증으로 초기화</a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -57,13 +52,13 @@
                         <div class="col-5 h-100">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <div class="option-header">Opt.2 E-mail Authentication</div>
+                                    <div class="option-header">Opt.2 이메일 인증</div>
                                     <div class="option-body">
                                         <div>
-                                            <p>When signing up, you will receive a verification number through an email confirmation and proceed with the E-mail Authentication.</p>
+                                            <p>가입한 이메일로 전송된 인증 번호를 통해 이메일 인증을 진행해주세요.</p>
                                         </div>
                                         <div class="d-grid gap-2">
-                                            <a href="certification_email.html" class="btn btn-dark btn-lg">E-mail Authentication</a>
+                                            <a href="certification_email.html" class="btn btn-dark btn-lg">이메일 인증</a>
                                         </div>
                                     </div>
                                 </div>

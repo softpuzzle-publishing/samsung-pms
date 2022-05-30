@@ -30,18 +30,18 @@
                                         <div class="row gx-2">
                                             <div class="col">
                                                 <select class="form-select custom" multiple="multiple" placeholder="Status">
-                                                    <option value="Request">Request</option>
+                                                    <option value="Request">상태</option>
                                                     <option value="Approve">Approve</option>
                                                     <option value="Return">Return</option>
                                                 </select>
                                             </div>
                                             <div class="col">
                                                 <select class="form-select custom">
-                                                    <option selected>Subsidiary</option>
+                                                    <option selected>지법인</option>
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select custom" multiple="multiple" placeholder="Country">
+                                                <select class="form-select custom" multiple="multiple" placeholder="국가">
                                                     <option value="AR">Arabic</option>
                                                     <option value="EN">English</option>
                                                     <option value="CH">Chinese</option>
@@ -56,13 +56,13 @@
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select custom" multiple="multiple" placeholder="Channel">
+                                                <select class="form-select custom" multiple="multiple" placeholder="채널">
                                                     @@for (var i = 1; i < 10; i++) { <option value="Ch`+i+`">S1-Ch`+i+`</option>
                                                         }
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select custom" multiple="multiple" placeholder="Device Model">
+                                                <select class="form-select custom" multiple="multiple" placeholder="모델명">
                                                     @@for (var i = 1; i < 20; i++) { <option value="Ch`+i+`">Device Model - `+i+`</option>
                                                         }
                                                 </select>
@@ -83,12 +83,12 @@
                                             <thead>
                                                 <tr>
                                                     <th class="text-center">No</th>
-                                                    <th class="text-center">Model</th>
-                                                    <th class="text-center">Status</th>
+                                                    <th class="text-center">모델명</th>
+                                                    <th class="text-center">상태</th>
                                                     <th class="text-center">최근 변경일시</th>
-                                                    <th class="text-center">Subsidiary</th>
-                                                    <th class="text-center">Country</th>
-                                                    <th class="text-center">Channel</th>
+                                                    <th class="text-center">지법인</th>
+                                                    <th class="text-center">국가</th>
+                                                    <th class="text-center">채널</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -161,7 +161,7 @@
 
                                         <div class="row mb-2">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex"><span class="text-primary mx-1">*</span>Model</label>
+                                                <label for="" class="d-flex"><span class="text-primary mx-1">*</span>모델</label>
                                             </div>
                                             <div class="col">
                                                 <select class="form-select" aria-label="Default select">
@@ -175,7 +175,7 @@
 
                                         <div class="row mb-2">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex"><span class="text-primary mx-1">*</span>Subsidiary</label>
+                                                <label for="" class="d-flex"><span class="text-primary mx-1">*</span>법인</label>
                                             </div>
                                             <div class="col">
                                                 <select class="form-select" aria-label="Default select">
@@ -189,7 +189,7 @@
 
                                         <div class="row">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex"><span class="text-primary mx-1">*</span>Company Name</label>
+                                                <label for="" class="d-flex"><span class="text-primary mx-1">*</span>회사명</label>
                                             </div>
                                             <div class="col">
                                                 <select class="form-select" aria-label="Default select">
@@ -198,12 +198,12 @@
                                                     <option value="2">Two</option>
                                                     <option value="3">Three</option>
                                                 </select>
-                                                <p class="text-danger">Please change your posting time to GMT</p>
+                                                <p class="text-danger">GMT 시간으로 설정해주세요.</p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">Posting Period</label>
+                                                <label for="" class="d-flex">게시 기간</label>
                                             </div>
                                             <div class="col">
                                                 <div class="row gx-3 align-items-center">
@@ -226,7 +226,7 @@
 
                                         <div class="row mb-2">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">Promotion Image</label>
+                                                <label for="" class="d-flex">프로모션 이미지</label>
                                             </div>
                                             <div class="col">
                                                 <div class="image-container">
@@ -237,11 +237,11 @@
                                                         </button>
                                                     </div>
 
-                                                    <input type="file" id="input-image" class="d-none" value="upload">
+                                                    <input type="file" id="input-image" class="d-none" value="업로드">
 
                                                     <p class="mt-2 text-gray5">용량: 3MB 이하, 해상도: 640*228의 이미지 파일만 업로드 가능합니다.</p>
                                                     <div class="mt-2 d-flex justify-content-end">
-                                                        <label for="input-image" class="btn btn-xs btn-dark">upload</label>
+                                                        <label for="input-image" class="btn btn-xs btn-dark">업로드</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -249,8 +249,7 @@
 
                                         <div class="row">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">Promotion<br>
-                                                    Description</label>
+                                                <label for="" class="d-flex">프로모션 상세 설명</label>
                                             </div>
                                             <div class="col">
                                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="300"></textarea>
@@ -263,7 +262,7 @@
 
                                         <div class="row mb-2">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex"><span class="text-primary  mx-1">*</span>Price</label>
+                                                <label for="" class="d-flex"><span class="text-primary  mx-1">*</span>가격</label>
                                             </div>
                                             <div class="col">
                                                 <div class="row gx-2 gy-2 mb-2">
@@ -365,7 +364,7 @@
                                         </div>
                                         <div class="row mt-4">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">Price Disclaimer</label>
+                                                <label for="" class="d-flex">가격 유의사항</label>
                                             </div>
                                             <div class="col">
                                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="300"></textarea>
@@ -378,7 +377,7 @@
 
                                         <div class="row mb-2">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">Link Button Text</label>
+                                                <label for="" class="d-flex">버튼 라벨</label>
                                             </div>
                                             <div class="col">
                                                 <input type="text" class="form-control" value="Price Description">
@@ -386,7 +385,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">URL</label>
+                                                <label for="" class="d-flex">외부 링크 URL</label>
                                             </div>
                                             <div class="col">
                                                 <input type="text" class="form-control" value="Price Description">

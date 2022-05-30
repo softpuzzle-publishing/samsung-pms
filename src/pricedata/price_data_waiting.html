@@ -30,18 +30,18 @@
                                         <div class="row gx-2">
                                             <div class="col">
                                                 <select class="form-select custom" multiple="multiple" placeholder="Status">
-                                                    <option value="Request">Request</option>
+                                                    <option value="Request">상태</option>
                                                     <option value="Approve">Approve</option>
                                                     <option value="Return">Return</option>
                                                 </select>
                                             </div>
                                             <div class="col">
                                                 <select class="form-select custom">
-                                                    <option selected>Subsidiary</option>
+                                                    <option selected>지법인</option>
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select custom" multiple="multiple" placeholder="Country">
+                                                <select class="form-select custom" multiple="multiple" placeholder="국가">
                                                     <option value="AR">Arabic</option>
                                                     <option value="EN">English</option>
                                                     <option value="CH">Chinese</option>
@@ -56,13 +56,13 @@
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select custom" multiple="multiple" placeholder="Channel">
+                                                <select class="form-select custom" multiple="multiple" placeholder="채널">
                                                     @@for (var i = 1; i < 10; i++) { <option value="Ch`+i+`">S1-Ch`+i+`</option>
                                                         }
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select custom" multiple="multiple" placeholder="Device Model">
+                                                <select class="form-select custom" multiple="multiple" placeholder="모델명">
                                                     @@for (var i = 1; i < 20; i++) { <option value="Ch`+i+`">Device Model - `+i+`</option>
                                                         }
                                                 </select>
@@ -82,12 +82,12 @@
                                             <thead>
                                                 <tr>
                                                     <th class="text-center">No</th>
-                                                    <th class="text-center">Model</th>
-                                                    <th class="text-center">Status</th>
+                                                    <th class="text-center">모델명</th>
+                                                    <th class="text-center">상태</th>
                                                     <th class="text-center">최근 변경일시</th>
-                                                    <th class="text-center">Subsidiary</th>
-                                                    <th class="text-center">Country</th>
-                                                    <th class="text-center">Channel</th>
+                                                    <th class="text-center">지법인</th>
+                                                    <th class="text-center">국가</th>
+                                                    <th class="text-center">채널</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -160,7 +160,7 @@
 
                                         <div class="row mb-2">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">Model</label>
+                                                <label for="" class="d-flex">모델</label>
                                             </div>
                                             <div class="col">
                                                 <input type="text" class="form-control" value="Galaxy S22" readonly>
@@ -168,7 +168,7 @@
                                         </div>
                                         <div class="row mb-2">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">Promotion Image</label>
+                                                <label for="" class="d-flex">프로모션 이미지</label>
                                             </div>
                                             <div class="col">
                                                 <div class="image-container">
@@ -180,24 +180,15 @@
                                         </div>
                                         <div class="row mb-2">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">Promotion<br>
-                                                    Description</label>
+                                                <label for="" class="d-flex">프로모션 상세 설명</label>
                                             </div>
                                             <div class="col">
                                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="300" readonly>Trade in and save $22.31 Early upgrade with AT&T Next Up</textarea>
                                             </div>
                                         </div>
-                                        <div class="row mb-2">
-                                            <div class="col-auto">
-                                                <label for="" class="d-flex">Company Name</label>
-                                            </div>
-                                            <div class="col">
-                                                <input type="text" class="form-control" value="AT&T" readonly>
-                                            </div>
-                                        </div>
                                         <div class="row">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">Posting Period</label>
+                                                <label for="" class="d-flex">게시 기간 (GMT)</label>
                                             </div>
                                             <div class="col">
                                                 <div class="row gx-3 align-items-center">
@@ -220,21 +211,25 @@
 
                                         <div class="row mb-2">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">Price</label>
+                                                <label for="" class="d-flex">가격</label>
                                             </div>
                                             <div class="col">
                                                 <div class="row gx-2 gy-2 mb-2">
                                                     <div class="col-auto">
-                                                        <button type="button" class="btn btn-sm btn-gray4 text-white active">128G</button>
+                                                        <input type="radio" class="btn-check" name="capacity" id="btncheck1" autocomplete="off">
+                                                        <label class="btn btn-gray4 btn-sm" for="btncheck1">128G</label>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <button type="button" class="btn btn-sm btn-gray4 text-white">256G</button>
+                                                        <input type="radio" class="btn-check" name="capacity" id="btncheck2" autocomplete="off">
+                                                        <label class="btn btn-gray4 btn-sm" for="btncheck2">256G</label>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <button type="button" class="btn btn-sm btn-gray4 text-white">512G</button>
+                                                        <input type="radio" class="btn-check" name="capacity" id="btncheck3" autocomplete="off">
+                                                        <label class="btn btn-gray4 btn-sm" for="btncheck3">512G</label>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <button type="button" class="btn btn-sm btn-gray4 text-white">1TB</button>
+                                                        <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
+                                                        <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
                                                     </div>
                                                 </div>
                                                 <div class="row gx-2 mb-2">
@@ -244,8 +239,8 @@
                                                     <div class="col">
                                                         <input type="text" class="form-control" value="1288.98" readonly>
                                                     </div>
-                                                    <div class="col">
-                                                        <input type="text" class="form-control width-60px" value="Monetary" readonly>
+                                                    <div class="col-auto">
+                                                        <input type="text" class="form-control width-60px" value="$" readonly>
                                                     </div>
                                                     <div class="row gx-2 mt-2">
                                                         <div class="col">
@@ -262,7 +257,7 @@
                                                         <input type="text" class="form-control" value="1288.98" readonly>
                                                     </div>
                                                     <div class="col-auto">
-                                                        <input type="text" class="form-control width-60px" value="Monetary" readonly>
+                                                        <input type="text" class="form-control width-60px" value="$" readonly>
                                                     </div>
                                                     <div class="col">
                                                         <input type="text" class="form-control" value="24" readonly>

@@ -97,32 +97,33 @@
                                                         <a href="" class="text-gray5">Galaxy S22</a>
                                                     </td>
                                                     <td class="text-center">Request</td>
-                                                    <td class="text-center"></td>
                                                     <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
+                                                    <td class="text-center">SEA</td>
                                                     <td class="text-center text-dark">S1-Ch1</td>
                                                 </tr>
                                                 <tr data-toggle="raight-card">
-                                                    <td class="text-center">2</td>
+                                                    <td class="text-center">1</td>
                                                     <td class="text-center">
                                                         <a href="" class="text-gray5">Galaxy S22</a>
                                                     </td>
                                                     <td class="text-center">Request</td>
-                                                    <td class="text-center"></td>
                                                     <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
+                                                    <td class="text-center">SEA</td>
                                                     <td class="text-center text-dark">S1-Ch1</td>
                                                 </tr>
                                                 <tr data-toggle="raight-card">
-                                                    <td class="text-center">3</td>
+                                                    <td class="text-center">1</td>
                                                     <td class="text-center">
                                                         <a href="" class="text-gray5">Galaxy S22</a>
                                                     </td>
                                                     <td class="text-center">Request</td>
-                                                    <td class="text-center"></td>
                                                     <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
+                                                    <td class="text-center">SEA</td>
                                                     <td class="text-center text-dark">S1-Ch1</td>
+                                                </tr>ass="text-center text-dark">S1-Ch1</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -188,18 +189,26 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-auto">
-                                                <label for="" class="d-flex">게시 기간 (GMT)</label>
+                                                <label for="" class="d-flex">게시기간</label>
                                             </div>
                                             <div class="col">
-                                                <div class="row gx-3 align-items-center">
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" value="2020/07/27 17:59:00" readonly>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <span class="fw-bold"> ~ </span>
-                                                    </div>
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" value="2020/07/27 17:59:00" readonly>
+                                                <div class="d-grid gap-2">
+                                                    <select class="form-select" aria-label="Default select">
+                                                        <option selected>AEDT (UTC+11:00)</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <div class="row gx-3 align-items-center">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control" id="before-datepicker">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <span class="fw-bold"> ~ </span>
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="text" class="form-control" id="after-datepicker">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -209,12 +218,12 @@
                                         <div class="dash-line"></div>
                                         <!-- line //-->
 
-                                        <div class="row mb-2">
+                                        <div class="row g- mb-2">
                                             <div class="col-auto">
                                                 <label for="" class="d-flex">가격</label>
                                             </div>
                                             <div class="col">
-                                                <div class="row gx-2 gy-2 mb-2">
+                                                <div class="row g-2 mb-2">
                                                     <div class="col-auto">
                                                         <input type="radio" class="btn-check" name="capacity" id="btncheck1" autocomplete="off">
                                                         <label class="btn btn-gray4 btn-sm" for="btncheck1">128G</label>
@@ -232,68 +241,47 @@
                                                         <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
                                                     </div>
                                                 </div>
-                                                <div class="row gx-2 mb-2">
+                                                <div class="row g-2 mb-4">
                                                     <div class="col">
-                                                        <input type="text" class="form-control" value="Full Pricen" readonly>
+                                                        <input type="text" class="form-control" value="Full Pricen">
                                                     </div>
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" value="1288.98" readonly>
+                                                    <div class="col-3">
+                                                        <input type="text" class="form-control" value="1288.98">
                                                     </div>
-                                                    <div class="col-auto">
-                                                        <input type="text" class="form-control width-60px" value="$" readonly>
+                                                    <div class="col-4">
+                                                        <select class="form-select w-100" aria-label="Default select">
+                                                            <option selected>Monetary</option>
+                                                            <option value="1">W</option>
+                                                        </select>
                                                     </div>
-                                                    <div class="row gx-2 mt-2">
-                                                        <div class="col">
-                                                            <input type="text" class="form-control" value="Price Description" readonly>
-                                                        </div>
+                                                    <div class="col-12">
+                                                        <input type="text" class="form-control" value="Price Description">
                                                     </div>
                                                 </div>
-
-                                                <div class="row gx-2 gy-2 mb-2 mt-4">
+                                                <div class="row g-2 mb-4">
                                                     <div class="col">
-                                                        <input type="text" class="form-control" value="Full Pricen" readonly>
+                                                        <input type="text" class="form-control" value="Monthly">
                                                     </div>
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" value="1288.98" readonly>
+                                                    <div class="col-3">
+                                                        <input type="text" class="form-control" value="1288.98">
                                                     </div>
-                                                    <div class="col-auto">
-                                                        <input type="text" class="form-control width-60px" value="$" readonly>
+                                                    <div class="col-2">
+                                                        <input type="text" class="form-control" value="$">
                                                     </div>
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" value="24" readonly>
+                                                    <div class="col-2">
+                                                        <input type="text" class="form-control" value="24">
                                                     </div>
-                                                    <div class="row gx-2 mt-2">
-                                                        <div class="col">
-                                                            <input type="text" class="form-control" value="Price Description" readonly>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="row gx-2 gy-2 mb-2  mt-4">
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" value="Full Pricen" readonly>
-                                                    </div>
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" value="1288.98" readonly>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <input type="text" class="form-control width-60px" value="$" readonly>
-                                                    </div>
-                                                    <div class="col">
-                                                        <input type="text" class="form-control" value="Month" readonly>
-                                                    </div>
-
-                                                    <div class="row gx-2 mt-2">
-                                                        <div class="col">
-                                                            <input type="text" class="form-control" value="Price Description" readonly>
-                                                        </div>
+                                                    <div class="col-12">
+                                                        <input type="text" class="form-control" value="Price Description">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row mt-5">
                                             <div class="d-flex justify-content-end">
-                                                <button type="button" class="btn btn-dark w-auto">완료</button>
+                                                <button type="button" class="btn btn-outline-primary w-auto">미리보기</button>
+                                                <button type="button" class="btn btn-gray4 w-auto mx-2" data-bs-target="#modal-companion" data-bs-toggle="modal">반려</button>
+                                                <button type="button" class="btn btn-primary w-auto ">승인</button>
                                             </div>
                                         </div>
                                     </form> <!-- form-wrap -->

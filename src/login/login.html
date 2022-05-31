@@ -16,15 +16,25 @@
                             <input type="text" placeholder="User ID" class="form-control form-control-lg">
                             <input type="password" placeholder="Password" class="form-control form-control-lg">
                         </div>
-                        <div class="d-grid gap-2 mt-5 ">
+                        <div class="d-grid gap-4 mt-4 pt-2">
                             <button type="submit" class="btn btn-dark btn-lg">LOGIN</button>
-                            <ul class="d-flex justify-content-center align-items-center gap-3 mt-4">
+                            <a href="../user/user_terms.html" class="btn btn-outline-dark btn-lg">Sign up</a>
+                            <ul class="d-flex justify-content-between align-items-center gap-3">
                                 <li>
-                                    <a href="../user/user_form.html" class="text-gray6 text-decoration-none fw-bold">사용자 등록</a>
+                                    <a href="find_password.html " class="text-gray6 text-decoration-none fw-bold">비밀번호 찾기</a>
                                 </li>
-                                <li class="vr"></li>
                                 <li>
-                                    <a href="find_password.html "class="text-gray6 text-decoration-none fw-bold">비밀번호 찾기</a>
+                                    <ul class="d-flex align-items-center">
+                                        <li>
+                                            <input type="radio" class="btn-check" id="KO" name="lang" autocomplete="off">
+                                            <label class="btn btn-sm text-gray4 fw-bold" for="KO">KO</label>
+                                        </li>
+                                        <li class="vr"></li>
+                                        <li>
+                                            <input type="radio" class="btn-check" id="EN" name="lang" autocomplete="off">
+                                            <label class="btn btn-sm text-gray4 fw-bold pe-0" for="EN">EN</label>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -36,4 +46,4 @@
     @@include('@@webRoot/_include/_modal.html')
 </body>
 
-</html> 
+</html>

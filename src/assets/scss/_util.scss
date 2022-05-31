@@ -11,12 +11,21 @@
         border-radius:1.25rem;
         box-shadow:  0 6px 6px 0 rgba(0, 0, 0, 0.05);
         form{
-            width: 380px;
+            width: 360px;
             margin: auto;
         }
         h1 {
             margin-bottom: 3rem;
         }
+    }
+    .vr{
+        height:14px;
+        align-self: center;
+    }
+    .btn-check:checked, .btn-check:focus, .btn-check:active, .btn-check:checked + label, .btn-check:focus + label, .btn-check:active + label{
+        box-shadow: none!important;
+        color:$black!important;
+        border-color: transparent!important;
     }
 }
 

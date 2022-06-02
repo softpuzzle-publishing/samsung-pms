@@ -16,7 +16,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="icon-home"></i></li>
-                            <li class="breadcrumb-item">가격 데이터 관리</li>
+                            <li class="breadcrumb-item">PRICE DATA SETTINGS</li>
                             <li class="breadcrumb-item active" aria-current="page">가격 데이터 등록/관리</li>
                         </ol>
                     </nav>
@@ -29,15 +29,17 @@
                                     <div class="search">
                                         <div class="row gx-2">
                                             <div class="col">
-                                                <select class="form-select custom" multiple="multiple" placeholder="Status">
-                                                    <option value="Request">상태</option>
-                                                    <option value="Approve">Approve</option>
-                                                    <option value="Return">Return</option>
+                                                <select class="form-select custom" multiple="multiple" placeholder="상태">
+                                                    <option value="Request">승인대기</option>
+                                                    <option value="Approve">승인</option>
+                                                    <option value="Return">반려</option>
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select custom">
-                                                    <option selected>지법인</option>
+                                                <select class="form-select custom"  placeholder="지법인">
+                                                    <option value="">Subsidiary1</option>
+                                                    <option value="">Subsidiary2</option>
+                                                    <option value="">Subsidiary3</option>
                                                 </select>
                                             </div>
                                             <div class="col">
@@ -240,9 +242,6 @@
                                                         <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
                                                         <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
                                                     </div>
-                                                    <div class="col-auto">
-                                                        <button type="button" class="btn btn-sm btn-gray2" data-bs-toggle="modal" data-bs-target="#modal-modelcapacity"><i class="icon-plus"></i></button>
-                                                    </div>
                                                 </div>
                                                 <div class="row g-2 mt-4">
                                                     <div class="col">
@@ -256,9 +255,6 @@
                                                             <option selected>Monetary</option>
                                                             <option value="1">W</option>
                                                         </select>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <button type="button" class="btn btn-gray2"><i class="icon-plus"></i></button>
                                                     </div>
                                                     <div class="col-12">
                                                         <input type="text" class="form-control" value="Price Description">
@@ -276,9 +272,6 @@
                                                     </div>
                                                     <div class="col-2">
                                                         <input type="text" class="form-control" value="24">
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <button type="button" class="btn btn-gray2"><i class="icon-minus"></i></button>
                                                     </div>
                                                     <div class="col-12">
                                                         <input type="text" class="form-control" value="Price Description">

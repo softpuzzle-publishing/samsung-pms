@@ -27,7 +27,7 @@
                                 <div class="card-body">
                                     <h2 class="header-title">유저 목록</h2>
                                     <div class="search">
-                                        <div class="row gx-2">
+                                        <div class="row gx-2"> 
                                             <div class="col-auto min-width-150px">
                                                 <select class="form-select custom" placeholder="구분">
                                                     <option value="Administrator">Administrator</option>
@@ -62,7 +62,7 @@
                                             <p class="fw-bold">
                                                 [총 <span class="text-primary">106</span>건]
                                             </p>
-                                            <a href="user_management_form.html" class="btn btn-xs btn-primary rounded-pill">신규등록</a>
+                                            <button class="btn btn-xs btn-primary rounded-pill" data-toggle="right-card">신규등록</button>
                                         </div>
                                         <table class="table custom-table table-hover">
                                             <thead>
@@ -78,7 +78,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr data-toggle="right-card">
+                                                <tr>
                                                     <td class="text-center">1</td>
                                                     <td class="text-center">슈퍼관리자</td>
                                                     <td class="text-center">홍길동</td>
@@ -115,7 +115,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-5  d-none" id="right-card">
+                        <div class="col-5">
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h2 class="header-title">사용자 상세</h2>
@@ -175,7 +175,12 @@
                                             <tr>
                                                 <th class="text-center"><span class="text-primary mx-1">*</span>아이디</th>
                                                 <td colspan="3">
-                                                    <input type="text" class="form-control">
+                                                    <div class="row g-2">
+                                                        <div class="col"><input type="text" class="form-control"></div>
+                                                        <div class="col-auto">
+                                                            <button type="button" class="btn btn-dark">중복확인</button>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -193,7 +198,12 @@
                                             <tr>
                                                 <th class="text-center"><span class="text-primary mx-1">*</span>이메일</th>
                                                 <td colspan="3">
-                                                    <input type="text" class="form-control">
+                                                    <div class="row g-2">
+                                                        <div class="col"><input type="text" class="form-control"></div>
+                                                        <div class="col-auto">
+                                                            <button type="button" class="btn btn-dark">중복확인</button>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>

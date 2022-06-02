@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    @@include('@@webRoot/_include/_head.html')
+</head>
+
+<body>
+    <div id="wrap">
+
+        @@include('@@webRoot/_include/_header.html')
+        <div id="container">
+            @@include('@@webRoot/_include/_aside.html')
+            <main id="main">
+                <div class="container-fluid">
+                    <div class="row mt-5 pt-3">
+                        <div class="col"></div>
+                        <div class="col-auto">
+                            <div class="min-width-400px">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h2 class="header-title">COUNTRY 목록</h2>
+                                    <a href="../pricedata/price_data_waiting.html" class="btn rounded-pill btn-gray2 d-flex align-items-center btn-sm">더보기<i class="icon-more ms-2"></i></a>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="dashboard-list">
+                                            <li>
+                                                <span class="badge badge-review">Review</span>
+                                                <strong>Galaxy S22</strong>
+                                                <span class="text-gray5">SEA</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div> <!-- container-fluid -->
+            </main> <!-- main -->
+        </div>
+    </div>
+    @@include('@@webRoot/_include/_modal.html')
+</body>
+
+</html>

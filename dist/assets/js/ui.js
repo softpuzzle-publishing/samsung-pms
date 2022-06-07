@@ -82,6 +82,14 @@ var Common = {
       $("#preview-image").attr("src", "/assets/images/default-image.png");
       $("#input-image").val("");
       $(".image-delete-btn").hide();
+    }); // 
+
+    $('.daterangepickers').dateRangePicker({
+      inline: true,
+      alwaysOpen: true,
+      container: ".modal-body",
+      format: 'YYYY-MM-DD',
+      language: 'ko'
     });
   }
 };

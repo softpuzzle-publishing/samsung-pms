@@ -17,18 +17,18 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="icon-home"></i></li>
                             <li class="breadcrumb-item">이력 관리</li>
-                            <li class="breadcrumb-item active" aria-current="page">유저 이력 관리</li>
+                            <li class="breadcrumb-item active" aria-current="page">가격 이력 관리</li>
                         </ol>
                     </nav>
-                    <h1 class="page-title">유저 이력 관리</h1>
+                    <h1 class="page-title">가격 이력 관리</h1>
                     <div class="row">
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h2 class="header-title">사용자 이력 목록</h2>
+                                    <h2 class="header-title">가격 이력 목록</h2>
                                     <div class="search">
                                         <div class="row gx-2">
-                                            <div class="col-auto">
+                                            <div class="col">
                                                 <select class="form-select custom" multiple="multiple" placeholder="싱테">
                                                     <option value="등록">등록</option>
                                                     <option value="수정">수정</option>
@@ -37,17 +37,35 @@
                                                     <option value="반려">반려</option>
                                                 </select>
                                             </div>
-                                            <div class="col-auto">
-                                                <select class="form-select custom" placeholder="전체">
-                                                    <option value="전체">전체</option>
-                                                    <option value="아이디">아이디</option>
-                                                    <option value="이름">이름</option>
+                                            <div class="col">
+                                                <select class="form-select custom" placeholder="지법인">
+                                                    <option value="Subsidiary1">Subsidiary1</option>
+                                                    <option value="Subsidiary2">Subsidiary2</option>
+                                                    <option value="Subsidiary3">Subsidiary3</option>
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <input type="text" class="form-control" value="" placeholder="asdsad">
+                                                <select class="form-select custom" placeholder="국가">
+                                                    <option value="Subsidiary1">Subsidiary1</option>
+                                                    <option value="Subsidiary2">Subsidiary2</option>
+                                                    <option value="Subsidiary3">Subsidiary3</option>
+                                                </select>
                                             </div>
-                                            <div class="col-auto">
+                                            <div class="col">
+                                                <select class="form-select custom" multiple="multiple"  placeholder="S1-Ch1">
+                                                    <option value="S1-Ch1">S1-Ch1</option>
+                                                    <option value="S1-Ch2">S1-Ch2</option>
+                                                    <option value="S1-Ch3">S1-Ch3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-select custom" multiple="multiple"  placeholder="모델명">
+                                                    <option value="S1-Ch1">S1-Ch1</option>
+                                                    <option value="S1-Ch2">S1-Ch2</option>
+                                                    <option value="S1-Ch3">S1-Ch3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-auto"> 
                                                 <button type="button" class="btn btn-secondary">검색</button>
                                             </div>
                                         </div>
@@ -62,23 +80,23 @@
                                             <thead>
                                                 <tr>
                                                     <th class="text-center">No</th>
-                                                    <th class="text-center">활동 일시</th>
-                                                    <th class="text-center">구분</th>
-                                                    <th class="text-center">소속</th>
-                                                    <th class="text-center">이름</th>
-                                                    <th class="text-center">아이디</th>
+                                                    <th class="text-center">모델명</th>
+                                                    <th class="text-center">지법인</th>
+                                                    <th class="text-center">국가</th>
+                                                    <th class="text-center">채널</th>
+                                                    <th class="text-center">상태</th>
+                                                    <th class="text-center">최근 변경일시</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr data-toggle="right-card">
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">
-                                                        2022/05/04 01:11:22
-                                                    </td>
+                                                    <td class="text-center">Galaxy S22</td>
                                                     <td class="text-center">삼성지법인</td>
-                                                    <td class="text-center">SEA</td>
-                                                    <td class="text-center">홍길동</td>
-                                                    <td class="text-center">gd.hong2</td>
+                                                    <td class="text-center">Country2</td>
+                                                    <td class="text-center">S1-Ch1</td>
+                                                    <td class="text-center">승인</td>
+                                                    <td class="text-center">2022/05/04 01:11:22</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -110,56 +128,51 @@
                         <div class="col-5 d-none" id="right-card">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h2 class="header-title">사용자 이력 상세</h2>
+                                    <h2 class="header-title">가격 이력 상세</h2>
 
-                                    <table class="table common-table border">
+                                    <table class="table common-table border table-fixed">
                                         <tbody>
                                             <tr>
-                                                <th class="text-center">구분</th>
-                                                <td class="text-center">삼성지법인</td>
-                                                <th class="text-center">소속</th>
-                                                <td class="text-center">SEA</td>
+                                                <th class="text-center">No</th>
+                                                <td class="text-center">1</td>
+                                                <th class="text-center">상태</th>
+                                                <td class="text-center">승인</td>
                                             </tr>
                                             <tr>
-                                                <th class="text-center">이름</th>
-                                                <td class="text-center">홍길동</td>
-                                                <th class="text-center">아이디</th>
-                                                <td class="text-center">gd.hong2</td>
+                                                <th class="text-center">모델명</th>
+                                                <td colspan="3">Galaxy S22</td>
                                             </tr>
                                             <tr>
-                                                <th class="text-center">활동 일시</th>
-                                                <td colspan="3">
-                                                    2022/05/04 01:11:22
-                                                </td>
+                                                <th class="text-center">변경일시</th>
+                                                <td colspan="3">2022/09/22 20:00</td>
                                             </tr>
                                             <tr>
-                                                <th class="text-center">변경내용</th>
-                                                <td colspan="3" >
-                                                    <div class="height-300px overflow-auto">
-                                                        <p>모델: Galaxy S22</p>
-                                                        <br>
-                                                        <p>가격 변경:</p>
-                                                        <p>모델: Galaxy S22</p>
-                                                        <br>
-                                                        <p>가격 변경:</p>
-                                                        <p>모델: Galaxy S22</p>
-                                                        <br>
-                                                        <p>가격 변경:</p>
-                                                        <p>모델: Galaxy S22</p>
-                                                        <br>
-                                                        <p>가격 변경:</p>
-                                                        <p>모델: Galaxy S22</p>
-                                                        <br>
-                                                        <p>가격 변경:</p>
-                                                        <p>모델: Galaxy S22</p>
-                                                        <br>
-                                                        <p>가격 변경:</p>
-                                                        <p>모델: Galaxy S22</p>
-                                                        <br>
-                                                        <p>가격 변경:</p>
-
-                                                    </div>
-                                                </td>
+                                                <th class="text-center">지법인</th>
+                                                <td colspan="3">Subsidiary1</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center">국가</th>
+                                                <td colspan="3">Korea</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center">채널</th>
+                                                <td colspan="3">S1-Ch1</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center">요청</th>
+                                                <td colspan="3">홍길동(gd.hong@samsung.com)</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center">요청일시</th>
+                                                <td colspan="3">2022/09/22 20:00</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center">결재</th>
+                                                <td colspan="3">홍길동(gd.hong@samsung.com)</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-center">결재일시</th>
+                                                <td colspan="3">2022/09/22 20:00</td>
                                             </tr>
                                         </tbody>
                                     </table>

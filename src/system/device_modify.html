@@ -46,28 +46,34 @@
                                             <p class="fw-bold">
                                                 [총 <span class="text-primary">106</span>건]
                                             </p>
-                                            <button type="button" class="btn btn-xs btn-primary rounded-pill">수동수집</button>
                                         </div>
-                                        <table class="table custom-table">
+                                        <table class="table custom-table table-hover">
                                             <thead>
                                                 <tr>
                                                     <th class="text-center">No</th>
                                                     <th class="text-center">모델명</th>
                                                     <th class="text-center">최근 수집일시</th>
                                                     <th class="text-center">엠바고</th>
-                                                    <th class="text-center">가격 데이터 관리</th>
+                                                    <th class="text-center">관리</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                <tr data-toggle="right-card">
                                                     <td class="text-center">1</td>
-                                                    <td class="text-center">
-                                                        Galaxy S22
-                                                    </td>
+                                                    <td class="text-center">Galaxy S22</td>
                                                     <td class="text-center">2022/12/31 00:00:00</td>
                                                     <td class="text-center">2022/12/31 00:00:00 </td>
                                                     <td class="text-center">
-                                                        <a href="" class="text-decoration-underline">가격 데이터 검색</a>
+                                                        <a href="device_modify.html" class="btn btn-dark btn-sm">수정</a>
+                                                    </td>
+                                                </tr>
+                                                <tr data-toggle="right-card">
+                                                    <td class="text-center">1</td>
+                                                    <td class="text-center">Galaxy S22</td>
+                                                    <td class="text-center">2022/12/31 00:00:00</td>
+                                                    <td class="text-center">2022/12/31 00:00:00 </td>
+                                                    <td class="text-center">
+                                                        <a href="device_modify.html" class="btn btn-dark btn-sm">등록</a>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -101,42 +107,30 @@
                             <div class="card h-100">
                                 <div class="card-body">
                                     <h2 class="header-title">DEVICE MODEL 수정</h2>
-                                    <table class="table common-table border">
+                                    <table class="table common-table border table-fixed">
                                         <tbody>
                                             <tr>
                                                 <th class="text-center">No</th>
                                                 <td class="text-center">1</td>
                                                 <th class="text-center">모델명</th>
-                                                <td class="text-center">
-                                                    Galaxy S22
-                                                </td>
+                                                <td class="text-center">Galaxy S22</td>
                                             </tr>
                                             <tr>
                                                 <th class="text-center">최근 수집일시</th>
-                                                <td colspan="3">
-                                                    <span>2022/05/04 01:11:22</span>
-                                                    <button type="button" class="btn btn-xs btn-outline-primary rounded-pill mx-2">수동갱신</button>
-                                                </td>
+                                                <td colspan="3">2022/05/04 01:11:22</td>
                                             </tr>
                                             <tr>
                                                 <th class="text-center">엠바고</th>
                                                 <td colspan="3">
                                                     <input type="text" class="form-control w-auto d-inline" value="" placeholder="" id="before-datepicker">
-                                                    <span class="mx-2">(GMT)</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th class="text-center">가격 데이터 관리</th>
-                                                <td colspan="3">
-                                                    <a href="">가격 데이터 검색</a>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                     <div class="row mt-5">
                                         <div class="d-flex justify-content-center">
+                                            <button type="button" class="btn btn-gray4 w-auto mx-2">취소</button>
                                             <button type="button" class="btn btn-dark w-auto">저장</button>
-                                            <button type="button" class="btn btn-outline-danger w-auto mx-2">취소</button>
                                         </div>
                                     </div>
                                 </div> <!-- card-body -->

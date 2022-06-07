@@ -55,3 +55,84 @@
         min-height: 220px;
     }
 }
+
+
+.badge{
+    font-weight: 500;
+    color:$gray-600;
+    height: 22px;
+    vertical-align: middle;
+    padding: 5px 5px 2px 5px;
+    &.badge-review{
+        background-color: #F5F7FE;
+    }
+    &.badge-require{
+        background-color: #F7F5F2;
+    }
+}
+
+
+.dashboard-list{
+    li{
+        padding:25px 0;
+        & + li {
+            border-top:1px solid $input-border-color;
+        }
+    }
+}
+
+.active-device{
+    height: 249px;
+    .title-image{
+        width: 45px;
+        height: 45px;
+        background-position: center;
+        background-size: cover;
+        &.total-users{
+            background-image: url(../images/icon-dashboard-total-users.svg);
+        }
+        &.recent-users{
+            background-image: url(../images/icon-dashboard-recent-users.svg);
+        }
+        &.models{
+            background-image: url(../images/icon-dashboard-models.svg);
+        }
+        &.channels{
+            background-image: url(../images/icon-dashboard-channels.svg);
+        }
+    }
+    b{
+        margin-top: 1rem;
+        font-size: 15px;
+    }
+    strong{
+        margin-top: 0.5rem;
+        font-size: 32px;
+    }
+    &:hover{
+        color:$white;
+        background-color: $primary;
+        .title-image{
+            &.total-users{
+                background-image: url(../images/icon-dashboard-total-users-white.svg);
+            }
+            &.recent-users{
+                background-image: url(../images/icon-dashboard-recent-users-white.svg);
+            }
+            &.models{
+                background-image: url(../images/icon-dashboard-models-white.svg);
+            }
+            &.channels{
+                background-image: url(../images/icon-dashboard-channels-white.svg);
+            }
+        }
+    }
+}
+
+#chart-usage{
+    margin-left: -4px;
+
+}
+#chart-channel{
+    width: 100%;
+}

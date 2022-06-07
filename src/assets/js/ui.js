@@ -73,14 +73,25 @@ let Common = {
                 //이미지 삭제 버튼
                 $(".image-delete-btn").show();
             });
-        } 
+        }
         // input file에 이미지 삭제
         $('.upload-image-wrap').on('click', '.image-delete-btn', function () {
             $("#preview-image").attr("src", "/assets/images/default-image.png");
             $("#input-image").val("");
             $(".image-delete-btn").hide();
         });
+        // 
+
+        $('.daterangepickers').dateRangePicker({
+            inline: true,
+            alwaysOpen: true,
+            container: ".modal-body",
+            format: 'YYYY-MM-DD',
+            language: 'ko',
+        });
+        
     }
 }
+
 
 Common.init();

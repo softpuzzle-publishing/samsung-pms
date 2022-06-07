@@ -77,7 +77,8 @@
                         <li class="has-treeview">
                             <a href="#"><i class="icon-gnb-record"></i> <span>이력 관리</span></a>
                             <ul class="second-level">
-                                <li class=""><a href="../record/record.html">User Action Log</a></li>
+                                <li class=""><a href="../record/price.html">가격 이력 관리</a></li>
+                                <li class=""><a href="../record/record.html">유저 이력 관리</a></li>
                                 <li><a href="../record/api.html">API Test</a></li>
                             </ul>
                         </li>
@@ -97,10 +98,10 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><i class="icon-home"></i></li>
                             <li class="breadcrumb-item">이력 관리</li>
-                            <li class="breadcrumb-item active" aria-current="page">User Action Log</li>
+                            <li class="breadcrumb-item active" aria-current="page">유저 이력 관리</li>
                         </ol>
                     </nav>
-                    <h1 class="page-title">User Action Log</h1>
+                    <h1 class="page-title">유저 이력 관리</h1>
                     <div class="row">
                         <div class="col">
                             <div class="card h-100">
@@ -108,6 +109,15 @@
                                     <h2 class="header-title">사용자 이력 목록</h2>
                                     <div class="search">
                                         <div class="row gx-2">
+                                            <div class="col-auto">
+                                                <select class="form-select custom" multiple="multiple" placeholder="싱테">
+                                                    <option value="등록">등록</option>
+                                                    <option value="수정">수정</option>
+                                                    <option value="삭제">삭제</option>
+                                                    <option value="승인">승인</option>
+                                                    <option value="반려">반려</option>
+                                                </select>
+                                            </div>
                                             <div class="col-auto">
                                                 <select class="form-select custom" placeholder="전체">
                                                     <option value="전체">전체</option>
@@ -129,7 +139,7 @@
                                                 [총 <span class="text-primary">106</span>건]
                                             </p>
                                         </div>
-                                        <table class="table custom-table">
+                                        <table class="table custom-table table-hover">
                                             <thead>
                                                 <tr>
                                                     <th class="text-center">No</th>

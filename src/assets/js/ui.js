@@ -86,8 +86,11 @@ let Common = {
             inline: true,
             alwaysOpen: true,
             container: ".modal-body",
-            format: 'YYYY-MM-DD',
+            format: 'MM-DD-YYYY',
             language: 'ko',
+            monthSelect: true,
+            yearSelect: true,
+            stickyMonths: true
         });
         
     }

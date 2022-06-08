@@ -138,22 +138,24 @@
 }
 
 .modal-datepicker{
-    max-width: 850px; min-height: 527px; margin: 0 auto; background-color: #f5f5f5; top: 50%; transform: translateY(-50%) !important; border-radius: 16px;
+    max-width: 850px; min-height: auto; height: fit-content; margin: 0 auto; background-color: #f5f5f5; top: 50%; transform: translateY(-50%) !important; border-radius: 16px;
     .modal-content{
         border:0; background-color: #f5f5f5;
     }
     .modal-body{
-        padding: 0 20px;
+        padding:40px 20px 0 20px;
     }
 }
+
 .date-picker-wrapper{
     width: 100%; border: 0; background-color: #f5f5f5; padding: 0;
+    min-height: 390px;
     .drp_top-bar{display: none;}
     .gap{display: none;}
     .month-wrapper {
         width: 100% !important; background-color: #f5f5f5; border: 0; padding: 0;
         table{
-            width: 47% !important;
+            width: 47% !important; overflow: hidden;
             .day{
                 padding: 0;  font-size: 18px !important; 
                 &.checked{
@@ -184,9 +186,32 @@
             .week-name{
                 th{padding: 25px 0;}
             }
-            .select-wrapper{
-                width: 50px; height:35px; line-height: 35px;
-                select{width: 100%; text-align: center; padding: 5px 0;}
+            .select-wrapper {
+                width: auto;
+                /* height: 35px; */
+                line-height: 31px;
+                background: #fff;
+                padding: 0.5rem 1.25rem;
+                border-radius: 6px;
+                position: relative;
+                select {
+                    width: 100%;
+                    text-align: center;
+                    top: 0;
+                    height: 35px;
+                }
+
+                &:after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 0 8px 8px;
+                    border-color: rgba(0,0,0,0) rgba(0,0,0,0) #2189ff rgba(0,0,0,0);
+                    position: absolute;
+                    bottom: 0.5rem;
+                    right: 0.5rem;
+                }
             }
             .next, .prev{
                width:44px; height:44px; background-color: $white; color: $black; display: flex; align-items: center; justify-content: center; border-radius: 50%;
@@ -194,5 +219,14 @@
         }
         .month1{margin-right: 24px;}
         .month2{margin-left: 24px;}
+    }
+}
+
+
+.datepicker-btn{
+    &:hover{
+        i{
+            background-image: url('../images/icon-calendar-check-white.svg');
+        }
     }
 }

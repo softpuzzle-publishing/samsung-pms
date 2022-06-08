@@ -88,8 +88,11 @@ var Common = {
       inline: true,
       alwaysOpen: true,
       container: ".modal-body",
-      format: 'YYYY-MM-DD',
-      language: 'ko'
+      format: 'YYYY.MD.DD',
+      language: 'ko',
+      monthSelect: true,
+      yearSelect: true,
+      stickyMonths: true
     });
   }
 };

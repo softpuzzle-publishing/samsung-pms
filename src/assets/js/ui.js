@@ -86,7 +86,7 @@ let Common = {
             inline: true,
             alwaysOpen: true,
             container: ".modal-body",
-            format: 'MM-DD-YYYY',
+            format: 'YYYY.MD.DD',
             language: 'ko',
             monthSelect: true,
             yearSelect: true,

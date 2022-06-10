@@ -84,21 +84,14 @@ var Common = {
       $(".image-delete-btn").hide();
     }); // 
 
-<<<<<<< HEAD
-=======
     $('.has-treeview > a').click(function () {
       $(this).parent().toggleClass('hide'); // console.log('ads');
     });
->>>>>>> park
     $('.daterangepickers').dateRangePicker({
       inline: true,
       alwaysOpen: true,
       container: ".modal-body",
-<<<<<<< HEAD
       format: 'YYYY.MD.DD',
-=======
-      format: 'MM-DD-YYYY',
->>>>>>> park
       language: 'ko',
       monthSelect: true,
       yearSelect: true,

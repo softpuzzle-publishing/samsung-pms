@@ -81,6 +81,10 @@ let Common = {
             $(".image-delete-btn").hide();
         });
         // 
+        $('.has-treeview > a').click( function(){
+            $(this).parent().toggleClass('hide');
+            // console.log('ads');
+        })
 
         $('.daterangepickers').dateRangePicker({
             inline: true,
@@ -93,6 +97,8 @@ let Common = {
             stickyMonths: true
         });
         
+      
+
     }
 }
 

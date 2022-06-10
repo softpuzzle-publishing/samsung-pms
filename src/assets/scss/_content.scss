@@ -195,4 +195,17 @@
         .month1{margin-right: 24px;}
         .month2{margin-left: 24px;}
     }
+
+}
+
+
+// text checkbox
+.days + .btn{
+    color:$gray-500;
+}
+.days + .btn:focus{
+    border-color: transparent; box-shadow: none;
+}
+.days:checked + .btn{
+    color:$black;
 }

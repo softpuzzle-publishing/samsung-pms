@@ -82,6 +82,20 @@ var Common = {
       $("#preview-image").attr("src", "/assets/images/default-image.png");
       $("#input-image").val("");
       $(".image-delete-btn").hide();
+    }); // 
+
+    $('.has-treeview > a').click(function () {
+      $(this).parent().toggleClass('hide'); // console.log('ads');
+    });
+    $('.daterangepickers').dateRangePicker({
+      inline: true,
+      alwaysOpen: true,
+      container: ".modal-body",
+      format: 'MM-DD-YYYY',
+      language: 'ko',
+      monthSelect: true,
+      yearSelect: true,
+      stickyMonths: true
     });
   }
 };

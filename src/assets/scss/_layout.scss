@@ -3,7 +3,7 @@
 #container{padding-left: 250px;}
 #main{padding-left: 28px;padding-right: 28px; padding-bottom: 28px;}
 #aside{
-    width: 250px;position: fixed;background: #fff;top: 0;left: 0;bottom: 0;padding-top: 130px;
+    width: 250px;position: fixed;background: #fff;top: 0;left: 0;bottom: 0;padding-top: 130px; z-index: 1;
     &::before{content: '';width: 40px;height: 40px;background: url('../images/bg-border-radius.png') no-repeat 0 0;position: absolute;right: -40px;top: 0;}
 }
 
@@ -34,7 +34,7 @@
         }
     }
     .second-level{
-        padding-left: 40px;
+        padding-left: 40px; display: block;
         > li{
             > a{line-height: 2.3;color: $gray-500;}
         }
@@ -44,5 +44,11 @@
     }
     .has-treeview{
         margin-bottom: 1rem;
+        .icon-select-top{background-position: 0px 8px; margin-right: 0;}
+        &.hide{
+            .second-level{display: none;}
+            .icon-select-top{transform:rotate(180deg);}
+        }
+        
     }
 }

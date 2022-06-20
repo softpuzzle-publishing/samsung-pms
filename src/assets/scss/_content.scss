@@ -229,4 +229,20 @@
             background-image: url('../images/icon-calendar-check-white.svg');
         }
     }
+
+}
+
+
+// text checkbox
+.days + .btn{
+    color:$gray-500;
+}
+.days + .btn{
+    border-color: transparent; box-shadow: none;
+}
+.days:focus + .btn{
+    box-shadow: none;
+}
+.days:checked + .btn{
+    color:$black;
 }

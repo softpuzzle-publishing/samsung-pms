@@ -43,7 +43,7 @@
 
         <header id="header">
             <div class="navbar navbar-expand">
-                <div class="container-fluid justify-content-end">
+                <div class="container-fluid">
                     <a class="navbar-brand" href="#"><img src="../assets/images/logo.svg" alt="SAMSUNG PMS"></a>
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item dropdown">
@@ -69,7 +69,12 @@
                     <ul class="sidebar-nav">
                         <li class="has-treeview"><a href="../dashboard/dashboard.html"><i class="icon-gnb-dash"></i> <span>DASHBOARD</span></a></li>
                         <li class="has-treeview">
-                            <a href="#"> <i class="icon-gnb-system"></i><span>SYSTEM</span></a>
+                            <a href="javascript:void(0)" class="w-100 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <i class="icon-gnb-system"></i><span>SYSTEM</span>
+                                </div>
+                                <i class="icon-select-top"></i>
+                            </a>
                             <ul class="second-level">
                                 <li class=""><a href="../system/subsidary_view.html">SUBSIDIARY 관리</a></li>
                                 <li><a href="../system/country_view.html">COUNTRY 관리</a></li>
@@ -77,24 +82,39 @@
                                 <li><a href="../system/device_view.html">DEVICE MODEL 관리</a></li>
                             </ul>
                         </li>
-                        <li class="has-treeview">
-                            <a href="#"> <i class="icon-gnb-price"></i> <span>PRICE DATA</span></a>
+                        <li class="has-treeview hide">
+                            <a href="javascript:void(0)" class="w-100 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <i class="icon-gnb-price"></i> <span>PRICE DATA</span>
+                                </div>
+                                <i class="icon-select-top"></i>
+                            </a>
                             <ul class="second-level">
                                 <li class="active"><a href="../pricedata/price_data_list.html">가격 데이터 등록 / 관리</a></li>
                                 <li><a href="../pricedata/price_data_waiting.html">승인 대기 목록</a></li>
                                 <li><a href="../pricedata/price_data_approval.html">승인 완료 목록</a></li>
                             </ul>
                         </li>
-                        <li class="has-treeview">
-                            <a href="#"><i class="icon-gnb-record"></i> <span>이력 관리</span></a>
+                        <li class="has-treeview hide">
+                            <a href="javascript:void(0)" class="w-100 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <i class="icon-gnb-record"></i> <span>이력 관리</span>
+                                </div>
+                                <i class="icon-select-top"></i>
+                            </a>
                             <ul class="second-level">
                                 <li class=""><a href="../record/price.html">가격 이력 관리</a></li>
                                 <li class=""><a href="../record/record.html">유저 이력 관리</a></li>
                                 <li><a href="../record/api.html">API Test</a></li>
                             </ul>
                         </li>
-                        <li class="has-treeview">
-                            <a href="#"><i class="icon-gnb-user"></i><span>USER</span></a>
+                        <li class="has-treeview hide">
+                            <a href="javascript:void(0)" class="w-100 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <i class="icon-gnb-user"></i><span>USER</span>
+                                </div>
+                                <i class="icon-select-top"></i>
+                            </a>
                             <ul class="second-level">
                                 <li class=""><a href="../user_management/user_management_list.html">유저 목록</a></li>
                                 <li><a href="../user_management/user_management_approval.html">유저 승인 대기 목록</a></li>
@@ -596,7 +616,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Country 선택</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">국가 선택</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">

@@ -50,14 +50,14 @@
                                                 });
                                             </script>
                                             <tr>
-                                                <th class="text-center"><span class="text-primary mx-1">*</span>Country</th>
+                                                <th class="text-center"><span class="text-primary mx-1">*</span>국가</th>
                                                 <td colspan="3">
                                                     <div class="row g-2">
                                                         <div class="col">
                                                             <input type="text" class="form-control" readonly>
                                                         </div>
                                                         <div class="col-auto">
-                                                            <button class="btn btn-dark">검색</button>
+                                                            <button class="btn btn-dark" data-bs-target="#modal-search-country-single" data-bs-toggle="modal">검색</button>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -71,7 +71,14 @@
                                             <tr>
                                                 <th class="text-center"><span class="text-primary mx-1">*</span>아이디</th>
                                                 <td colspan="3">
-                                                    <input type="text" class="form-control" aria-describedby="idHelp">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control" aria-describedby="idHelp">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <button class="btn btn-dark">중복확인</button>
+                                                        </div>
+                                                    </div>
                                                     <div id="idHelp" class="form-text">6~30자 이내 영문으로 입력</div>
                                                 </td>
                                             </tr>
@@ -90,15 +97,17 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th class="text-center"><span class="text-primary mx-1">*</span>E-mail</th>
+                                                <th class="text-center"><span class="text-primary mx-1">*</span>이메일</th>
                                                 <td colspan="3">
-                                                    <div class="row g-2">
+                                                    <div class="row">
                                                         <div class="col">
                                                             <input type="text" class="form-control">
                                                         </div>
                                                         <div class="col-auto">
-                                                            <button class="btn btn-dark" data-bs-target="#modal-user-emailCode" data-bs-toggle="modal">인증 요청</button>
-                                                        </div> 
+                                                            <button class="btn btn-dark">중복확인</button>
+                                                          
+                                                            <!-- <button class="btn btn-dark" data-bs-target="" data-bs-toggle="modal">인증 요청</button>  중복아닐시 모달 호출-->
+                                                        </div>
                                                     </div>
                                                 </td>
                                             </tr>

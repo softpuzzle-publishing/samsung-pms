@@ -2,6 +2,7 @@
 <html lang="ko">
 
 <head>
+    <link rel="stylesheet" href="../assets/lib/select/select2.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-Compatible" content="IE=edge">
     <title>SAMSUNG PMS</title>
@@ -36,6 +37,9 @@
     <script src="../assets/js/ui.js" defer></script>
 
 
+
+    <!-- https://github.com/select2/select2 document git 주소-->
+    <script src="../assets/lib/select/select2.js"></script>
 </head>
 
 <body>
@@ -435,8 +439,8 @@
                                                         <input type="text" class="form-control" value="1288.98">
                                                     </div>
                                                     <div class="col-4">
-                                                        <select class="form-select w-100" aria-label="Default select">
-                                                            <option selected>Monetary</option>
+                                                        <select class="form-select w-auto search-select" aria-label="Default select">
+                                                            <option selected>US$</option>
                                                             <option value="1">W</option>
                                                         </select>
                                                     </div>
@@ -455,7 +459,7 @@
                                                         <input type="text" class="form-control" value="1288.98">
                                                     </div>
                                                     <div class="col-auto">
-                                                        <select class="form-select w-auto" aria-label="Default select">
+                                                        <select class="form-select w-auto search-select" aria-label="Default select">
                                                             <option selected>US$</option>
                                                             <option value="1">W</option>
                                                         </select>
@@ -521,6 +525,7 @@
             </main> <!-- main -->
         </div>
     </div>
+
 
     <!-- 용량 설정 -->
     <div class="modal fade" id="modal-modelcapacity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1418,6 +1423,7 @@
             </div>
         </div>
     </div>
+
 
 
 </body>

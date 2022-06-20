@@ -101,6 +101,8 @@ let Common = {
 
     }
 }
-
+$(document).ready(function () {
+    $(".search-select").select2();
+});
 
 Common.init();

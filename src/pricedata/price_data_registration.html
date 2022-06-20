@@ -2,7 +2,11 @@
 <html lang="ko">
 
 <head>
+    <link rel="stylesheet" href="../assets/lib/select/select2.min.css">
     @@include('@@webRoot/_include/_head.html')
+
+    <!-- https://github.com/select2/select2 document git 주소-->
+    <script src="../assets/lib/select/select2.js"></script>
 </head>
 
 <body>
@@ -36,7 +40,7 @@
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select custom"  placeholder="지법인">
+                                                <select class="form-select custom" placeholder="지법인">
                                                     <option value="">Subsidiary1</option>
                                                     <option value="">Subsidiary2</option>
                                                     <option value="">Subsidiary3</option>
@@ -79,7 +83,7 @@
                                             <p class="fw-bold">
                                                 [총 <span class="text-primary">106</span>건]
                                             </p>
-                                            <a href="price_data_registration.html" class="btn btn-xs btn-primary rounded-pill"data-toggle="right-card">신규등록</a>
+                                            <a href="price_data_registration.html" class="btn btn-xs btn-primary rounded-pill" data-toggle="right-card">신규등록</a>
                                         </div>
                                         <table class="table custom-table table-hover">
                                             <thead>
@@ -297,8 +301,8 @@
                                                         <input type="text" class="form-control" value="1288.98">
                                                     </div>
                                                     <div class="col-4">
-                                                        <select class="form-select w-100" aria-label="Default select">
-                                                            <option selected>Monetary</option>
+                                                        <select class="form-select w-auto search-select" aria-label="Default select">
+                                                            <option selected>US$</option>
                                                             <option value="1">W</option>
                                                         </select>
                                                     </div>
@@ -317,7 +321,7 @@
                                                         <input type="text" class="form-control" value="1288.98">
                                                     </div>
                                                     <div class="col-auto">
-                                                        <select class="form-select w-auto" aria-label="Default select">
+                                                        <select class="form-select w-auto search-select" aria-label="Default select">
                                                             <option selected>US$</option>
                                                             <option value="1">W</option>
                                                         </select>
@@ -335,7 +339,7 @@
                                             </div>
                                         </div>
 
-                                        
+
                                         <!-- line -->
                                         <div class="dash-line"></div>
                                         <!-- line //-->
@@ -369,7 +373,7 @@
                                         <div class="row mt-5">
                                             <div class="d-flex justify-content-end">
                                                 <button type="button" class="btn btn-gray4 w-auto">취소</button>
-                                                <button type="button" class="btn btn-outline-primary w-auto mx-2"data-bs-target="#modal-preview" data-bs-toggle="modal">미리보기</button>
+                                                <button type="button" class="btn btn-outline-primary w-auto mx-2" data-bs-target="#modal-preview" data-bs-toggle="modal">미리보기</button>
                                                 <button type="button" class="btn btn-primary w-auto ">저장</button>
                                             </div>
                                         </div>
@@ -383,7 +387,9 @@
             </main> <!-- main -->
         </div>
     </div>
+
     @@include('@@webRoot/_include/_modal.html')
+
 </body>
 
 </html>

@@ -28,20 +28,21 @@
                                     <h2 class="header-title">승인 완료 목록</h2>
                                     <div class="search">
                                         <div class="row gx-2">
-                                            <div class="col">
+                                            <!-- <div class="col">
                                                 <select class="form-select custom" multiple="multiple" placeholder="Status">
                                                     <option value="Request">Request</option>
                                                     <option value="Approve">Approve</option>
                                                     <option value="Return">Return</option>
                                                 </select>
-                                            </div>
+                                            </div> -->
                                             <div class="col">
                                                 <select class="form-select custom">
-                                                    <option selected>Subsidiary</option>
+                                                    <option value="지법인" selected>지법인</option>
+                                                    <option value=""></option>
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select custom" multiple="multiple" placeholder="Country">
+                                                <select class="form-select custom" multiple="multiple" placeholder="국가">
                                                     <option value="AR">Arabic</option>
                                                     <option value="EN">English</option>
                                                     <option value="CH">Chinese</option>
@@ -56,13 +57,13 @@
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select custom" multiple="multiple" placeholder="Channel">
+                                                <select class="form-select custom" multiple="multiple" placeholder="채널">
                                                     @@for (var i = 1; i < 10; i++) { <option value="Ch`+i+`">S1-Ch`+i+`</option>
                                                         }
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <select class="form-select custom" multiple="multiple" placeholder="Device Model">
+                                                <select class="form-select custom" multiple="multiple" placeholder="모델명  ">
                                                     @@for (var i = 1; i < 20; i++) { <option value="Ch`+i+`">Device Model - `+i+`</option>
                                                         }
                                                 </select>
@@ -83,11 +84,10 @@
                                                 <tr>
                                                     <th class="text-center">No</th>
                                                     <th class="text-center">모델명</th>
-                                                    <th class="text-center">상태</th>
-                                                    <th class="text-center">최근 변경일시</th>
                                                     <th class="text-center">지법인</th>
                                                     <th class="text-center">국가</th>
                                                     <th class="text-center">채널</th>
+                                                    <th class="text-center">승인일시</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -96,33 +96,30 @@
                                                     <td class="text-center">
                                                         <a href="" class="text-gray5">Galaxy S22</a>
                                                     </td>
-                                                    <td class="text-center">Request</td>
-                                                    <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
                                                     <td class="text-center">SEA</td>
                                                     <td class="text-center text-dark">S1-Ch1</td>
+                                                    <td class="text-center">2020/07/27 17:59:00</td>
                                                 </tr>
                                                 <tr data-toggle="raight-card">
-                                                    <td class="text-center">1</td>
+                                                    <td class="text-center">2</td>
                                                     <td class="text-center">
                                                         <a href="" class="text-gray5">Galaxy S22</a>
                                                     </td>
-                                                    <td class="text-center">Request</td>
-                                                    <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
                                                     <td class="text-center">SEA</td>
                                                     <td class="text-center text-dark">S1-Ch1</td>
+                                                    <td class="text-center">2020/07/27 17:59:00</td>
                                                 </tr>
                                                 <tr data-toggle="raight-card">
-                                                    <td class="text-center">1</td>
+                                                    <td class="text-center">3</td>
                                                     <td class="text-center">
                                                         <a href="" class="text-gray5">Galaxy S22</a>
                                                     </td>
-                                                    <td class="text-center">Request</td>
-                                                    <td class="text-center">2020/07/27 17:59:00</td>
                                                     <td class="text-center">Subsidiary1</td>
                                                     <td class="text-center">SEA</td>
                                                     <td class="text-center text-dark">S1-Ch1</td>
+                                                    <td class="text-center">2020/07/27 17:59:00</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -278,9 +275,7 @@
                                         </div>
                                         <div class="row mt-5">
                                             <div class="d-flex justify-content-end">
-                                                <button type="button" class="btn btn-outline-primary w-auto">미리보기</button>
-                                                <button type="button" class="btn btn-gray4 w-auto mx-2" data-bs-target="#modal-companion" data-bs-toggle="modal">반려</button>
-                                                <button type="button" class="btn btn-primary w-auto ">승인</button>
+                                                <button type="button" class="btn btn-primary w-auto ">확인</button>
                                             </div>
                                         </div>
                                     </form> <!-- form-wrap -->

@@ -47,7 +47,9 @@ var Common = {
     } // 데이트피커
 
 
-    $("#before-datepicker, #after-datepicker").datepicker(); //
+    $("#before-datepicker, #after-datepicker").datepicker({
+      dateFormat: "yy.mm.dd"
+    }); //
 
     function readImage(input) {
       // 인풋 태그에 파일이 있는 경우
@@ -98,7 +100,8 @@ var Common = {
       stickyMonths: true
     });
   }
-};
+}; // search select-box
+
 $(document).ready(function () {
   $(".search-select").select2();
 });

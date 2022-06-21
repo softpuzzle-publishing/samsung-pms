@@ -120,7 +120,7 @@
                         <div class="col-5">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h2 class="header-title">COUNTRY 상세</h2>
+                                    <h2 class="header-title">COUNTRY 등록</h2>
 
                                     <table class="table common-table border">
                                         <tbody>
@@ -135,11 +135,16 @@
                                             <tr>
                                                 <th class="text-center">지법인명</th>
                                                 <td class="text-center">
-                                                    <input type="text" class="form-control" value="" placeholder="">
+                                                    <select class="form-select custom" multiple="multiple" placeholder="">
+                                                        <option value="전체">전체</option>
+                                                        <option value="리전명">리전명</option>
+                                                        <option value="지법인명">지법인명</option>
+                                                        <option value="지법인코드">지법인 코드</option>
+                                                    </select>
                                                 </td>
                                                 <th class="text-center">지법인 코드</th>
                                                 <td class="text-center">
-                                                    <input type="text" class="form-control" value="" placeholder="">
+                                                    <input type="text" class="form-control" value="" placeholder="" disabled>
                                                 </td>
                                             </tr>
                                             <tr>

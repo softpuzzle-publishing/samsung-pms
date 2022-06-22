@@ -102,34 +102,76 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-5 d-none" id="right-card">
+                        <div class="col-5">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h2 class="header-title">DEVICE MODEL 상세</h2>
+                                    <h2 class="header-title">DEVICE MODEL 등록</h2>
                                     <table class="table common-table border table-fixed">
                                         <tbody>
                                             <tr>
                                                 <th class="text-center">No</th>
-                                                <td class="text-center">1</td>
+                                                <td class="text-center">
+                                                    <input type="text" class="form-control" value="" placeholder="" >
+                                                </td>
                                                 <th class="text-center">모델명</th>
-                                                <td class="text-center">Galaxy S22</td>
+                                                <td class="text-center">
+                                                    <input type="text" class="form-control" value="" placeholder="" >
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th class="text-center">최근 수집일시</th>
-                                                <td colspan="3">2022/05/04 01:11:22</td>
+                                                <td colspan="3">
+                                                    <input type="text" class="form-control w-auto d-inline" value="" placeholder="" id="before-datepicker">
+                                                    <div class="row gx-2 mt-2">
+                                                        <div class="col-5">
+                                                            <select class="form-select custom form-select-sm d-inline" aria-label="Default select">
+                                                                <option selected disabled>시</option>
+                                                                <option value="1">01</option>
+                                                                <option value="2">02</option>
+                                                                <option value="3">03</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <select class="form-select custom form-select-sm d-inline" aria-label="Default select">
+                                                                <option selected disabled>분</option>
+                                                                <option value="1">01</option>
+                                                                <option value="2">02</option>
+                                                                <option value="3">03</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th class="text-center">엠바고</th>
                                                 <td colspan="3">
-                                                    2022/12/31 00:00:00
+                                                    <input type="text" class="form-control w-auto d-inline" value="" placeholder="" id="before-datepicker">
+                                                    <div class="row gx-2 mt-2">
+                                                        <div class="col-5">
+                                                            <select class="form-select custom form-select-sm d-inline" aria-label="Default select">
+                                                                <option selected disabled>시</option>
+                                                                <option value="1">01</option>
+                                                                <option value="2">02</option>
+                                                                <option value="3">03</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <select class="form-select custom form-select-sm d-inline" aria-label="Default select">
+                                                                <option selected disabled>분</option>
+                                                                <option value="1">01</option>
+                                                                <option value="2">02</option>
+                                                                <option value="3">03</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
-                                    </table> 
+                                    </table>
                                     <div class="row mt-5">
                                         <div class="d-flex justify-content-center">
-                                            <button type="button" class="btn btn-gray4 w-auto">삭제</button>
-                                            <a href="device_modify.html" class="btn btn-dark w-auto mx-2">수정</a>
+                                            <button type="button" class="btn btn-gray4 w-auto mx-2">취소</button>
+                                            <button type="button" class="btn btn-dark w-auto">저장</button>
                                         </div>
                                     </div>
                                 </div> <!-- card-body -->

@@ -162,7 +162,7 @@
                                                 </select>
                                             </div>
                                             <div class="col">
-                                                <input type="text" class="form-control" value="" placeholder="asdsad">
+                                                <input type="text" class="form-control" value="" placeholder="">
                                             </div>
                                             <div class="col-auto">
                                                 <button type="button" class="btn btn-secondary">검색</button>
@@ -230,7 +230,7 @@
                         <div class="col-5">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h2 class="header-title">사용자 상세</h2>
+                                    <h2 class="header-title">유저 등록</h2>
 
                                     <table class="table common-table border table-fixed">
                                         <tbody>
@@ -244,21 +244,35 @@
                                                 <th class="text-center"><span class="text-primary mx-1">*</span>구분</th>
                                                 <td colspan="3">
                                                     <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="superAdmin" value="superAdmin">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="superAdmin" value="Administrator">
                                                         <label class="form-check-label" for="superAdmin">Administrator</label>
                                                     </div>
                                                     <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="samsungHq" value="samsungHq">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="samsungHq" value="HQ">
                                                         <label class="form-check-label" for="samsungHq">HQ</label>
                                                     </div>
                                                     <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="samsungCor" value="samsungCor">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="samsungCor" value="Subsidiary">
                                                         <label class="form-check-label" for="samsungCor">Subsidiary</label>
                                                     </div>
                                                     <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="samsungChannel" value="samsungChannel">
+                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="samsungChannel" value="Channel">
                                                         <label class="form-check-label" for="samsungChannel">Channel</label>
                                                     </div>
+                                                    <script>
+                                                        $(function() {
+                                                            $('input[name="inlineRadioOptions"]:radio').change(function() {
+                                                                var value = $(this).val();
+                                                                if (value == "Channel") {
+                                                                    $('.check-channel').show();
+                                                                } else {
+                                                                    $('.check-channel').hide();
+                                                                }
+                                                            })
+
+
+                                                        })
+                                                    </script>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -282,6 +296,12 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="check-channel">
+                                                <th class="text-center"><span class="text-primary mx-1">*</span>채널</th>
+                                                <td class="text-center" colspan="3">
+                                                    <input type="text" class="form-control" value="ch-01" readonly>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -335,8 +355,7 @@
                                     </table>
                                     <div class="row g-2 mt-5 justify-content-center">
                                         <div class="col-auto"><button type="button" class="btn btn-gray4 w-auto">취소</button></div>
-                                        <div class="col-auto"><button type="button" class="btn btn-dark w-auto">수정</button></div>
-                                        <div class="col-auto"><button type="button" class="btn btn-danger w-auto">삭제</button></div>
+                                        <div class="col-auto"><button type="button" class="btn btn-dark w-auto">저장</button></div>
                                     </div>
                                 </div> <!-- card-body -->
                             </div>

@@ -85,7 +85,6 @@ let Common = {
         // 
         $('.has-treeview > a').click( function(){
             $(this).parent().toggleClass('hide');
-            // console.log('ads');
         })
 
         $('.daterangepickers').dateRangePicker({

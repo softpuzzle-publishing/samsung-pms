@@ -87,7 +87,7 @@ var Common = {
     }); // 
 
     $('.has-treeview > a').click(function () {
-      $(this).parent().toggleClass('hide'); // console.log('ads');
+      $(this).parent().toggleClass('hide');
     });
     $('.daterangepickers').dateRangePicker({
       inline: true,

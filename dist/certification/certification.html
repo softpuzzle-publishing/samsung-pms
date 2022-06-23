@@ -78,7 +78,7 @@
                                             <p>앱스토어(iOS)나 구글플레이(Android)에서 Google OTP 앱을 다운로드 해주세요.</p>
                                         </div>
                                         <div class="d-grid gap-2">
-                                            <a href="#" class="btn btn-outline-dark">앱 다운로드 하기 (Android | iOS)</a>
+                                            <a href="#" class="btn btn-outline-dark  btn-lg">앱 다운로드 하기 (Android | iOS)</a>
                                             <a href="certification_otp.html" class="btn btn-dark btn-lg">Google OTP 앱에서 QR코드 스캔하기</a>
                                         </div>
                                     </div>
@@ -1003,6 +1003,26 @@
         </div>
     </div>
 
+    <!-- 모달 : 2단계 인증 > 이메일 초기화 > 인증 성공 -->
+    <div class="modal fade" id="modal-reset-email-success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">알림</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-body__desc">
+                        OTP 인증이 초기화 됐습니다.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="../certification/certification.html" class="btn btn-lg btn-dark">확인</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- 모달 : 달력-->
     <div class="modal fade" id="modal-data-picker" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-datepicker border">
@@ -1017,7 +1037,6 @@
             </div>
         </div>
     </div>
-
 
 </body>
 

@@ -51,8 +51,11 @@ let Common = {
 
         // 데이트피커
         $("#before-datepicker, #after-datepicker").datepicker({
-            dateFormat: "yy.mm.dd"
-        });
+            dateFormat: "yy.mm.dd",
+            showButtonPanel: true,
+            currentText: "Now",
+        }).datepicker('setDate', 'today');
+       
         //
         function readImage(input) {
             // 인풋 태그에 파일이 있는 경우

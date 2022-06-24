@@ -355,7 +355,9 @@ textarea{ resize: none;}
         min-width: 180px!important;
     }
     .select2-container--default .select2-selection--single .select2-selection__arrow{
-        background-image: url(../images/icon-dashboard-select.svg);
+        background-image: url(../images/icon-dashboard-select.svg)!important;
+        width: 18px;
+        height: 18px;
     }
     .select2-container--default .select2-selection--single{
         border: 0;

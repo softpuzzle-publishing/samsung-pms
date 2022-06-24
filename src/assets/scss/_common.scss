@@ -218,6 +218,7 @@ textarea{ resize: none;}
 //multi-select 디자인 수정
 .dashboardcode-bsmultiselect{
     position:relative;
+    min-width: 120px;
     .dropdown-menu{
         column-count: 1 !important;
         transform: none!important;
@@ -289,15 +290,19 @@ textarea{ resize: none;}
 
 // 셀렉트2 커스텀
 .select2-container--default .select2-selection--single .select2-selection__arrow{
-    background-image: escape-svg($form-select-custom-indicator);
+    background-image: escape-svg($form-select-indicator);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 16px;
-    height: 12px;
+    right: 16px!important;
+    width: 9px;
+    height: 8px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b{
     border:0;
+}
+.select2-results__option{
+    padding: 6px 14px!important;
 }
 
 .select2-container{
@@ -308,26 +313,27 @@ textarea{ resize: none;}
     border-radius: 0.25rem;
     top: 100%;
 }
-
-.form-select.dashboard{
-    background-color:transparent;
-    border: 0;
-
-    // background-position: right center;
-    // padding-right: 1.05rem;
-    // min-width: 150px;
-    // background-size: 21px 17px;
-    & ~ .select2 {
-        .select2-container--default .select2-selection--single .select2-selection__arrow{
-            background-image: url(../images/icon-dashboard-select.svg);
-        }
-    }
+.select2-container .select2-selection--single .select2-selection__rendered{
+    padding-left: 14px;
 }
+
 .select2-container--open .select2-dropdown--below{
     border-top: 1px solid $gray-300;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
     margin-top: -1px;
+}
+.form-select.custom + .select2-container{
+    background:#ededed!important;
+    min-width: 120px;
+    .selection .select2-selection--single .select2-selection__arrow{
+        background-image: escape-svg($form-select-custom-indicator)!important;
+        width: 16px;
+        height: 12px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow{
+
+    }
 }
 
 .dashboard{

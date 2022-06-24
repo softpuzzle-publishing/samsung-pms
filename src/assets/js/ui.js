@@ -107,7 +107,7 @@ let Common = {
 // search select-box
 $(document).ready(function () {
     $(".search-select").select2();
-    $(".form-select.custom").not('[multiple="multiple"]').select2(
+    $("select.form-select").not('[multiple="multiple"], .search-select').select2(
         {
             minimumResultsForSearch: Infinity
         }

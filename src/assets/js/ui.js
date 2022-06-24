@@ -37,14 +37,16 @@ let Common = {
                         },
                     },
                     css: {
-                        pick: "",
+                        pick: "selected",
                         pickButton: "btn-close ms-1",
                         choiceContent: 'form-check mb-0'
                     },
-                    placeholder: ph,
+                    // placeholder: ph,
                 });
+                $(".form-select.custom[placeholder='" + ph + "']").next().find('ul.form-control').prepend(`<li class="placeholder-wrap">` + ph + `</li>`);
             });
         }
+
 
 
         // 데이트피커
@@ -105,6 +107,12 @@ let Common = {
 // search select-box
 $(document).ready(function () {
     $(".search-select").select2();
+    $(".form-select.custom").not('[multiple="multiple"]').select2(
+        {
+            minimumResultsForSearch: Infinity
+        }
+    );
 });
+
 
 Common.init();

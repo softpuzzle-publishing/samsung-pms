@@ -50,12 +50,36 @@ let Common = {
 
 
         // 데이트피커
-        $("#before-datepicker, #after-datepicker").datepicker({
-            dateFormat: "yy.mm.dd",
-            showButtonPanel: true,
-            currentText: "Now",
-        }).datepicker('setDate', 'today');
-       
+        // $("#before-datepicker, #after-datepicker").datepicker({
+        //     dateFormat: "yy.mm.dd",
+        //     showButtonPanel: true,
+        //     currentText: "Now",
+        // }).datepicker('setDate', 'today');
+        $("#before-datepicker, #after-datepicker").datetimepicker({
+			format: "yyyy-mm-dd",
+			minDate: '+7',
+			closeText: "닫기",
+			prevText: "이전달",
+			nextText: "다음달",
+			currentText: "오늘",
+			monthNames: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+			monthNamesShort: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
+			dayNames: ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"],
+			dayNamesShort: ["(일)", "(월)", "(화)", "(수)", "(목)", "(금)", "(토)"],
+			dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+			weekHeader: "주",
+			dateFormat: "yy-mm-dd",
+			firstDay: 0,
+			isRTL: false,
+			showMonthAfterYear: true,
+			showOtherMonths: true,
+			changeMonth: true,
+			changeYear: true,
+			beforeShow: function (input, inst) {
+				$('#ui-datepicker-div').addClass('datepicker-wrapper');
+			}
+		});
+
         //
         function readImage(input) {
             // 인풋 태그에 파일이 있는 경우

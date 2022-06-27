@@ -80,7 +80,7 @@
                                             <p class="fw-bold">
                                                 [총 <span class="text-primary">106</span>건]
                                             </p>
-                                            <a href="price_data_registration.html" class="btn btn-xs btn-primary rounded-pill" data-toggle="right-card">신규등록</a>
+                                            <a href="#javascript:void(0)" class="btn btn-xs btn-primary rounded-pill" data-toggle="right-card">신규등록</a>
                                         </div>
                                         <table class="table custom-table table-hover">
                                             <thead>
@@ -149,10 +149,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-5" id="right-card">
+                        <div class="col-5 d-none" id="right-card">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h2 class="header-title">가격 데이터 등록</h2>
+
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h2 class="header-title">가격 데이터 등록</h2>
+                                        <a href="#javascript:void(0)" class="tab-close"><i class="icon-plus rotate"></i></a>
+                                    </div>
 
                                     <form action="" class="form-wrap mt-5">
 
@@ -332,7 +336,7 @@
                                                         <input type="text" class="form-control" value="Full Price">
                                                     </div>
                                                     <div class="col-3">
-                                                        <input type="text" class="form-control" value="1288.98">
+                                                        <input type="number" class="form-control" value="1288.98">
                                                     </div>
                                                     <div class="col-4">
                                                         <select class="form-select w-auto search-select" aria-label="Default select">

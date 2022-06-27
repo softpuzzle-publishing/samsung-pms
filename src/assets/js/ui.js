@@ -19,6 +19,14 @@ let Common = {
             }
         });
 
+        $('.tab-close').on('click', function(){
+            $("#right-card").addClass("d-none");
+        })      
+         // 버튼 active
+         $('[data-toggle="right-card"]').on('click', function (e) {
+            $("#right-card").toggleClass("d-none");
+        });
+
         // 버튼 active
         $('[data-toggle="btn-select"]').on('click', function (e) {
             e.preventDefault();
@@ -40,13 +48,12 @@ let Common = {
                         pick: "selected",
                         pickButton: "btn-close ms-1",
                         choiceContent: 'form-check mb-0'
-                    },
+                    }
                     // placeholder: ph,
                 });
                 $(".form-select.custom[placeholder='" + ph + "']").next().find('ul.form-control').prepend(`<li class="placeholder-wrap">` + ph + `</li>`);
             });
         }
-
 
 
         // 데이트피커

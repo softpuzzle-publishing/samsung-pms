@@ -58,7 +58,9 @@ textarea{ resize: none;}
 .icon-paging-end{width: 30px; height:30px; background-image:url('../images/icon-paging-end.png');}
 .icon-more{width: 6px; height:10px; background-image:url('../images/icon-more.svg');}
 
-.icon-plus{width: 12px; height:12px; background-image:url('../images/icon-plus.png');}
+.icon-plus{width: 12px; height:12px; background-image:url('../images/icon-plus.png');
+    &.rotate{transform: rotate(45deg);}
+}
 .icon-minus{width: 12px; height:2px; background-image:url('../images/icon-minus.png');}
 
 .icon-close-circle{width: 28px; height:28px; background-image:url('../images/icon-close-circle.svg');}
@@ -87,6 +89,11 @@ textarea{ resize: none;}
 .height-320px{height: 320px;}
 
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 // line
 .dash-line{ width: 100%; height: 1px; background-color: $black; margin: 1.8rem 0;}

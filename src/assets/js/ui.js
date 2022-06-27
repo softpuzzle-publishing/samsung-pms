@@ -33,7 +33,7 @@ let Common = {
                     cssPatch: {
                         choice: 'p-1',
                         choices: {
-                            columnCount: "2",
+                            columnCount: "1",
                         },
                     },
                     css: {

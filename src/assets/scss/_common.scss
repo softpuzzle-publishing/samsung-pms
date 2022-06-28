@@ -157,19 +157,7 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: $black; border-color: $black; box-sizing: 0;
 }
 
-//select multiple
-.form-select[multiple]{opacity: 0;}
-.dashboardcode-bsmultiselect{
-    .dropdown-menu{padding: .5rem;}
-    .btn-close{margin-left: 3px;}
-    .form-control{
-        // border-color: $input-border-color;font-weight: 400;position: relative;padding-right: $form-select-indicator-padding;overflow: hidden;
-        &::before{content: '';width: 50px;height: auto;background: #fff;position: absolute;right: 0;top: 0;}
-        &::after{border: 0;content: '';
-            _background-image: escape-svg($form-select-custom-indicator);background-size: 16px 12px;background-position: 0 0;background-repeat: no-repeat; width: 16px;height: 16px;background-size: 16px 12px;position: absolute;top: 50%;right: 1rem;transform: translateY(-50%);}
-        &::placeholder{color: #000;}
-    }
-}
+
 
 // form
 .form-wrap{
@@ -222,12 +210,18 @@ input[type="number"]::-webkit-inner-spin-button {
 .bg-w-disabled:disabled, .bg-w-disabled[readonly]{
     background-color: #fff; cursor: pointer;
 }
+//select multiple
+.form-select[multiple]{opacity: 0;}
+.dashboardcode-bsmultiselect{
+   
+}
 
 //multi-select 디자인 수정
 .dashboardcode-bsmultiselect{
     position:relative;
     min-width: 120px;
     .dropdown-menu{
+        padding: .5rem;
         column-count: 1 !important;
         transform: none!important;
         top: 100%!important;
@@ -235,10 +229,19 @@ input[type="number"]::-webkit-inner-spin-button {
         min-width: auto;
         border:1px solid #d8d8d8;
         >ul{
-            overflow-y: auto;
-            max-height: 300px;
+            display: block;
+            height: 100%;
+            max-height: 300px!important;
+            overflow-y: auto!important;
         }
-
+    }
+    .btn-close{margin-left: 3px;}
+    .form-control{
+        // border-color: $input-border-color;font-weight: 400;position: relative;padding-right: $form-select-indicator-padding;overflow: hidden;
+        &::before{content: '';width: 50px;height: auto;background: #fff;position: absolute;right: 0;top: 0;}
+        &::after{border: 0;content: '';
+            _background-image: escape-svg($form-select-custom-indicator);background-size: 16px 12px;background-position: 0 0;background-repeat: no-repeat; width: 16px;height: 16px;background-size: 16px 12px;position: absolute;top: 50%;right: 1rem;transform: translateY(-50%);}
+        &::placeholder{color: #000;}
     }
     .btn-close{
         background-size: 9px;

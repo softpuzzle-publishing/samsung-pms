@@ -234,6 +234,10 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 100%!important;
         min-width: auto;
         border:1px solid #d8d8d8;
+        >ul{
+            overflow-y: auto;
+            max-height: 300px;
+        }
 
     }
     .btn-close{

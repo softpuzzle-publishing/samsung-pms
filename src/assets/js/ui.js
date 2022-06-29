@@ -130,8 +130,7 @@ let Common = {
             format: 'YYYY.MD.DD',
             language: 'ko',
             monthSelect: true,
-            yearSelect: true,
-            stickyMonths: true
+            yearSelect: true
         });
         
       

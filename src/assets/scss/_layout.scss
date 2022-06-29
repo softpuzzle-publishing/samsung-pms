@@ -20,7 +20,12 @@
     .dropdown-menu{
         min-width: -webkit-fill-available;
     }
+    .container-fluid{
+        padding-left:0;
+    }
+    .navbar-brand{width: 170px;}
 }
+
 
 .breadcrumb{
     i{vertical-align: middle;transform: translateY(-2px);}

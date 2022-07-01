@@ -137,15 +137,7 @@ let Common = {
 
     }
 }
-// search select-box
-$(document).ready(function () {
-    $(".search-select").select2();
-    $("select.form-select").not('[multiple="multiple"], .search-select').select2(
-        {
-            minimumResultsForSearch: Infinity
-        }
-    );
-});
+
 
 
 Common.init();

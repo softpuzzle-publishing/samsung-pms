@@ -258,3 +258,9 @@
         b{border-color: #000 transparent transparent transparent;}
     }
 }
+
+
+// 부트스트랩 셀렉트 커스텀(플러그인)
+.bootstrap-select .dropdown-menu{max-height:300px;}
+.inner.show{max-height:240px;}
+.dropdown-menu.show{inset:inherit!important; transform:inherit!important;}

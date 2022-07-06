@@ -64,7 +64,7 @@ let Common = {
         // }).datepicker('setDate', 'today');
         $("#before-datepicker, #after-datepicker").datetimepicker({
 			format: "yyyy-mm-dd",
-			minDate: '+7',
+			minDate: '0',
 			closeText: "닫기",
 			prevText: "이전달",
 			nextText: "다음달",

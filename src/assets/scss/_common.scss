@@ -243,6 +243,7 @@ input[type="number"]::-webkit-inner-spin-button {
             _background-image: escape-svg($form-select-custom-indicator);background-size: 16px 12px;background-position: 0 0;background-repeat: no-repeat; width: 16px;height: 16px;background-size: 16px 12px;position: absolute;top: 50%;right: 1rem;transform: translateY(-50%);}
         &::placeholder{color: #000;}
     }
+  
     .btn-close{
         background-size: 9px;
         padding: 0.2rem;
@@ -389,4 +390,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .ui-datepicker .ui-datepicker-buttonpane button{
     height: 25px;
+}
+.important-mark{
+    &::before{
+        content: "*"; position: absolute; color: $primary; font-size: 16px; top: 55%; transform: translateY(-50%); left: -15px;
+    }
 }

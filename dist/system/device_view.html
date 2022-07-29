@@ -145,118 +145,120 @@
                         </ol>
                     </nav>
                     <h1 class="page-title">DEVICE MODEL 관리</h1>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h2 class="header-title">DEVICE MODEL 목록</h2>
-                                    <div class="search">
-                                        <div class="row gx-2">
-                                            <div class="col-2">
-                                                <select class="form-select custom" multiple="multiple" placeholder="모델명">
-                                                    <option value="모델명">모델명</option>
-                                                </select>
-                                            </div>
-                                            <div class="col">
-                                                <input type="text" class="form-control" value="" placeholder="">
-                                            </div>
-                                            <div class="col-auto">
-                                                <button type="button" class="btn btn-secondary">검색</button>
+                    <div class="content-wrapper">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h2 class="header-title">DEVICE MODEL 목록</h2>
+                                        <div class="search">
+                                            <div class="row gx-2">
+                                                <div class="col-2">
+                                                    <select class="form-select custom" multiple="multiple" placeholder="모델명">
+                                                        <option value="모델명">모델명</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" value="" placeholder="">
+                                                </div>
+                                                <div class="col-auto">
+                                                    <button type="button" class="btn btn-secondary">검색</button>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="table-container mt-5">
+                                            <div class="table-container__total">
+                                                <p class="fw-bold">
+                                                    [총 <span class="text-primary">106</span>건]
+                                                </p>
+                                            </div>
+                                            <table class="table custom-table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center">No</th>
+                                                        <th class="text-center">모델명</th>
+                                                        <th class="text-center">최근 수집일시</th>
+                                                        <th class="text-center">엠바고</th>
+                                                        <th class="text-center">관리</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr data-toggle="right-card">
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">Galaxy S22</td>
+                                                        <td class="text-center">2022/12/31 00:00:00</td>
+                                                        <td class="text-center">2022/12/31 00:00:00 </td>
+                                                        <td class="text-center">
+                                                        </td>
+                                                    </tr>
+                                                    <tr data-toggle="right-card">
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">Galaxy S22</td>
+                                                        <td class="text-center">2022/12/31 00:00:00</td>
+                                                        <td class="text-center">2022/12/31 00:00:00 </td>
+                                                        <td class="text-center">
+                                                            <a href="device_registration.html" class="btn btn-dark btn-sm">등록</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <nav class="pagination-wrap d-flex justify-content-center" aria-label="Page navigation">
+                                            <ul class="pagination custom-pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#"><i class="icon-paging-first"></i></a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#"><i class="icon-paging-prev"></i></a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#"><i class="icon-paging-next"></i></a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#"><i class="icon-paging-end"></i></a>
+                                                </li>
+                                            </ul>
+                                        </nav>
                                     </div>
-                                    <div class="table-container mt-5">
-                                        <div class="table-container__total">
-                                            <p class="fw-bold">
-                                                [총 <span class="text-primary">106</span>건]
-                                            </p>
-                                        </div>
-                                        <table class="table custom-table table-hover">
-                                            <thead>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h2 class="header-title">DEVICE MODEL 상세</h2>
+                                        <table class="table common-table border table-fixed">
+                                            <tbody>
                                                 <tr>
                                                     <th class="text-center">No</th>
+                                                    <td class="text-center">1</td>
                                                     <th class="text-center">모델명</th>
+                                                    <td class="text-center">Galaxy S22</td>
+                                                </tr>
+                                                <tr>
                                                     <th class="text-center">최근 수집일시</th>
+                                                    <td colspan="3">2022/05/04 01:11:22</td>
+                                                </tr>
+                                                <tr>
                                                     <th class="text-center">엠바고</th>
-                                                    <th class="text-center">관리</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr data-toggle="right-card">
-                                                    <td class="text-center">1</td>
-                                                    <td class="text-center">Galaxy S22</td>
-                                                    <td class="text-center">2022/12/31 00:00:00</td>
-                                                    <td class="text-center">2022/12/31 00:00:00 </td>
-                                                    <td class="text-center">
-                                                    </td>
-                                                </tr>
-                                                <tr data-toggle="right-card">
-                                                    <td class="text-center">1</td>
-                                                    <td class="text-center">Galaxy S22</td>
-                                                    <td class="text-center">2022/12/31 00:00:00</td>
-                                                    <td class="text-center">2022/12/31 00:00:00 </td>
-                                                    <td class="text-center">
-                                                        <a href="device_registration.html" class="btn btn-dark btn-sm">등록</a>
+                                                    <td colspan="3">
+                                                        2022/12/31 00:00:00
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div>
-                                    <nav class="pagination-wrap d-flex justify-content-center" aria-label="Page navigation">
-                                        <ul class="pagination custom-pagination">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#"><i class="icon-paging-first"></i></a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#"><i class="icon-paging-prev"></i></a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#"><i class="icon-paging-next"></i></a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#"><i class="icon-paging-end"></i></a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-5">
-                            <div class="card h-100">
-                                <div class="card-body">
-                                    <h2 class="header-title">DEVICE MODEL 상세</h2>
-                                    <table class="table common-table border table-fixed">
-                                        <tbody>
-                                            <tr>
-                                                <th class="text-center">No</th>
-                                                <td class="text-center">1</td>
-                                                <th class="text-center">모델명</th>
-                                                <td class="text-center">Galaxy S22</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="text-center">최근 수집일시</th>
-                                                <td colspan="3">2022/05/04 01:11:22</td>
-                                            </tr>
-                                            <tr>
-                                                <th class="text-center">엠바고</th>
-                                                <td colspan="3">
-                                                    2022/12/31 00:00:00
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <div class="row mt-5">
-                                        <div class="d-flex justify-content-center">
-                                            <button type="button" class="btn btn-gray4 w-auto">삭제</button>
-                                            <a href="device_modify.html" class="btn btn-dark w-auto mx-2">수정</a>
+                                        <div class="row mt-5">
+                                            <div class="d-flex justify-content-center">
+                                                <button type="button" class="btn btn-gray4 w-auto">삭제</button>
+                                                <a href="device_modify.html" class="btn btn-dark w-auto mx-2">수정</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div> <!-- card-body -->
+                                    </div> <!-- card-body -->
+                                </div>
                             </div>
                         </div>
                     </div>

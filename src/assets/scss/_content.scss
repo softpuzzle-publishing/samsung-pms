@@ -86,7 +86,7 @@
         width: 45px;
         height: 45px;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         &.total-users{
             background-image: url(../images/icon-dashboard-total-users.svg);
         }

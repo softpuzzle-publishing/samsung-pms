@@ -48,6 +48,7 @@ textarea{ resize: none;}
 [class^=icon-]{display: inline-block;vertical-align: middle;background-repeat: no-repeat;background-position: 50% 50%;}
 .icon-logout{width: 30px;height: 30px; background-image: url('../images/icon-logout.svg');}
 .icon-user{width: 30px;height: 30px; background-image: url('../images/icon-user.svg');}
+.icon-user-download{width: 30px;height: 30px; background-image: url('../images/icon-user-download.svg');}
 .icon-home{width: 13px; height:13px; background-image:url('../images/icon-home.png');}
 .icon-arrow-gray{width: 20px; height:20px; background-image:url('../images/icon-arrow-next-gray5.png');}
 .icon-select-top{width: 20px; height:20px; background-image:url('../images/icon-select.png'); background-position: 0 7px;}
@@ -112,6 +113,8 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
+.cursor-none{cursor:auto;}
+
 // table
 .table-container{
     .table-container__total{ display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;
@@ -121,7 +124,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .custom-table{
     thead{ border-top: 1px solid $black;}
     th{padding: 15px 0.5rem; font-size: 13px; font-weight: 700; vertical-align: middle;}
-    td{padding: 27px 0.5rem; font-size: 14px; font-weight: 400; color: $gray-500; vertical-align: middle;}
+    td{padding: 27px 0.5rem; font-size: 12px; font-weight: 400; color: $gray-500; vertical-align: middle;}
     >:not(:first-child){
         border-top: 0;
     }
@@ -160,6 +163,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 // form
+.form-control:disabled, .form-control[readonly]{
+    background-color: #eeeeee61;
+    opacity: 1;
+}
 .form-wrap{
     >.row>.col-auto{
         label{

@@ -403,3 +403,7 @@ input[type="number"]::-webkit-inner-spin-button {
         content: "*"; position: absolute; color: $primary; font-size: 16px; top: 55%; transform: translateY(-50%); left: -15px;
     }
 }
+
+.overflow-x-auto{
+  overflow-x: auto;
+}

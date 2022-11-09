@@ -266,7 +266,6 @@
             </main> <!-- main -->
         </div>
     </div>
-
     <!-- 용량 설정 -->
     <div class="modal fade" id="modal-modelcapacity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -339,10 +338,10 @@
 
     <!-- 가격데이터 미리보기 입력 -->
     <div class="modal fade" id="modal-preview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width: 500px; margin: 0.5rem auto;">
             <div class="modal-content border-4 border-dark">
                 <div class="moda-header p-3"></div>
-                <div class="modal-body">
+                <div class="modal-body w-100" style="overflow-x: hidden;">
                     <div class="modal-pricedata d-flex flex-wrap flex-column">
                         <b>Price</b>
                         <b class="modal-pricedata__model mt-3">The price for <br>
@@ -354,8 +353,8 @@
                             <p>Early upgrade with AT&T Next Up</p>
                         </div>
                         <b class="mt-4">Choose the capacity</b>
-                        <div class="modal-pricedata__capacity">
-                            <div class="row gx-2 gy-2 pt-1">
+                        <div class="modal-pricedata__capacity overflow-x-auto pb-2 w-100">
+                            <div class="hstack gap-2 pt-1 flex-nowrap ">
                                 <div class="col-auto">
                                     <input type="radio" class="btn-check" name="capacity" id="btncheck1" autocomplete="off">
                                     <label class="btn btn-gray4 btn-sm" for="btncheck1">128G</label>
@@ -367,6 +366,22 @@
                                 <div class="col-auto">
                                     <input type="radio" class="btn-check" name="capacity" id="btncheck3" autocomplete="off">
                                     <label class="btn btn-gray4 btn-sm" for="btncheck3">512G</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
+                                    <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
+                                    <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
+                                    <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
+                                    <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
                                 </div>
                                 <div class="col-auto">
                                     <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">

@@ -148,7 +148,7 @@
                     <h1 class="page-title">가격 데이터 등록/관리</h1>
                     <div class="content-wrapper">
                         <div class="row">
-                            <div class="col">
+                            <div class="col d-none">
                                 <div class="card h-100">
                                     <div class="card-body">
                                         <h2 class="header-title">가격 데이터 목록</h2>
@@ -301,7 +301,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-5 d-none" id="right-card">
+                            <div class="col-7" id="right-card">
                                 <div class="card h-100">
                                     <div class="card-body">
                                         <div class="d-flex align-items-center justify-content-between">
@@ -460,74 +460,71 @@
                                                     <label for="" class="d-flex">가격</label>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="row g-2 mb-2">
-                                                        <div class="col-auto">
-                                                            <input type="radio" class="btn-check" name="capacity" id="btncheck1" autocomplete="off">
-                                                            <label class="btn btn-gray4 btn-sm" for="btncheck1">128G</label>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <input type="radio" class="btn-check" name="capacity" id="btncheck2" autocomplete="off">
-                                                            <label class="btn btn-gray4 btn-sm" for="btncheck2">256G</label>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <input type="radio" class="btn-check" name="capacity" id="btncheck3" autocomplete="off">
-                                                            <label class="btn btn-gray4 btn-sm" for="btncheck3">512G</label>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
-                                                            <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <button type="button" class="btn btn-sm btn-gray2" data-bs-toggle="modal" data-bs-target="#modal-modelcapacity"><i class="icon-plus"></i></button>
-                                                        </div>
-                                                    </div>
                                                     <div class="row g-2 mt-4">
-                                                        <div class="col d-flex align-items-center ">
-                                                            <div class="important-mark position-relative">
-                                                                <input type="text" class="form-control" value="Full Price">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <input type="number" class="form-control" value="1288.98">
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <select class="selectpicker w-auto" data-show-subtext="true" data-live-search="true">
-                                                                <option data-subtext="">US$</option>
-                                                                <option data-subtext="" disabled="disabled">\</option>
-                                                            </select>
-                                                        </div>
                                                         <div class="col-auto">
                                                             <button type="button" class="btn btn-gray2"><i class="icon-plus"></i></button>
                                                         </div>
-                                                        <div class="col-12">
-                                                            <input type="text" class="form-control" value="Price Description">
+                                                        <div class="col">
+                                                            <div class="row g-2">
+                                                                <div class="col-3">
+                                                                    <input type="text" class="form-control" value="Monthly">
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <input type="text" class="form-control" value="1288.98">
+                                                                </div>
+                                                                <div class="col">
+                                                                    <select class="selectpicker w-auto" data-show-subtext="true" data-live-search="true">
+                                                                        <option data-subtext="">US$</option>
+                                                                        <option data-subtext="" disabled="disabled">\</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <input type="text" class="form-control" value="24" style="width: 60px;">
+                                                                </div>
+                                                                <div class="col-auto" style="width: 104px;">
+                                                                    <button type="button" class="btn btn-gray2"><i class="icon-plus"></i></button>
+                                                                    <button type="button" class="btn btn-gray2"><i class="icon-minus"></i></button>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input type="text" class="form-control" value="Price Description">
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="row g-2 mt-4">
-                                                        <div class="col-3">
-                                                            <input type="text" class="form-control" value="Monthly">
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <input type="text" class="form-control" value="1288.98">
+                                                        <div class="col-auto">
+                                                            <button type="button" class="btn btn-gray2"><i class="icon-plus"></i></button>
                                                         </div>
                                                         <div class="col">
-                                                            <select class="selectpicker w-auto" data-show-subtext="true" data-live-search="true">
-                                                                <option data-subtext="">US$</option>
-                                                                <option data-subtext="" disabled="disabled">\</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <input type="text" class="form-control" value="24">
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <button type="button" class="btn btn-gray2"><i class="icon-minus"></i></button>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <input type="text" class="form-control" value="Price Description">
+                                                            <div class="row g-2">
+                                                                <div class="col-3">
+                                                                    <input type="text" class="form-control" value="Monthly">
+                                                                </div>
+                                                                <div class="col-3">
+                                                                    <input type="text" class="form-control" value="1288.98">
+                                                                </div>
+                                                                <div class="col">
+                                                                    <select class="selectpicker w-auto" data-show-subtext="true" data-live-search="true">
+                                                                        <option data-subtext="">US$</option>
+                                                                        <option data-subtext="" disabled="disabled">\</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <input type="text" class="form-control" value="24" style="width: 60px;">
+                                                                </div>
+                                                                <div class="col-auto" style="width: 104px;">
+                                                                    <button type="button" class="btn btn-gray2"><i class="icon-minus"></i></button>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <input type="text" class="form-control" value="Price Description">
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
+
                                             <!-- line -->
                                             <div class="dash-line"></div>
                                             <!-- line //-->
@@ -572,7 +569,6 @@
             </main> <!-- main -->
         </div>
     </div>
-
 
     <!-- 용량 설정 -->
     <div class="modal fade" id="modal-modelcapacity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -646,10 +642,10 @@
 
     <!-- 가격데이터 미리보기 입력 -->
     <div class="modal fade" id="modal-preview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width: 500px; margin: 0.5rem auto;">
             <div class="modal-content border-4 border-dark">
                 <div class="moda-header p-3"></div>
-                <div class="modal-body">
+                <div class="modal-body w-100" style="overflow-x: hidden;">
                     <div class="modal-pricedata d-flex flex-wrap flex-column">
                         <b>Price</b>
                         <b class="modal-pricedata__model mt-3">The price for <br>
@@ -661,8 +657,8 @@
                             <p>Early upgrade with AT&T Next Up</p>
                         </div>
                         <b class="mt-4">Choose the capacity</b>
-                        <div class="modal-pricedata__capacity">
-                            <div class="row gx-2 gy-2 pt-1">
+                        <div class="modal-pricedata__capacity overflow-x-auto pb-2 w-100">
+                            <div class="hstack gap-2 pt-1 flex-nowrap ">
                                 <div class="col-auto">
                                     <input type="radio" class="btn-check" name="capacity" id="btncheck1" autocomplete="off">
                                     <label class="btn btn-gray4 btn-sm" for="btncheck1">128G</label>
@@ -674,6 +670,22 @@
                                 <div class="col-auto">
                                     <input type="radio" class="btn-check" name="capacity" id="btncheck3" autocomplete="off">
                                     <label class="btn btn-gray4 btn-sm" for="btncheck3">512G</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
+                                    <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
+                                    <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
+                                    <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
+                                    <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
                                 </div>
                                 <div class="col-auto">
                                     <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">

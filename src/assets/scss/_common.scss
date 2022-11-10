@@ -62,6 +62,7 @@ textarea{ resize: none;}
 .icon-plus{width: 12px; height:12px; background-image:url('../images/icon-plus.png');
     &.rotate{transform: rotate(45deg);}
 }
+.icon-plus-circle{width: 24px; height:24px; background-image:url('../images/icon-plus-circle.svg'); margin:-4px -6px;}
 .icon-minus{width: 12px; height:2px; background-image:url('../images/icon-minus.png');}
 
 .icon-close-circle{width: 28px; height:28px; background-image:url('../images/icon-close-circle.svg');}

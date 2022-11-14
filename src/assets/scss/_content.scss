@@ -264,3 +264,11 @@
 .bootstrap-select .dropdown-menu{max-height:300px;}
 .inner.show{max-height:240px;}
 .dropdown-menu.show{inset:inherit!important; transform:inherit!important;}
+
+
+
+
+.chart-usage-area, .chart-channel-area{
+  height: auto;
+  min-height: 420px;
+}

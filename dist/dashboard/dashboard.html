@@ -191,22 +191,24 @@
                                         <div class="col">
                                             <div class="d-flex align-items-center justify-content-between mb-3">
                                                 <h2 class="header-title mb-0">User Usage</h2>
-                                                <div class="row gx-2 gy-2">
-                                                    <select class="form-select dashboard" aria-label="Default select">
-                                                        <option selected>Today</option>
-                                                        <option value="1">Last 7 days</option>
-                                                        <option value="2">Past month</option>
-                                                        <option value="3">Past 3 month</option>
-                                                        <option value="3">Past 6 month</option>
-                                                    </select>
-                                                </div>
                                             </div>
-
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <div class="overflow-hidden">
-
-                                                        <canvas id="chart-usage"></canvas>
+                                                    <div class="row">
+                                                        <div class="col mb-3">
+                                                            <select class="form-select dashboard" aria-label="Default select">
+                                                                <option selected>Today</option>
+                                                                <option value="1">Last 7 days</option>
+                                                                <option value="2">Past month</option>
+                                                                <option value="3">Past 3 month</option>
+                                                                <option value="3">Past 6 month</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="chart-usage-area">
+                                                            <canvas id="chart-usage"></canvas>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -217,20 +219,19 @@
                                         <div class="col">
                                             <div class="d-flex align-items-center justify-content-between mb-3">
                                                 <h2 class="header-title mb-0">Active channel</h2>
-                                                <div class="row gx-2 gy-2">
-                                                    <select class="form-select dashboard d-inline w-auto" aria-label="Default select">
-                                                        <option selected>Today</option>
-                                                        <option value="1">Last 7 days</option>
-                                                        <option value="2">Past month</option>
-                                                        <option value="3">Past 3 month</option>
-                                                        <option value="3">Past 6 month</option>
-                                                    </select>
-                                                </div>
                                             </div>
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <div class="overflow-hidden">
-                                                        <canvas id="chart-channel"></canvas>
+                                                    <div class="row">
+                                                        <div class="col mb-3">
+                                                            <select class="form-select dashboard opacity-0" aria-label="Default select">
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="chart-channel-area">
+                                                            <canvas id="chart-channel"></canvas>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -251,10 +252,10 @@
 
                                             // User Usage 차트
                                             const chartVertical = {
-                                                type: 'bar',
+                                                type: 'horizontalBar',
                                                 data: {
                                                     datasets: [{
-                                                        data: [1000, 2000, 5000],
+                                                        data: [100, 200, 500],
                                                         borderWidth: 1,
                                                         backgroundColor: ['#97D653', '#FFB546', '#8093DC'],
                                                         // barThickness: 44,
@@ -266,6 +267,8 @@
                                                     // labels: ["1", "2", "3"],
                                                 },
                                                 options: {
+                                                    maintainAspectRatio: false, //상위 div를 무시한 채 창 크기에 따라 크기가 크기가 마음대로 바뀌던 것이 상위 div에 구속된다
+                                                    // responsive:true,
                                                     tooltips: {
                                                         enabled: false
                                                     },
@@ -331,18 +334,19 @@
                                                 // type: 'doughnut',
                                                 data: {
                                                     datasets: [{
-                                                        data: [80, 70, 60, 50, 40, 30],
+                                                        data: [80, 70, 60, 50, 40, 30, 40, 30, 80, 70, 60, 50, 40, 30, 40, 30, ],
                                                         borderWidth: 1,
-                                                        backgroundColor: ['#97D653', '#FFB546', '#8093DC', '#FF4337', '#00B3E3'],
+                                                        backgroundColor: ['#97D653', '#FFB546', '#8093DC', '#FF4337', '#00B3E3', '#FF4337', '#00B3E3', '#97D653', '#FFB546', '#8093DC', '#FF4337', '#00B3E3', '#FF4337', '#00B3E3'],
                                                         // barThickness: 28,
                                                         borderWidth: 0,
-                                                        minBarLength: 20,
+                                                        minBarLength: 10,
                                                         barPercentage: 0.5
                                                     }],
-                                                    labels: ["S1-CH2", "S2-CH4", "S3-CH1", "S5-CH2", "S4-CH2"],
-
+                                                    labels: ["S1-CH2", "S2-CH4", "S3-CH1", "S5-CH2", "S4-CH2", "S5-CH2", "S4-CH2", "S1-CH2", "S2-CH4", "S3-CH1", "S5-CH2", "S4-CH2", "S5-CH2", "S4-CH2"],
                                                 },
                                                 options: {
+                                                    maintainAspectRatio: false, //상위 div를 무시한 채 창 크기에 따라 크기가 크기가 마음대로 바뀌던 것이 상위 div에 구속된다
+                                                    // responsive:true,
                                                     tooltips: {
                                                         enabled: false
                                                     },

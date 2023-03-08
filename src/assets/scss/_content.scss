@@ -120,9 +120,16 @@
         margin-top: 0.5rem;
         font-size: 32px;
     }
+    .currency-text :last-child{
+        color: gray;
+    }
+
     &:hover{
         color:$white;
         background-color: $primary;
+        .currency-text :last-child{
+            color: $white;
+        }
         .title-image{
             &.total-users{
                 background-image: url(../images/icon-dashboard-total-users-white.svg);
@@ -135,6 +142,18 @@
             }
             &.channels{
                 background-image: url(../images/icon-dashboard-channels-white.svg);
+            }
+            &.subsidiary-user {
+                background-image: url(../images/Group\ 1321315256W.svg);
+            }
+            &.channel-user {
+                background-image: url(../images/Group\ 1321315258w.svg);
+            }
+            &.time-zone {
+                background-image: url(../images/Group\ 1321315262w.svg);
+            }
+            &.currency {
+                background-image: url(../images/Group\ 1321315264w.svg);
             }
         }
     }

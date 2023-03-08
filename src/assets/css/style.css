@@ -1011,9 +1011,15 @@ body {
   margin-top: 0.5rem;
   font-size: 32px;
 }
+.active-device .currency-text :last-child {
+  color: gray;
+}
 .active-device:hover {
   color: #fff;
   background-color: #2189FF;
+}
+.active-device:hover .currency-text :last-child {
+  color: #fff;
 }
 .active-device:hover .title-image.total-users {
   background-image: url(../images/icon-dashboard-total-users-white.svg);
@@ -1026,6 +1032,18 @@ body {
 }
 .active-device:hover .title-image.channels {
   background-image: url(../images/icon-dashboard-channels-white.svg);
+}
+.active-device:hover .title-image.subsidiary-user {
+  background-image: url(../images/Group\ 1321315256W.svg);
+}
+.active-device:hover .title-image.channel-user {
+  background-image: url(../images/Group\ 1321315258w.svg);
+}
+.active-device:hover .title-image.time-zone {
+  background-image: url(../images/Group\ 1321315262w.svg);
+}
+.active-device:hover .title-image.currency {
+  background-image: url(../images/Group\ 1321315264w.svg);
 }
 
 #chart-usage {

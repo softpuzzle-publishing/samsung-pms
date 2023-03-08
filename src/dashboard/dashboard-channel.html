@@ -3,6 +3,8 @@
 
 <head>
     @@include('@@webRoot/_include/_head.html')
+    <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+
 </head>
 
 <body>
@@ -15,7 +17,115 @@
                 <div class="container-fluid">
                     <div class="row mt-3">
                         <!-- [**좌측] System Usage / User Usage / Active channel / 최근 업데이트 /게시 종료 예정  -->
-                        <div class="col-9 pt-5">
+                        <div class="col pt-5">
+                            <div class="row gy-5">
+                <!-- System Usage -->
+                <div class="col pb-3">
+                    <h2 class="header-title mb-0">System Usage</h2>
+                    <div class="row gx-4">
+
+                      <div class="col">
+                        <div class="card active-device mt-3">
+                          <div class="card-body d-flex flex-column justify-content-end">
+                            <div class="title-image channel-user"></div>
+                            <b>해당 채널 유저 수 </b>
+                            <strong>2</strong>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card active-device mt-3">
+                          <div class="card-body d-flex flex-column justify-content-end">
+                            <div class="title-image recent-users"></div>
+                            <b>최근 3달 내 활동 유저</b>
+                            <strong>2</strong>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-auto">
+                        <div class="row">
+                          <div class="col time">
+                            <div class="card active-device mt-3">
+                              <div class="card-body d-flex flex-column   justify-content-end">
+                                <div class="title-image time-zone"></div>
+                                <b>Time Zone</b>
+                                <strong>Asia/Kuala Lumpur</strong>
+                                <b class="mt-0">(UTC+08:00)</b>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card active-device mt-3">
+                              <div class="card-body d-flex flex-column   justify-content-end">
+                                <div class="title-image currency"></div>
+                                <b>통화</b>
+                                <div>
+                                <strong>RM</strong>
+                                <strong style="color: gray;">MYR</strong>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card active-device mt-3">
+                          <div class="card-body d-flex flex-column justify-content-end">
+                            <div class="title-image models"></div>
+                            <b>총 등록된 모델 수 </b>
+                            <strong>8</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- System Usage 끝 -->
+                <div class="col-12">
+                    <div class="row g-4">
+                    <!-- 게시기간현황 -->
+                    <div class="col">
+                        <div class="h-100 d-flex flex-column">
+                          <div class="d-flex align-items-center
+                          justify-content-between mb-3">
+                            <h2 class="header-title mb-0">게시기간현황</h2>
+                          </div>
+                          <div class="card flex-grow-1">
+                            <div class="card-body">
+                              <div class="chart-current-area">
+                                <canvas id="chart-current"></canvas>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 게시기간현황 끝 -->
+  
+                      <!-- 게시률 -->
+                    <div class="col">
+                      <div class="h-100 d-flex flex-column">
+                        <div class="d-flex align-items-center
+                        justify-content-between mb-3">
+                          <h2 class="header-title mb-0">게시율</h2>
+                        </div>
+                        <div class="card flex-grow-1">
+                          <div class="card-body percent">
+                            <strong>50%</strong>
+                            <p>(50/100)</p>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                    <!-- 게시률 끝 -->
+                  </div>
+  
+                
+
+
                             <!-- 최근업데이트  -->
                             <div class=" pt-3">
                                 <h2 class="header-title mb-3">최근 업데이트</h2>
@@ -79,6 +189,61 @@
             </main> <!-- main -->
         </div>
     </div>
+    <script>
+        $(document).ready(function () {
+        window.onload = function () {
+        // 게시기간현황 차트 로드
+        var postChart = document.getElementById('chart-current').getContext('2d');
+        window.myChart3 = new Chart(postChart, chartPie);
+        };
+        // 게시기간현황 차트
+        const chartPie = {
+        type: 'pie',
+        data: {
+        datasets: [{
+            data: [20, 30, 50],
+            backgroundColor: ['#97D653', '#FFB546', '#8093DC'],
+            borderWidth: 3,
+        }],
+        labels: ["전", "중", "후"],
+          // labels: ["1", "2", "3"],
+        },
+        options: {
+
+           maintainAspectRatio: false, //상위 div를 무시한 채 창 크기에 따라 크기가 크기가 마음대로 바뀌던 것이 상위 div에 구속된다
+          // responsive:true,
+        tooltips: {
+            enabled: false
+        },
+        hover: {
+            animationDuration: 1
+        },
+        animation: {
+            duration: 0,
+        },
+        plugins: {
+                labels: {
+                    render: 'percentage',
+                    showZero: true,
+                    fontSize: 20,
+                    position: 'outside',
+                    outsidePadding: 5,
+                    textMargin: 6
+                }
+            },
+        responsive: true,
+        legend: {
+            display: true,
+            position: 'bottom'
+        },
+        }
+    };
+      //게시기간현황 끝
+});
+
+
+
+    </script>
     @@include('@@webRoot/_include/_modal.html')
 </body>
 

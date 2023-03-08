@@ -99,6 +99,18 @@
         &.channels{
             background-image: url(../images/icon-dashboard-channels.svg);
         }
+        &.subsidiary-user {
+            background-image: url(../images/Group\ 1321315256.svg);
+        }
+        &.channel-user {
+            background-image: url(../images/Group\ 1321315258.svg);
+        }
+        &.time-zone {
+            background-image: url(../images/Group\ 1321315262.svg);
+        }
+        &.currency {
+            background-image: url(../images/Group\ 1321315264.svg);
+        }
     }
     b{
         margin-top: 1rem;
@@ -268,7 +280,37 @@
 
 
 
-.chart-usage-area, .chart-channel-area{
-  height: auto;
-  min-height: 420px;
+.chart-usage-area, .chart-channel-area {
+    height: auto;
+    min-height: 420px;
+}
+.chart-current-area {
+    height: auto;
+    min-height: 320px;
+}
+
+.company-chart-wrapper {
+    .card {overflow-y: hidden;
+    }
+    .card-body {
+        position: relative;
+    }
+    .inner{min-width: 1500px}
+    .chart-company-channel, .chart-company-price {
+        overflow-x: auto;
+    }
+}
+
+.time {
+    min-width: 61.38%;
+}
+
+.percent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    strong {
+        font-size: 40px;
+    }
 }

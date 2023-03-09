@@ -127,9 +127,7 @@
     &:hover{
         color:$white;
         background-color: $primary;
-        .currency-text :last-child{
-            color: $white;
-        }
+      
         .title-image{
             &.total-users{
                 background-image: url(../images/icon-dashboard-total-users-white.svg);
@@ -306,6 +304,10 @@
 .chart-current-area {
     height: auto;
     min-height: 320px;
+}
+
+.chart-channel-wrap {
+    min-height: 350px;
 }
 
 .company-chart-wrapper {

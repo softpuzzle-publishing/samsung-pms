@@ -1018,9 +1018,6 @@ body {
   color: #fff;
   background-color: #2189FF;
 }
-.active-device:hover .currency-text :last-child {
-  color: #fff;
-}
 .active-device:hover .title-image.total-users {
   background-image: url(../images/icon-dashboard-total-users-white.svg);
 }
@@ -1262,6 +1259,10 @@ body {
 .chart-current-area {
   height: auto;
   min-height: 320px;
+}
+
+.chart-channel-wrap {
+  min-height: 350px;
 }
 
 .company-chart-wrapper .card {

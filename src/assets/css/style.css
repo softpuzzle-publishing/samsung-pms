@@ -1011,7 +1011,7 @@ body {
   margin-top: 0.5rem;
   font-size: 32px;
 }
-.active-device .currency-text :last-child {
+.active-device:not(:hover) .currency-text :last-child {
   color: gray;
 }
 .active-device:hover {

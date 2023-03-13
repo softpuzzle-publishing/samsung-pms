@@ -120,14 +120,13 @@
         margin-top: 0.5rem;
         font-size: 32px;
     }
-    .currency-text :last-child{
-        color: gray;
-    }
+    &:not(:hover) .currency-text :last-child{
+        color: gray;}
+
 
     &:hover{
         color:$white;
         background-color: $primary;
-      
         .title-image{
             &.total-users{
                 background-image: url(../images/icon-dashboard-total-users-white.svg);

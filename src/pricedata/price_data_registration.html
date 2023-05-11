@@ -324,10 +324,45 @@
                       <!-- 일시불 -->
                       <div class="row g-4 mb-3">
                         <div class="col-auto">
-                          <label for="" class="text-gray5">일시불</label>
+                          <label for="">일시불</label>
                         </div>
                         <div class="col pb-3 border-bottom">
-                          <button type="button" class="btn btn-gray2"><i class="icon-plus-circle"></i></button>
+                          <!-- <button type="button" class="btn btn-gray2"><i class="icon-plus-circle"></i></button> -->
+                          <div class="row g-2">
+                            <div class="col-3">
+                              <input type="text" class="form-control" value="Monthly">
+                            </div>
+                            <div class="col-3">
+                              <input type="text" class="form-control" value="1288.98">
+                            </div>
+                            <div class="col">
+                              <select class="selectpicker w-auto" data-show-subtext="true" data-live-search="true">
+                                <option data-subtext="">US$</option>
+                                <option data-subtext="" disabled="disabled">\</option>
+                              </select>
+                            </div>
+                            <div class="col-auto">
+                              <input type="text" class="form-control" value="24" style="width: 60px;">
+                            </div>
+                            <div class="col-auto" style="width: 104px;">
+                              <button type="button" class="btn btn-gray2"><i class="icon-plus"></i></button>
+                              <button type="button" class="btn btn-gray2"><i class="icon-minus"></i></button>
+                            </div>
+                            <div class="col-6">
+                              <select class="form-select">
+                                <option value="">메모리</option>
+                                <option value="">4 GB</option>
+                                <option value="">6 GB</option>
+                                <option value="">8 GB</option>
+                                <option value="">12 GB</option>
+                                <option value="">16 GB</option>
+                                <option value="">32 GB</option>
+                              </select>
+                            </div>
+                            <div class="col-12">
+                              <input type="text" class="form-control" value="Price Description">
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <!-- 일시불 끝 -->
@@ -335,7 +370,7 @@
                       <!-- 할부 영역 -->
                       <div class="row g-4 mb-3 ">
                         <div class="col-auto">
-                          <label for="" class="text-gray5">할부</label>
+                          <label for="">할부</label>
                         </div>
                         <div class="col">
                           <div class="row g-2">

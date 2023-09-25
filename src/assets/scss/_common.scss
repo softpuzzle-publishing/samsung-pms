@@ -1,18 +1,18 @@
 body{
-    -webkit-font-smoothing: antialiased; min-width: 1400px;
-    scrollbar-face-color: transparent;
+  -webkit-font-smoothing: antialiased; min-width: 1400px;
+  scrollbar-face-color: transparent;
 	scrollbar-track-color: transparent;
-	scrollbar-arrow-color: $gray-300;
+	scrollbar-arrow-color: rgba(0,0,0,0.2);
 	scrollbar-3dlight-color: none;
-	scrollbar-shadow-color: $gray-300;
+	scrollbar-shadow-color: rgba(0,0,0,0.2);
 	scrollbar-darkshadow-color: none;
-    scrollbar-color: $gray-300 transparent;
-    scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.2);
+  scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar{
-	width: 6px;
-	height: 6px;
+	width: 5px;
+	height: 5px;
 	background-color: transparent;
 }
 ::-webkit-scrollbar-track{
@@ -21,7 +21,7 @@ body{
 }
 ::-webkit-scrollbar-thumb{
 	border-radius: 2px;
-	background-color: $gray-300;
+	background-color: rgba(0,0,0,0.2);
 }
 ::-webkit-scrollbar-button {
     width: 0;
@@ -137,7 +137,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .common-table{
     th{padding: 15px 0.3rem; font-size: 13px; font-weight: 700; vertical-align: middle; background-color: $gray-100;}
     td{padding: 15px 0.5rem; font-size: 14px; font-weight: 400; color: $gray-500; vertical-align: middle;}
-    
+
     textarea{
         width: 100%; height: 120px; border-radius: 6px; background-color: #fff; border:1px solid $gray-300; margin-top: 20px;
     }
@@ -183,7 +183,7 @@ input[type="number"]::-webkit-inner-spin-button {
                 width: 100px;
             }
         }
-    }   
+    }
 }
 
 // modal
@@ -214,14 +214,14 @@ input[type="number"]::-webkit-inner-spin-button {
     border-radius: 1.25rem;
 }
 
-// 
+//
 .bg-w-disabled:disabled, .bg-w-disabled[readonly]{
     background-color: #fff; cursor: pointer;
 }
 //select multiple
 .form-select[multiple]{opacity: 0;}
 .dashboardcode-bsmultiselect{
-   
+
 }
 
 //multi-select 디자인 수정
@@ -251,7 +251,7 @@ input[type="number"]::-webkit-inner-spin-button {
             _background-image: escape-svg($form-select-custom-indicator);background-size: 16px 12px;background-position: 0 0;background-repeat: no-repeat; width: 16px;height: 16px;background-size: 16px 12px;position: absolute;top: 50%;right: 1rem;transform: translateY(-50%);}
         &::placeholder{color: #000;}
     }
-  
+
     .btn-close{
         background-size: 9px;
         padding: 0.2rem;
@@ -276,7 +276,7 @@ input[type="number"]::-webkit-inner-spin-button {
             border-color:$black!important;
         }
     }
-    
+
 }
 .placeholder-wrap{
     background: #ededed;
@@ -391,10 +391,10 @@ input[type="number"]::-webkit-inner-spin-button {
         border:0!important;
     }
 }
-    
+
 .bootstrap-select>.dropdown-toggle{
     border: 1px solid #d8d8d8 ; background-color: #fff; font-size: 0.875rem; font-weight: 400; line-height: 1.2857;
-} 
+}
 
 .ui-datepicker .ui-datepicker-buttonpane button{
     height: 25px;
@@ -409,3 +409,19 @@ input[type="number"]::-webkit-inner-spin-button {
   overflow-x: auto;
 }
 
+.card-full-scroll{
+  max-height: calc(100dvh - 197px - 30px);
+  overflow-x: hidden;
+}
+
+.row>*{
+  min-width: 0;
+}
+
+.cursor-text{
+  cursor: text;
+}
+
+.form-control{
+  &.cursor-text{overflow: auto;}
+}

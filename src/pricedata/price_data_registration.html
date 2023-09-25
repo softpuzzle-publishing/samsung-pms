@@ -153,12 +153,21 @@
               </div>
               <div class="col-7" id="right-card">
                 <div class="card h-100">
-                  <div class="card-body">
+                  <div class="card-body card-full-scroll">
                     <div class="d-flex align-items-center justify-content-between">
                       <h2 class="header-title">가격 데이터 등록</h2>
                       <a href="#javascript:void(0)" class="tab-close"><i class="icon-plus rotate"></i></a>
                     </div>
                     <form action="" class="form-wrap mt-5">
+                      <div class="row mb-2" style="background-color: rgb(255, 247, 247)">
+                        <div class="col-auto">
+                          <label for="" class="d-flex">**sample</label>
+                        </div>
+                        <div class="col">
+                          <div class="form-control cursor-text" style="height: 40px;">div input text</div>
+                          <div class="form-control cursor-text" style="height: 70px">div textarea</div>
+                        </div>
+                      </div>
                       <div class="row mb-2">
                         <div class="col-auto">
                           <label for="" class="d-flex"><span class="text-primary mx-1">*</span>모델</label>
@@ -263,37 +272,6 @@
                       <!-- line -->
                       <div class="dash-line"></div>
                       <!-- line //-->
-                      <div class="row mb-2">
-                        <div class="col-auto">
-                          <label for="" class="d-flex">프로모션 이미지</label>
-                        </div>
-                        <div class="col">
-                          <div class="image-container">
-                            <div class="upload-image-wrap position-relative">
-                              <img id="preview-image" src="/assets/images/default-image.png">
-                              <button type="button" class="image-delete-btn">
-                                <i class="icon-close-circle"></i>
-                              </button>
-                            </div>
-                            <input type="file" id="input-image" class="d-none" value="업로드">
-                            <p class="mt-2 text-gray5">용량: 3MB 이하, 해상도: 640*228의 이미지 파일만 업로드 가능합니다.</p>
-                            <div class="mt-2 d-flex justify-content-end">
-                              <label for="input-image" class="btn btn-xs btn-dark">업로드</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-auto">
-                          <label for="" class="d-flex">프로모션 상세 설명</label>
-                        </div>
-                        <div class="col">
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="300"></textarea>
-                        </div>
-                      </div>
-                      <!-- line -->
-                      <div class="dash-line"></div>
-                      <!-- line //-->
                       <div class="row g-4 mb-2">
                         <div class="col-auto">
                           <label for="" class="d-flex"></label>
@@ -302,6 +280,26 @@
                           <div class="row g-2 mb-2">
                             <p>영역영역영역영역영역영역</p>
                             <p>영역영역영역영역영역영역영역영역</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row g-4 mb-3">
+                        <div class="col-auto">
+                          <label for="" class="d-flex">화폐단위</label>
+                        </div>
+                        <div class="col">
+                          <div class="row g-2">
+                            <div class="col-auto">
+                              <select class="form-select">
+                                <option value="">$USD</option>
+                              </select>
+                            </div>
+                            <div class="col-auto">
+                              <button type="button" class="btn btn-outline-primary">양식 다운로드</button>
+                            </div>
+                            <div class="col-auto">
+                              <button type="button" class="btn btn-primary">업로드</button>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -320,7 +318,6 @@
                         </div>
                       </div>
                       <!-- 가격 버튼 1 끝 -->
-
                       <!-- 일시불 -->
                       <div class="row g-4 mb-3">
                         <div class="col-auto">
@@ -366,7 +363,6 @@
                         </div>
                       </div>
                       <!-- 일시불 끝 -->
-
                       <!-- 할부 영역 -->
                       <div class="row g-4 mb-3 ">
                         <div class="col-auto">
@@ -459,7 +455,6 @@
                         </div>
                       </div>
                       <!-- 할부 영역 끝 -->
-
                       <!-- line -->
                       <div class="dash-line"></div>
                       <!-- line //-->
@@ -496,6 +491,129 @@
                       </div>
                     </form> <!-- form-wrap -->
                   </div> <!-- card-body -->
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body card-full-scroll">
+                    <div class="modal-pricedata d-flex flex-wrap flex-column">
+                      <b>Price</b>
+                      <b class="modal-pricedata__model mt-3">The price for <br>
+                        <span>Galaxy S22</span></b>
+                      <b class="mt-4">Promotion</b>
+                      <div class="modal-pricedata__promImg mt-2" style="background-image: url(../assets/images/@profile.jpg);"></div>
+                      <div class="modal-pricedata__promDesc mt-2 fs-6">
+                        <p>Trade in and save $22.31</p>
+                        <p>Early upgrade with AT&T Next Up</p>
+                      </div>
+                      <b class="mt-4">Choose the capacity</b>
+                      <div class="modal-pricedata__capacity overflow-x-auto pb-2 w-100">
+                        <div class="hstack gap-2 pt-1 flex-nowrap ">
+                          <div class="col-auto">
+                            <input type="radio" class="btn-check" name="capacity" id="btncheck1" autocomplete="off" checked>
+                            <label class="btn btn-gray4 btn-sm" for="btncheck1">128G</label>
+                          </div>
+                          <div class="col-auto">
+                            <input type="radio" class="btn-check" name="capacity" id="btncheck2" autocomplete="off">
+                            <label class="btn btn-gray4 btn-sm" for="btncheck2">256G</label>
+                          </div>
+                          <div class="col-auto">
+                            <input type="radio" class="btn-check" name="capacity" id="btncheck3" autocomplete="off">
+                            <label class="btn btn-gray4 btn-sm" for="btncheck3">512G</label>
+                          </div>
+                          <div class="col-auto">
+                            <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
+                            <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
+                          </div>
+                        </div>
+                      </div>
+                      <b class="mt-3">가격 옵션을 선택하세요</b>
+                      <div class="modal-pricedata__capacity overflow-x-auto pb-2 w-100">
+                        <div class="hstack gap-2 pt-1 flex-nowrap ">
+                          <div class="col-auto">
+                            <input type="radio" class="btn-check" name="capacity2" id="btncheck11" autocomplete="off">
+                            <label class="btn btn-gray4 btn-sm" for="btncheck11">일시불</label>
+                          </div>
+                          <div class="col-auto">
+                            <input type="radio" class="btn-check" name="capacity2" id="btncheck22" autocomplete="off" checked>
+                            <label class="btn btn-gray4 btn-sm" for="btncheck22">할부</label>
+                          </div>
+                        </div>
+                      </div>
+                      <b class="mt-3">할부선택</b>
+                      <div class="modal-pricedata__capacity overflow-x-auto pb-2 w-100">
+                        <div class="hstack gap-2 pt-1 flex-nowrap ">
+                          <div class="col-auto">
+                            <input type="radio" class="btn-check" name="capacity3" id="btncheck33" autocomplete="off" checked>
+                            <label class="btn btn-gray4 btn-sm" for="btncheck33">10</label>
+                          </div>
+                          <div class="col-auto">
+                            <input type="radio" class="btn-check" name="capacity3" id="btncheck44" autocomplete="off">
+                            <label class="btn btn-gray4 btn-sm" for="btncheck44">5</label>
+                          </div>
+                        </div>
+                      </div>
+                      <b class="mt-3">메모리 옵션</b>
+                      <div class="modal-pricedata__capacity overflow-x-auto pb-2 w-100">
+                        <div class="hstack gap-2 pt-1 flex-nowrap ">
+                          <div class="col-auto">
+                            <input type="radio" class="btn-check" name="capacity4" id="btncheck55" autocomplete="off">
+                            <label class="btn btn-gray4 btn-sm" for="btncheck55">8GB</label>
+                          </div>
+                          <div class="col-auto">
+                            <input type="radio" class="btn-check" name="capacity4" id="btncheck66" autocomplete="off" checked>
+                            <label class="btn btn-gray4 btn-sm" for="btncheck66">16GB</label>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <b class="mt-4 pt-2">Purchase option</b> -->
+                      <div class="">
+                        <b class="mt-4 fs-6 d-block">Full payment</b>
+                        <b class="modal-pricedata__price mt-3">
+                          $1288.90
+                        </b>
+                        <div class="fs-6 mt-3 pt-2">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          Vivamus placerat sit ametex eu congue.
+                        </div>
+                        <b class="mt-4 fs-6 d-block">Monthly</b>
+                        <b class="modal-pricedata__price mt-3 d-block">
+                          $1288.90 <span class="fs-5">/mo</span>
+                        </b>
+                        <b class="modal-pricedata__month mt-2 d-block">
+                          for 36 month
+                        </b>
+                        <div class="fs-6 mt-3 pt-2">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          Vivamus placerat sit ametex eu congue.
+                        </div>
+                        <b class="mt-4 fs-6 d-block">Monthly</b>
+                        <b class="modal-pricedata__price mt-3 d-block">
+                          $1288.90 <span class="fs-5">/mo</span>
+                        </b>
+                        <b class="modal-pricedata__month mt-2 d-block">
+                          for 12 month
+                        </b>
+                        <div class="fs-6 mt-3 pt-2v">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          Vivamus placerat sit ametex eu congue.
+                        </div>
+                        <b class="mt-5 fs-6 d-block">Description</b>
+                        <div class="modal-pricedata__description mt-3">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                          Vivamus placerat sit ametex eu congue.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -340,7 +340,10 @@
                           <label for="" class="d-flex">가격</label>
                         </div>
                         <div class="col">
-                          <button type="button" class="btn btn-dark">123</button>
+                          <div class="d-inline-block position-relative">
+                            <button type="button" class="btn btn-dark">123</button>
+                            <button type="button" aria-label="삭제" class="btn-item-delete"></button>
+                          </div>
                           <button type="button" class="btn btn-dark">123</button>
                           <button type="button" class="btn btn-dark">123</button>
                           <button type="button" class="btn btn-dark">123</button>
@@ -514,9 +517,10 @@
                       <b class="mt-4">Choose the capacity</b>
                       <div class="modal-pricedata__capacity overflow-x-auto pb-2 w-100">
                         <div class="hstack gap-2 pt-1 flex-nowrap ">
-                          <div class="col-auto">
+                          <div class="col-auto position-relative">
                             <input type="radio" class="btn-check" name="capacity" id="btncheck1" autocomplete="off" checked>
                             <label class="btn btn-gray4 btn-sm" for="btncheck1">128G</label>
+                            <button type="button" aria-label="삭제" class="btn-item-delete"></button>
                           </div>
                           <div class="col-auto">
                             <input type="radio" class="btn-check" name="capacity" id="btncheck2" autocomplete="off">

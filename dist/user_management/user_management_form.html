@@ -449,133 +449,165 @@
 
     <!-- 가격데이터 미리보기 입력 -->
     <div class="modal fade" id="modal-preview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width: 500px; margin: 0.5rem auto;">
-            <div class="modal-content border-4 border-dark">
-                <div class="moda-header p-3"></div>
-                <div class="modal-body w-100" style="overflow-x: hidden;">
-                    <div class="modal-pricedata d-flex flex-wrap flex-column">
-                        <b>Price</b>
-                        <b class="modal-pricedata__model mt-3">The price for <br>
-                            <span>Galaxy S22</span></b>
-                        <b class="mt-4">Promotion</b>
-                        <div class="modal-pricedata__promImg mt-2" style="background-image: url(../assets/images/@profile.jpg);"></div>
-                        <div class="modal-pricedata__promDesc mt-2 fs-6">
-                            <p>Trade in and save $22.31</p>
-                            <p>Early upgrade with AT&T Next Up</p>
-                        </div>
-                        <b class="mt-4">Choose the capacity</b>
-                        <div class="modal-pricedata__capacity overflow-x-auto pb-2 w-100">
-                            <div class="hstack gap-2 pt-1 flex-nowrap ">
-                                <div class="col-auto">
-                                    <input type="radio" class="btn-check" name="capacity" id="btncheck1" autocomplete="off" checked>
-                                    <label class="btn btn-gray4 btn-sm" for="btncheck1">128G</label>
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width: 406px; margin: 0.5rem auto;">
+            <div class="modal-content" style="padding: 0 20px;">
+                <div class="modal-priceinfo-option">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            바/플립
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            폴드
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            태블릿
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-body w-100 p-0 modal-priceinfo-body" style="overflow-x: hidden;">
+                    <div class="modal-priceinfo">
+                        <div class="modal-priceinfo-header"></div>
+                        <div class="priceinfo-top">
+                            <div class="model">Find out the price <br>
+                                options for Galaxy S23</div>
+                            <div class="promdesc">
+                                <p>from 1199.00USD </p>
+                            </div>
+                            <div class="capacity storage">
+                                <b>Storage</b>
+                                <div class="">
+                                    <div class="btn-wrap">
+                                        <div>
+                                            <input type="radio" class="btn-check" name="storage" id="btnStoragecheck1" autocomplete="off" checked>
+                                            <label class="btn btn-light-gray" for="btnStoragecheck1">1TB</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" class="btn-check" name="storage" id="btnStoragecheck2" autocomplete="off">
+                                            <label class="btn btn-light-gray" for="btnStoragecheck2">512GB</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" class="btn-check" name="storage" id="btnStoragecheck3" autocomplete="off">
+                                            <label class="btn btn-light-gray" for="btnStoragecheck3">256GB</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" class="btn-check" name="storage" id="btnStoragecheck4" autocomplete="off">
+                                            <label class="btn btn-light-gray" for="btnStoragecheck4">256GB</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" class="btn-check" name="storage" id="btnStoragecheck5" autocomplete="off">
+                                            <label class="btn btn-light-gray" for="btnStoragecheck5">256GB</label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-auto">
-                                    <input type="radio" class="btn-check" name="capacity" id="btncheck2" autocomplete="off">
-                                    <label class="btn btn-gray4 btn-sm" for="btncheck2">256G</label>
-                                </div>
-                                <div class="col-auto">
-                                    <input type="radio" class="btn-check" name="capacity" id="btncheck3" autocomplete="off">
-                                    <label class="btn btn-gray4 btn-sm" for="btncheck3">512G</label>
-                                </div>
-                                <div class="col-auto">
-                                    <input type="radio" class="btn-check" name="capacity" id="btncheck4" autocomplete="off">
-                                    <label class="btn btn-gray4 btn-sm" for="btncheck4">1TB</label>
+                                <script>
+                                    var btnlength = $(".btn-wrap").children("div").length;
+                                    if (btnlength > 4) {
+                                        $(".btn-wrap").parent("div").addClass("scroll");
+                                    };
+                                </script>
+                            </div>
+                            <div class="capacity">
+                                <b>Payment option</b>
+                                <div class="btn-wrap">
+                                    <div>
+                                        <input type="radio" class="btn-check" name="payment" id="btnPaymentcheck1" autocomplete="off" checked>
+                                        <label class="btn btn-light-gray" for="btnPaymentcheck1">One Time</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="btn-check" name="payment" id="btnPaymentcheck2" autocomplete="off">
+                                        <label class="btn btn-light-gray" for="btnPaymentcheck2">Monthly</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <b class="mt-3">가격 옵션을 선택하세요</b>
-                        <div class="modal-pricedata__capacity overflow-x-auto pb-2 w-100">
-                            <div class="hstack gap-2 pt-1 flex-nowrap ">
-                                <div class="col-auto">
-                                    <input type="radio" class="btn-check" name="capacity2" id="btncheck11" autocomplete="off">
-                                    <label class="btn btn-gray4 btn-sm" for="btncheck11">일시불</label>
+
+                        <!-- One Time -->
+                        <div class="price-card-wrap">
+                            <div class="price-card">
+                                <div class="price">
+                                    $1199.00
                                 </div>
-                                <div class="col-auto">
-                                    <input type="radio" class="btn-check" name="capacity2" id="btncheck22" autocomplete="off" checked>
-                                    <label class="btn btn-gray4 btn-sm" for="btncheck22">할부</label>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                                 </div>
-                            </div>
-                        </div>
-                        <b class="mt-3">할부선택</b>
-                        <div class="modal-pricedata__capacity overflow-x-auto pb-2 w-100">
-                            <div class="hstack gap-2 pt-1 flex-nowrap ">
-                                <div class="col-auto">
-                                    <input type="radio" class="btn-check" name="capacity3" id="btncheck33" autocomplete="off" checked>
-                                    <label class="btn btn-gray4 btn-sm" for="btncheck33">10</label>
-                                </div>
-                                <div class="col-auto">
-                                    <input type="radio" class="btn-check" name="capacity3" id="btncheck44" autocomplete="off">
-                                    <label class="btn btn-gray4 btn-sm" for="btncheck44">5</label>
+                                <div class="date">
+                                    Price is as of 2:45 PM CT on 9/14/2023
                                 </div>
                             </div>
                         </div>
-                        <b class="mt-3">메모리 옵션</b>
-                        <div class="modal-pricedata__capacity overflow-x-auto pb-2 w-100">
-                            <div class="hstack gap-2 pt-1 flex-nowrap ">
-                                <div class="col-auto">
-                                    <input type="radio" class="btn-check" name="capacity4" id="btncheck55" autocomplete="off">
-                                    <label class="btn btn-gray4 btn-sm" for="btncheck55">8GB</label>
+
+                        <!-- Monthly -->
+                        <div class="price-card-wrap">
+                            <div class="price-card">
+                                <div class="price">
+                                    <div class="logo-img">
+                                        <img src="../assets/images/price01.png" alt="">
+                                    </div>
+                                    <!-- 메모리만 있을때
+                <div class="memory">
+                  8GB Memory
+                </div> -->
+                                    <div class="month">For 3 month</div>
+                                    $39.33 <span class="fs-5">/ mo</span>
                                 </div>
-                                <div class="col-auto">
-                                    <input type="radio" class="btn-check" name="capacity4" id="btncheck66" autocomplete="off" checked>
-                                    <label class="btn btn-gray4 btn-sm" for="btncheck66">16GB</label>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                                 </div>
+                                <div class="date">
+                                    Price is as of 2:45 PM CT on 9/14/2023
+                                </div>
+                                <div class="memory">
+                                    8GB Memory
+                                </div>
+                            </div>
+                            <div class="price-card">
+                                <div class="price">
+                                    <div class="memory">
+                                        8GB Memory
+                                    </div>
+                                    <div class="month">For 6 month</div>
+                                    $19.33 <span class="fs-5">/ mo</span>
+                                </div>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                                </div>
+                                <div class="date">
+                                    Price is as of 2:45 PM CT on 9/14/2023
+                                </div>
+                                <!-- <div class="memory">
+                8GB Memory
+              </div> -->
                             </div>
                         </div>
-                        <!-- <b class="mt-4 pt-2">Purchase option</b> -->
-                        <div class="">
-                            <b class="mt-4 fs-6 d-block">Full payment</b>
-                            <b class="modal-pricedata__price mt-3">
-                                $1288.90
-                            </b>
-                            <div class="fs-6 mt-3 pt-2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                Vivamus placerat sit ametex eu congue.
-                            </div>
-                            <b class="mt-4 fs-6 d-block">Monthly</b>
-                            <b class="modal-pricedata__price mt-3 d-block">
-                                $1288.90 <span class="fs-5">/mo</span>
-                            </b>
-                            <b class="modal-pricedata__month mt-2 d-block">
-                                for 36 month
-                            </b>
-                            <div class="fs-6 mt-3 pt-2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                Vivamus placerat sit ametex eu congue.
-                            </div>
-                            <b class="mt-4 fs-6 d-block">Monthly</b>
-                            <b class="modal-pricedata__price mt-3 d-block">
-                                $1288.90 <span class="fs-5">/mo</span>
-                            </b>
-                            <b class="modal-pricedata__month mt-2 d-block">
-                                for 12 month
-                            </b>
-                            <div class="fs-6 mt-3 pt-2v">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                Vivamus placerat sit ametex eu congue.
-                            </div>
-                            <b class="mt-5 fs-6 d-block">Description</b>
-                            <div class="modal-pricedata__description mt-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                Vivamus placerat sit ametex eu congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                Vivamus placerat sit ametex eu congue.
-                            </div>
+                        <div class="link-wrap">
+                            <a href="">
+                                Go to the site
+                            </a>
+                            <i class="icon-link"></i>
+                        </div>
+                        <div class="modal-priceinfo-footer">
+                            <i class="icon-priceinfo"></i>
+                            <p>
+                                Talk to a operator for more details <br>
+                                or to discuss ways to buy Galaxy.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer pt-3">
-                    <button type="button" class="btn btn-lg btn-dark">닫기</button>
+                    <button type="button" class="btn btn-lg btn-outline-dark" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-lg btn-dark">저장</button>
                 </div>
             </div>
         </div>
+
     </div>
 
 
@@ -1327,6 +1359,75 @@
                 </div>
                 <div class="modal-footer">
                     <a href="../certification/certification.html" class="btn btn-lg btn-dark">확인</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  통신사 선택 -->
+    <div class="modal fade" id="modal-carrier" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">통신사 선택</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row gx-2 gy-2 mt-3 mb-4 align-items-center">
+                        <div class="col-auto">
+                            <label for="" class="">통신사명</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" value="AT&T">
+                        </div>
+                        <div class="col">
+                            <div class="logo-img">
+                                <img src="../assets/images/price01.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="btn-upload">
+                                <input type="file" name="file" id="file">
+                                <label for="file" class="btn btn-dark">로고 업로드
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dash-line"></div>
+                    <div class="row gx-2 gy-2 mb-2 align-items-center justify-content-center text-center">
+                        <div class="col">
+                            <a href="" class="text-decoration-none">
+                                T-Mobile
+                            </a>
+                        </div>
+                        <div class="col">
+                            <div class="logo-img">
+                                <img src="../assets/images/price02.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col text-end">
+                            <button type="button" class="btn btn-gray4">삭제
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row gx-2 gy-2 mb-2 align-items-center justify-content-center text-center">
+                        <div class="col">
+                            <a href="" class="text-decoration-none">T-Mobile</a>
+                        </div>
+                        <div class="col">
+                            <div class="logo-img">
+                                <img src="../assets/images/price02.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col text-end">
+                            <button type="button" class="btn btn-gray4">삭제
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-lg btn-outline-dark" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-lg btn-dark">확인</button>
                 </div>
             </div>
         </div>

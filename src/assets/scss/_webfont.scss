@@ -60,3 +60,12 @@
         url(../fonts/SamsungOneKorean/SamsungOneKorean-700.ttf) format('truetype'),;
         unicode-range: U+AC00-D7A3;
 }
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url(../fonts/Roboto/Roboto-Medium.eot);
+    src: 
+        url(../fonts/Roboto/Roboto-Medium.woff2) format('woff2'),
+        url(../fonts/Roboto/Roboto-Medium.woff) format('woff'),
+}

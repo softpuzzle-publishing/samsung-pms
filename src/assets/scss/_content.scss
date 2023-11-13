@@ -92,6 +92,14 @@
 
 .logo-img {max-width: 70px;}
 
+.carrier-item {
+    border: 1px solid $border-color; display: flex; align-items: center; position: relative; padding: 0 20px; margin-bottom: 15px; border-radius: 4px;
+    .carrier-item-btn {min-height: 60px; width: 85%;}
+    .btn-del {
+        position: absolute; right: 20px;
+    }
+}
+
 .image-delete-btn {
     position: absolute;
     top: -12px;

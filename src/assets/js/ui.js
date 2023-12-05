@@ -134,7 +134,22 @@ let Common = {
         });
         
       
-
+        //가격데이터 모달 show
+        $("#pricebar").click(function(){
+            $(".pricebar").show();
+            $(".pricefold").hide();
+            $(".pricetablet").hide();
+        });
+        $("#pricefold").click(function(){
+            $(".pricebar").hide();
+            $(".pricefold").show();
+            $(".pricetablet").hide();
+        });
+        $("#pricetablet").click(function(){
+            $(".pricebar").hide();
+            $(".pricefold").hide();
+            $(".pricetablet").show();
+        });
     }
 }
 

@@ -545,29 +545,31 @@
 
     <!-- 가격데이터 미리보기 입력 -->
     <div class="modal fade" id="modal-preview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" style="width: 406px; margin: 0.5rem auto;">
-            <div class="modal-content" style="padding: 0 20px;">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" style="width: 700px; margin: 0.5rem auto;">
+            <div class="modal-content d-flex align-items-center justify-content-center" style="padding: 0 20px;">
                 <div class="modal-priceinfo-option">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                        <label class="form-check-label" for="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="pricebar" checked>
+                        <label class="form-check-label" for="pricebar">
                             바/플립
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="pricefold">
+                        <label class="form-check-label" for="pricefold">
                             폴드
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                        <label class="form-check-label" for="flexRadioDefault3">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="pricetablet">
+                        <label class="form-check-label" for="pricetablet">
                             태블릿
                         </label>
                     </div>
                 </div>
-                <div class="modal-body w-100 p-0 modal-priceinfo-body" style="overflow-x: hidden;">
+
+                <!-- 바/플립 -->
+                <div class="modal-body p-0 modal-priceinfo-body pricebar" style="overflow-x: hidden;">
                     <div class="modal-priceinfo">
                         <div class="modal-priceinfo-header"></div>
                         <div class="priceinfo-top">
@@ -603,7 +605,7 @@
                                     </div>
                                 </div>
                                 <script>
-                                    var btnlength = $(".btn-wrap").children("div").length;
+                                    var btnlength = $(".pricebar .btn-wrap").children("div").length;
                                     if (btnlength > 4) {
                                         $(".btn-wrap").parent("div").addClass("scroll");
                                     };
@@ -665,9 +667,6 @@
                             </div>
                             <div class="price-card">
                                 <div class="price">
-                                    <div class="memory">
-                                        8GB Memory
-                                    </div>
                                     <div class="month">For 6 month</div>
                                     $19.33 <span class="fs-5">/ mo</span>
                                 </div>
@@ -677,9 +676,9 @@
                                 <div class="date">
                                     Price is as of 2:45 PM CT on 9/14/2023
                                 </div>
-                                <!-- <div class="memory">
-                8GB Memory
-              </div> -->
+                                <div class="memory">
+                                    8GB Memory
+                                </div>
                             </div>
                         </div>
                         <div class="link-wrap">
@@ -697,7 +696,147 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer pt-3">
+                <!-- 바/플립 -->
+
+                <!-- 폴드 -->
+                <div class="modal-body p-0 modal-priceinfo-body pricefold" style="overflow-x: hidden; display: none;">
+                    <div class="modal-priceinfo">
+                        <div class="modal-priceinfo-header"></div>
+                        <div class="priceinfo-top">
+                            <div class="model">Find out the price <br>
+                                options for Galaxy S23</div>
+                            <div class="promdesc">
+                                <p>from 1199.00USD </p>
+                            </div>
+                            <a href="#" class="text-decoration-none">
+                                <div class="promotion">
+                                    <div class="left">
+                                        <i class="icon-promotion"></i>
+                                        <p>Promotion<br>
+                                            Galaxy S23 Series to go!</p>
+                                    </div>
+                                    <div class="right">
+                                        <i class="icon-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="capacity storage">
+                                <b>Storage</b>
+                                <div class="">
+                                    <div class="btn-wrap">
+                                        <div>
+                                            <input type="radio" class="btn-check" name="storagefold" id="btnfoldStoragecheck1" autocomplete="off" checked>
+                                            <label class="btn btn-light-gray" for="btnfoldStoragecheck1">1TB</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" class="btn-check" name="storagefold" id="btnfoldStoragecheck2" autocomplete="off">
+                                            <label class="btn btn-light-gray" for="btnfoldStoragecheck2">512GB</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" class="btn-check" name="storagefold" id="btnfoldStoragecheck3" autocomplete="off">
+                                            <label class="btn btn-light-gray" for="btnfoldStoragecheck3">256GB</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" class="btn-check" name="storagefold" id="btnfoldStoragecheck4" autocomplete="off">
+                                            <label class="btn btn-light-gray" for="btnfoldStoragecheck4">256GB</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    var btnlength = $(".pricefold .btn-wrap").children("div").length;
+                                    if (btnlength > 4) {
+                                        $(".btn-wrap").parent("div").addClass("scroll");
+                                    };
+                                </script>
+                            </div>
+                            <div class="capacity">
+                                <b>Payment option</b>
+                                <div class="btn-wrap">
+                                    <div>
+                                        <input type="radio" class="btn-check" name="paymentfold" id="btnfoldPaymentcheck1" autocomplete="off" checked>
+                                        <label class="btn btn-light-gray" for="btnfoldPaymentcheck1">Full Payment</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" class="btn-check" name="paymentfold" id="btnfoldPaymentcheck2" autocomplete="off">
+                                        <label class="btn btn-light-gray" for="btnfoldPaymentcheck2">Monthly</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Full Payment -->
+                        <div class="price-card-wrap">
+                            <div class="price-card">
+                                <div class="price">
+                                    $1199.00
+                                </div>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                                </div>
+                                <div class="date">
+                                    Price is as of 2:45 PM CT on 9/14/2023
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Monthly -->
+                        <div class="price-card-wrap">
+                            <div class="price-card">
+                                <div class="price">
+                                    <div class="logo-img">
+                                        <img src="../assets/images/price01.png" alt="">
+                                    </div>
+                                    <!-- 메모리만 있을때
+                <div class="memory">
+                  8GB Memory
+                </div> -->
+                                    <div class="month">For 3 month</div>
+                                    $39.33 <span class="fs-5">/ mo</span>
+                                </div>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                                </div>
+                                <div class="date">
+                                    Price is as of 2:45 PM CT on 9/14/2023
+                                </div>
+                                <div class="memory">
+                                    8GB Memory
+                                </div>
+                            </div>
+                            <div class="price-card">
+                                <div class="price">
+                                    <div class="month">For 6 month</div>
+                                    $19.33 <span class="fs-5">/ mo</span>
+                                </div>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                                </div>
+                                <div class="date">
+                                    Price is as of 2:45 PM CT on 9/14/2023
+                                </div>
+                                <div class="memory">
+                                    8GB Memory
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link-wrap">
+                            <a href="">
+                                Go to the site
+                            </a>
+                            <i class="icon-link"></i>
+                        </div>
+                        <div class="modal-priceinfo-footer">
+                            <i class="icon-priceinfo"></i>
+                            <p>
+                                Talk to a operator for more details <br>
+                                or to discuss ways to buy Galaxy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 폴트 -->
+
+                <div class="modal-footer pt-3 w-100">
                     <button type="button" class="btn btn-lg btn-outline-dark" data-bs-dismiss="modal">취소</button>
                     <button type="button" class="btn btn-lg btn-dark">저장</button>
                 </div>

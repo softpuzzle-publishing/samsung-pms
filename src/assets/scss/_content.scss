@@ -41,53 +41,91 @@
 .modal-priceinfo-body {
     border: 2px solid #000; border-radius: 20px; 
     &::-webkit-scrollbar{display: none;}
+    .modal-priceinfo {
+        color: #252525; background-color: #F6F6F6;
+        .priceinfo-top {padding-bottom: calc(40px / 3);}
+        .model {font-size: calc(70px / 3); font-weight: 700; padding: 0 20px; line-height: normal;}
+        .promdesc {font-size: calc(46px / 3); font-weight: 700; opacity: 0.5; margin-top: calc(40px / 3); margin-bottom: calc(160px / 3); padding: 0 20px; line-height: normal;}
+        .capacity {
+            width: 100%; padding: 0 20px;
+            &.storage {
+                margin-bottom: calc(160px / 3); 
+                ::-webkit-scrollbar{display: none;}
+            }
+            .scroll {
+                margin-left: -20px; margin-right: -20px;
+                .btn-wrap {
+                    padding: 0 20px; gap: 10px;
+                    .btn {min-width: 69px;}
+                }
+            }
+            .btn-wrap {
+                display: flex; align-items: center; gap: calc(44px / 3); margin-top: calc(40px / 3); overflow-x: auto; 
+                div {flex: 1;}
+            }
+        }
+        .price-card-wrap {display: flex; flex-direction: column; gap: calc(40px / 3); margin-bottom: calc(40px / 3);}
+        .price-card {
+            padding: calc(80px / 3) 20px; background-color: #fff; border-radius: calc(80px / 3); display: flex; flex-direction: column; gap: calc(40px / 3); font-family: 'SamsungOne';
+            .price {
+                font-size: calc(100px / 3); font-weight: 800; line-height: normal;
+                .month {font-size: calc(46px / 3); font-weight: 700; font-family: 'SamsungSharpSans'; line-height: normal;}
+            }
+            .desc {font-size: 14px; font-weight: 700; line-height: normal;}
+            .date {font-size: calc(38px / 3); color: #979797; line-height: normal;}
+            .memory {padding: 10px; border-radius: calc(200px / 3); border: 1px solid #cfcfcf; display: flex; align-items: center; justify-content: center; color: #979797; font-size: 12px; font-weight: 700; line-height: calc(45.428px / 3); width: 30%;}
+            .logo-img {margin-left: auto;}
+        }
+        .link-wrap {
+            display: flex; align-items: center; gap: 6px; padding: 0 20px 0;
+            a{color: #0381FE; text-decoration: none; font-size: 14px; font-weight: 500; font-family: 'Roboto';}
+        }
+        .modal-priceinfo-footer {
+            padding: calc(140px / 3) 0; display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center; font-family: 'SamsungOne'; font-size: 14px; color: #252525;
+        }
+        .promotion {
+            display: flex; align-items: center; justify-content: space-between; padding: 0 20px; height: 64px; border-radius: calc(40px / 3); background-color: #E8E8E8; margin: 0 calc(160px / 3) calc(100px / 3);
+            .left {display: flex; align-items: center; gap: 13px; font-size: 12px; font-weight: 700; line-height: 16px; color: #000;}
+            .icon-promotion {
+                background-image: url("data:image/svg+xml,%3Csvg width='13.3' height='14.6' viewBox='0 0 40 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M39.2649 5.09485C39.2649 2.72569 36.7994 1.16228 34.6565 2.17254L17.1292 10.4354C16.4829 10.7401 15.7772 10.8981 15.0627 10.8981H5.58248C2.90602 10.8981 0.736328 13.0678 0.736328 15.7442V22.3989C0.736328 25.0754 2.90603 27.2451 5.58248 27.2451H15.0627C15.7772 27.2451 16.4829 27.4031 17.1292 27.7077L34.6565 35.9705C36.7994 36.9808 39.2649 35.4174 39.2649 33.0482V5.09485Z' fill='black'/%3E%3Crect x='5.92773' y='24.2344' width='6.91538' height='17.7692' rx='2.42308' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A"); width: 13.3px; height: 14.6px;
+            }
+            .icon-arrow-right {
+                background-image: url("data:image/svg+xml,%3Csvg width='12' height='11' viewBox='0 0 36 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.07365 5.36311L2.03269 2.38164C2.02762 2.08252 2.0859 1.78693 2.20416 1.51187C2.32242 1.23682 2.49835 0.987728 2.7218 0.778937C2.94526 0.570145 3.21184 0.40577 3.50622 0.295267C3.80059 0.184765 4.11694 0.130315 4.43708 0.135052L32.37 0.461064C32.6901 0.464007 33.0081 0.526063 33.3056 0.643666C33.6031 0.761266 33.8743 0.932094 34.1036 1.14632C34.3328 1.36054 34.5157 1.61393 34.6415 1.89191C34.7674 2.16989 34.8338 2.46698 34.8369 2.76608L35.1956 28.875C35.2006 29.1741 35.1422 29.4696 35.0239 29.7446C34.9056 30.0196 34.7297 30.2687 34.5063 30.4774C34.2828 30.6862 34.0163 30.8506 33.722 30.9611C33.4276 31.0717 33.1114 31.1262 32.7913 31.1216L29.6004 31.0833C29.2758 31.0787 28.9538 31.0137 28.6533 30.892C28.3527 30.7704 28.0796 30.5947 27.8498 30.375C27.6201 30.1554 27.4383 29.8962 27.3152 29.6128C27.1921 29.3293 27.13 29.0272 27.1327 28.7241L27.3232 12.9295L6.93707 31.9777C6.7138 32.1875 6.4472 32.3528 6.15261 32.4643C5.85801 32.5757 5.54124 32.6311 5.22051 32.6271C4.89979 32.6231 4.58144 32.56 4.28377 32.4412C3.98611 32.3225 3.71501 32.1505 3.48607 31.9352L1.1587 29.7605C0.928524 29.5466 0.744722 29.2933 0.617856 29.0152C0.49099 28.7371 0.423564 28.4398 0.419449 28.1403C0.415333 27.8407 0.474612 27.5449 0.593878 27.2698C0.713144 26.9947 0.890045 26.7457 1.11441 26.5372L21.5005 7.489L4.59852 7.66882C4.27352 7.67368 3.94911 7.61731 3.64463 7.5031C3.34015 7.38888 3.06183 7.21914 2.82623 7.00399C2.59063 6.78884 2.40259 6.53269 2.2733 6.25079C2.144 5.96888 2.07611 5.667 2.07365 5.36311Z' fill='black'/%3E%3C/svg%3E%0A"); width: 12px; height: 11px;
+            }
+        }
+    }
+    
+    &.pricebar {width: 364px;}
+    &.pricefold {
+        width: 608px;
+        .modal-priceinfo {
+            .model {padding: 0 calc(160px / 3);}
+            .promdesc {padding: 0 calc(160px / 3); margin-bottom: calc(100px / 3);}
+            .capacity {
+                padding: 0 calc(160px / 3);
+                .btn-wrap {max-width: 320px;}
+                &.storage {
+                    .scroll {
+                        .btn-wrap {
+                            max-width: 100%;
+                            >div {flex: 0;}
+                        }
+                    }
+                    }
+            }
+            .price-card-wrap {padding: 0 calc(160px / 3);}
+            .price-card {gap: 10px;}
+            .link-wrap {padding: 0 calc(220px / 3);}
+            .price-card {
+                .memory {width: 21%;}
+            }
+        }
+    }
+
 }
 .modal-priceinfo-option {
     display: flex; align-items: center; justify-content: center; gap: 20px; font-size: 18px; margin: 40px 0;
     label {font-weight: 700;}
-}
-.modal-priceinfo {
-    color: #252525; background-color: #F6F6F6;
-    .priceinfo-top {padding-bottom: calc(40px / 3);}
-    .model {font-size: calc(70px / 3); font-weight: 700; padding: 0 20px;}
-    .promdesc {font-size: calc(46px / 3); font-weight: 700; opacity: 0.5; margin-top: calc(40px / 3); margin-bottom: calc(160px / 3); padding: 0 20px;}
-    .capacity {
-        width: 100%; padding: 0 20px;
-        &.storage {
-            margin-bottom: calc(160px / 3); 
-            ::-webkit-scrollbar{display: none;}
-        }
-        .scroll {
-            margin-left: -20px; margin-right: -20px;
-            .btn-wrap {
-                padding: 0 20px; gap: 10px;
-                .btn {min-width: 69px;}
-            }
-        }
-        .btn-wrap {
-            display: flex; align-items: center; gap: calc(44px / 3); margin-top: calc(40px / 3); overflow-x: auto; 
-            div {flex: 1;}
-        }
-    }
-    .price-card-wrap {display: flex; flex-direction: column; gap: calc(40px / 3); margin-bottom: calc(40px / 3);}
-    .price-card {
-        padding: calc(80px / 3) 20px; background-color: #fff; border-radius: calc(80px / 3); display: flex; flex-direction: column; gap: 10px; font-family: 'SamsungOne';
-        .price {
-            font-size: calc(100px / 3); font-weight: 800;
-            .month {font-size: calc(46px / 3); font-weight: 700; font-family: 'SamsungSharpSans';}
-        }
-        .desc {font-size: 14px; font-weight: 700; line-height: calc(62.16px / 3);}
-        .date {font-size: 14px; color: #979797; line-height: calc(62.16px  / 3);}
-        .memory {padding: 10px; border-radius: calc(200px / 3); border: 1px solid #cfcfcf; display: flex; align-items: center; justify-content: center; margin-left: auto; color: #979797; font-size: 12px; font-weight: 700; line-height: calc(45.428px / 3); width: 30%;}
-        .logo-img {margin-left: auto;}
-    }
-    .link-wrap {
-        display: flex; align-items: center; gap: 6px; padding: 0 20px 0;
-        a{color: #0381FE; text-decoration: none; font-size: 14px; font-weight: 500; font-family: 'Roboto';}
-    }
-    .modal-priceinfo-footer {
-        padding: calc(140px / 3) 0; display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center; font-family: 'SamsungOne'; font-size: 14px; color: #252525;
-    }
 }
 
 .logo-img {max-width: 70px;}

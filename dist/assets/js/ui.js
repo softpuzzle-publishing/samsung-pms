@@ -135,19 +135,19 @@ var Common = {
 
     //가격데이터 모달 show
     $("#pricebar").click(function () {
-      $(".pricebar").show();
-      $(".pricefold").hide();
-      $(".pricetablet").hide();
+      $(".modal .pricebar").show();
+      $(".modal .pricefold").hide();
+      $(".modal .pricetablet").hide();
     });
     $("#pricefold").click(function () {
-      $(".pricebar").hide();
-      $(".pricefold").show();
-      $(".pricetablet").hide();
+      $(".modal .pricebar").hide();
+      $(".modal .pricefold").show();
+      $(".modal .pricetablet").hide();
     });
     $("#pricetablet").click(function () {
-      $(".pricebar").hide();
-      $(".pricefold").hide();
-      $(".pricetablet").show();
+      $(".modal .pricebar").hide();
+      $(".modal .pricefold").hide();
+      $(".modal .pricetablet").show();
     });
   }
 };

@@ -53,12 +53,11 @@
             width: 100%; padding: 0 20px;
             &.storage {
                 margin: calc(100px / 3) 0 calc(120px / 3); 
-                ::-webkit-scrollbar{display: none;}
             }
             .scroll {
-                margin-left: -20px; margin-right: -20px;
+                margin-right: -20px;
                 .btn-wrap {
-                    padding: 0 20px; gap: 10px;
+                    padding-right: 20px; gap: 10px;
                     .btn {min-width: 69px;}
                 }
             }

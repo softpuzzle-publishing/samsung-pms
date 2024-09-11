@@ -473,3 +473,31 @@
         font-size: 40px;
     }
 }
+
+.modal-error-btn-wrap {
+  display: flex; align-items: center; gap: 24px;
+  button {
+    font-size: 15px;
+    &:first-child {
+      position: relative;
+      &::after {
+        content: '';
+        height: 10px;
+        width: 1px;
+        background-color: #000;
+        right: -12px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &:hover:not(:disabled) {color: $primary;}
+  }
+}
+
+.error-box {
+  padding: .5rem;
+  &:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+}

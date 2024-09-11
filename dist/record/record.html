@@ -79,7 +79,8 @@
             <aside id="aside">
                 <nav class="sidebar">
                     <ul class="sidebar-nav">
-                        <li class="has-treeview"><a href="../dashboard/dashboard.html"><i class="icon-gnb-dash"></i> <span>DASHBOARD</span></a></li>
+                        <li class="has-treeview"><a href="../dashboard/dashboard.html"><i class="icon-gnb-dash"></i>
+                                <span>DASHBOARD</span></a></li>
                         <li class="has-treeview">
                             <a href="javascript:void(0)" class="w-100 d-flex align-items-center justify-content-between">
                                 <div>
@@ -105,6 +106,7 @@
                                 <li class="active"><a href="../pricedata/price_data_list.html">가격 데이터 등록 / 관리</a></li>
                                 <li><a href="../pricedata/price_data_waiting.html">승인 대기 목록</a></li>
                                 <li><a href="../pricedata/price_data_approval.html">승인 완료 목록</a></li>
+                                <li><a href="../pricedata/price_bulk_list.html">가격 벌크 업로드</a></li>
                             </ul>
                         </li>
                         <li class="has-treeview hide">
@@ -1650,6 +1652,54 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-lg btn-outline-dark" data-bs-dismiss="modal">취소</button>
                     <button type="button" class="btn btn-lg btn-dark">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 모달 : 오류 확인 팝업-->
+    <div class="modal fade" id="modal-error-check" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">오류 행: 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="border overflow-auto" style="max-height: 300px;">
+                        <ul class="error-box">
+                            <li>오류 열: B</li>
+                            <li>오류 항목: Model</li>
+                            <li>오류 내용: Segment에 없는 Model</li>
+                        </ul>
+                        <ul class="error-box">
+                            <li>오류 열: B</li>
+                            <li>오류 항목: Model</li>
+                            <li>오류 내용: Segment에 없는 Model</li>
+                        </ul>
+                        <ul class="error-box">
+                            <li>오류 열: B</li>
+                            <li>오류 항목: Model</li>
+                            <li>오류 내용: Segment에 없는 Model</li>
+                        </ul>
+                        <ul class="error-box">
+                            <li>오류 열: B</li>
+                            <li>오류 항목: Model</li>
+                            <li>오류 내용: Segment에 없는 Model</li>
+                        </ul>
+                        <ul class="error-box">
+                            <li>오류 열: B</li>
+                            <li>오류 항목: Model</li>
+                            <li>오류 내용: Segment에 없는 Model</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <div class="modal-error-btn-wrap">
+                        <button type="button">이전오류</button>
+                        <button type="button">다음오류</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -189,9 +189,9 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: $black; border-color: $black; box-sizing: 0;
 }
 .btn-light-gray {
-    padding: 15px 10px; color: #252525; background-color: #e8e8e8; border-radius: calc(200px / 3); font-size: calc(44px / 3); line-height: calc(58.75px / 3); width: 100%;
+    padding: 17px 32px; color: #232323; background-color: #e8e8e8; border-radius: 30px; font-size: 14px; line-height: 16.79px; width: 100%;font-weight: 700; font-family: 'SamsungOne';
 }
-.btn-check:checked+.btn-light-gray {background-color: #3F3F47; color: #F6F6F6;}
+.btn-check:checked+.btn-light-gray {background-color: #1E1E1E; color: #ffffff;}
 .btn-check:focus+.btn-light-gray {box-shadow: none;}
 .btn-upload {
     #file {display: none;}

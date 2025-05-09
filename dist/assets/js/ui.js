@@ -52,7 +52,6 @@ var Common = {
           }
           // placeholder: ph,
         });
-
         $(".form-select.custom[placeholder='" + ph + "']").next().find('ul.form-control').prepend("<li class=\"placeholder-wrap\">" + ph + "</li>");
       });
     }

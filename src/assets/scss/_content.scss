@@ -152,6 +152,19 @@
             background-size: cover;
           }
         }
+        &.small {
+          font-size: 12px;
+          align-items: center;
+          .price-tooltip {
+            margin-bottom: 1px;
+            width: 12px;
+            height: 12px;
+            .icon-info {
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
       }
       .price {
         font-size: 32px;

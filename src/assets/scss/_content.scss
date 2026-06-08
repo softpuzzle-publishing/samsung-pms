@@ -134,6 +134,25 @@
         font-weight: 800;
         font-family: "SamsungOne";
       }
+      .discount-price {
+        text-decoration: line-through;
+        display: flex;
+        gap: 4px;
+        color: #979797;
+        font-weight: 800;
+        font-family: "SamsungOne";
+        font-size: 15px;
+        .price-tooltip {
+          width: 18px;
+          height: 18px;
+          .icon-info {
+            width: 18px;
+            height: 18px;
+            background: url(../images/icon-info.svg) no-repeat center;
+            background-size: cover;
+          }
+        }
+      }
       .price {
         font-size: 32px;
         font-weight: 800;
@@ -172,6 +191,56 @@
       }
       .logo-img {
         margin-left: auto;
+      }
+    }
+    .care-card {
+      background-color: #eaf1ff;
+      border-radius: 20px;
+      padding: 18px;
+      margin: 10px 10px 20px;
+      font-family: "SamsungOne";
+
+      .icon-care {
+        width: 15px;
+        height: 15px;
+        background: url(../images/icon-care.svg) no-repeat center;
+        background-size: cover;
+      }
+
+      .care-header {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-bottom: 8px;
+
+        .care-title {
+          font-family: "SamsungSharpSans";
+          font-size: 15px;
+          font-weight: 700;
+          color: #252525;
+        }
+      }
+
+      .care-body {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .care-desc-bold {
+          font-size: 15px;
+          font-weight: 800;
+          color: #252525;
+          margin-bottom: 0;
+        }
+
+        .care-desc-light {
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 1.4;
+          color: #979797;
+          margin-bottom: 0;
+          word-break: break-all;
+        }
       }
     }
     .link-wrap {

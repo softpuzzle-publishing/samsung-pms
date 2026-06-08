@@ -20,16 +20,16 @@ var Common = {
         $("#right-card").addClass("d-none");
       }
     });
-    $('.tab-close').on('click', function () {
+    $(".tab-close").on("click", function () {
       $("#right-card").addClass("d-none");
     });
     // 버튼 active
-    $('[data-toggle="right-card"]').on('click', function (e) {
+    $('[data-toggle="right-card"]').on("click", function (e) {
       $("#right-card").toggleClass("d-none");
     });
 
     // 버튼 active
-    $('[data-toggle="btn-select"]').on('click', function (e) {
+    $('[data-toggle="btn-select"]').on("click", function (e) {
       e.preventDefault();
       $(this).toggleClass("active");
     });
@@ -37,10 +37,10 @@ var Common = {
     // 가격데이터 셀렉박스 옵션선택
     if ($('[multiple="multiple"]').length > 0) {
       $('[multiple="multiple"]').each(function () {
-        var ph = $(this).attr('placeholder');
+        var ph = $(this).attr("placeholder");
         $(this).bsMultiSelect({
           cssPatch: {
-            choice: 'p-1',
+            choice: "p-1",
             choices: {
               columnCount: "1"
             }
@@ -48,11 +48,11 @@ var Common = {
           css: {
             pick: "selected",
             pickButton: "btn-close ms-1",
-            choiceContent: 'form-check mb-0'
+            choiceContent: "form-check mb-0"
           }
           // placeholder: ph,
         });
-        $(".form-select.custom[placeholder='" + ph + "']").next().find('ul.form-control').prepend("<li class=\"placeholder-wrap\">" + ph + "</li>");
+        $(".form-select.custom[placeholder='" + ph + "']").next().find("ul.form-control").prepend("<li class=\"placeholder-wrap\">" + ph + "</li>");
       });
     }
 
@@ -64,7 +64,7 @@ var Common = {
     // }).datepicker('setDate', 'today');
     $("#before-datepicker, #after-datepicker").datetimepicker({
       format: "yyyy-mm-dd",
-      minDate: '0',
+      minDate: "0",
       closeText: "닫기",
       prevText: "이전달",
       nextText: "다음달",
@@ -83,7 +83,7 @@ var Common = {
       changeMonth: true,
       changeYear: true,
       beforeShow: function beforeShow(input, inst) {
-        $('#ui-datepicker-div').addClass('datepicker-wrapper');
+        $("#ui-datepicker-div").addClass("datepicker-wrapper");
       }
     });
 
@@ -113,21 +113,21 @@ var Common = {
       });
     }
     // input file에 이미지 삭제
-    $('.upload-image-wrap').on('click', '.image-delete-btn', function () {
+    $(".upload-image-wrap").on("click", ".image-delete-btn", function () {
       $("#preview-image").attr("src", "/assets/images/default-image.png");
       $("#input-image").val("");
       $(".image-delete-btn").hide();
     });
-    // 
-    $('.has-treeview > a').click(function () {
-      $(this).parent().toggleClass('hide');
+    //
+    $(".has-treeview > a").click(function () {
+      $(this).parent().toggleClass("hide");
     });
-    $('.daterangepickers').dateRangePicker({
+    $(".daterangepickers").dateRangePicker({
       inline: true,
       alwaysOpen: true,
       container: ".modal-body",
-      format: 'YYYY.MD.DD',
-      language: 'ko',
+      format: "YYYY.MD.DD",
+      language: "ko",
       monthSelect: true,
       yearSelect: true
     });
@@ -147,6 +147,12 @@ var Common = {
       $(".modal .pricebar").hide();
       $(".modal .pricefold").hide();
       $(".modal .pricetablet").show();
+    });
+
+    // 툴팁 활성화
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
     });
   }
 };
